@@ -18,6 +18,10 @@ Keep a simple log:
 | 2 Feb | Template: "we don't offer bulk deletion" | Email |
 | … | … | … |
 
+## Before you complain: write to the DPO
+
+Send a formal request to Discord's Data Protection Officer (`dpo@discord.com`) and give it the full month. So far, mail to the DPO has only drawn support templates, but even silence is useful: an unanswered request to the person responsible for data protection is clear, simple evidence that Discord missed its deadline under Article 12(3). [Templates](11-templates.md) has ready-to-use DPO emails.
+
 ## Complaining in the EU / EEA
 
 You can complain to the data protection authority **in the country where you live**, even though Discord's EU company is in the Netherlands. Your authority will deal with the other authorities for you. You don't need to work out which one leads.
@@ -26,7 +30,7 @@ You can complain to the data protection authority **in the country where you liv
 - **It's free,** and you don't need a lawyer.
 - **Expect it to take months.** Cross-border cases are slow. Authorities often don't acknowledge follow-up emails, and that's normal.
 
-**What to include:**
+**What to include** (a ready-made version is in [Templates](11-templates.md#complaint-template-eu--eea-data-protection-authority)):
 1. Who you are, and your Discord username and user ID
 2. The company: **Discord Netherlands BV**
 3. What you asked for, and when (attach your request)
@@ -34,6 +38,8 @@ You can complain to the data protection authority **in the country where you liv
 5. What happened: the before/after figures from [Step 6](06-check-the-result.md)
 6. What's wrong, in plain words. For example: no answer within a month; a refusal with no legal basis; no information about your right to complain; messages kept that you asked to be erased
 7. What you want: the authority to require Discord to erase your messages and to answer your request properly. You can also ask it to look at whether Discord's process is lawful in general
+
+**Optional:** if you want your complaint to push Discord to change its process for everyone, and not just get your own messages deleted, you can state your position on **amicable resolution** at the start. It may slow down your own result, so read [the note in Templates](11-templates.md#amicable-resolution-stating-your-position) first.
 
 Keep it factual. Let the evidence show the problem. Words like "malicious" don't help, while dates, quotes and numbers do.
 

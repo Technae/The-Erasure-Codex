@@ -78,7 +78,7 @@ The helper script's `compare … --remaining remaining.csv` option writes that f
 
 **What it means:** Discord won't define "access". This is the point where many people give up. Don't: you now have a clear record that Discord has refused part of your request without giving a legal reason.
 
-**Reply:** send one final, short message, then move on to [Step 7](07-deadlines-and-complaints.md).
+**Reply:** send one final, short message, escalate to the Data Protection Officer ([DPO template 1](11-templates.md#dpo-template-1-escalating-an-erasure-request)), then move on to [Step 7](07-deadlines-and-complaints.md).
 
 ```
 Thank you. You have not erased [number] of the messages I asked you to

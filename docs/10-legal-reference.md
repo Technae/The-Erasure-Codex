@@ -1,6 +1,6 @@
 # 10. Legal reference
 
-[← Case study](09-case-study.md) · [Contents](../README.md)
+[← Case study](09-case-study.md) · [Contents](../README.md) · [Next: Templates →](11-templates.md)
 
 A quick reference to the provisions this guide relies on. The article numbers are the same in the GDPR and the UK GDPR. Read the full text at [EUR-Lex](https://eur-lex.europa.eu/eli/reg/2016/679/oj) (GDPR) or [legislation.gov.uk](https://www.legislation.gov.uk/eur/2016/679/contents) (UK GDPR).
 
@@ -44,4 +44,4 @@ A quick reference to the provisions this guide relies on. The article numbers ar
 
 This page summarises the law for orientation. It doesn't cover every exception or national variation, and the law changes. If you're making decisions that matter, check the source text and get advice.
 
-[← Case study](09-case-study.md) · [Contents](../README.md)
+[← Case study](09-case-study.md) · [Contents](../README.md) · [Next: Templates →](11-templates.md)

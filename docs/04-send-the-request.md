@@ -35,7 +35,8 @@ My account:
 Please erase the [number] messages listed in the attached CSV file
 (channel_id, message_id), sent from my account across [number] channels.
 This includes messages in channels and direct messages that I can still
-access. I am relying on Article 17(1)(a) and, as I object to the
+access: being able to access a channel is not an exception under
+Article 17(3). I am relying on Article 17(1)(a) and, as I object to the
 continued processing of these messages under Article 21(1), on
 Article 17(1)(c).
 
@@ -81,7 +82,8 @@ My account:
 Please erase the [number] messages listed in the attached CSV file
 (channel_id, message_id), sent from my account across [number] channels.
 This includes messages in channels and direct messages that I can still
-access. I am relying on Article 17(1)(a) and, as I object to the
+access: being able to access a channel is not an exception under
+Article 17(3). I am relying on Article 17(1)(a) and, as I object to the
 continued processing of these messages under Article 21(1), on
 Article 17(1)(c).
 
