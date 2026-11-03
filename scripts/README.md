@@ -2,7 +2,8 @@
 
 A small, dependency-free Python 3 script for working with a Discord data package when making an erasure request.
 
-- Reads the package **directly from the .zip** (or an extracted folder) and never changes it
+- Reads the package **directly from the .zip** (or an extracted folder) and never changes it: it refuses to write output over the package or into an extracted package folder
+- Stops with a clear error if a file isn't in a format it recognises, rather than reporting a smaller count
 - Works with both the current JSON layout and older CSV layouts
 - Doesn't connect to the internet, and never needs your token or password
 
@@ -10,9 +11,13 @@ A small, dependency-free Python 3 script for working with a Discord data package
 |---|---|
 | `python3 erasure_helper.py summary package.zip` | Count your messages by channel type |
 | `python3 erasure_helper.py csv package.zip -o messages_to_delete.csv` | Write the `channel_id,message_id` CSV Discord asks for |
-| `python3 erasure_helper.py compare old.zip new.zip` | Show how many messages were removed between two packages |
+| `python3 erasure_helper.py compare old.zip new.zip` | Show how many messages are no longer in the newer export |
 
-Options for `csv`: `--exclude FILE`, `--only FILE` (channel IDs, one per line), `--split N`, `--no-header`.
-Options for `compare`: `--report FILE` (per-channel counts, includes channel names, keep private), `--remaining FILE` (IDs still present, ready to resend).
+Options for `csv`: `--exclude FILE`, `--only FILE` (channel IDs, one per line), `--split N`, `--no-header`, `--force`.
+Options for `compare`: `--report FILE` (per-channel counts, includes channel names, keep private), `--remaining FILE` (IDs in both exports, ready to resend), `--force`.
+
+The comparison counts `(channel_id, message_id)` pairs. It shows what Discord's export no longer includes, not whether every copy has been erased.
+
+**Tests:** `python3 -m unittest test_erasure_helper -v` (run from this folder) checks the script against small mock packages, including malformed ones. Please run it before submitting changes.
 
 See [Step 3](../docs/03-build-the-csv.md) and [Step 6](../docs/06-check-the-result.md) for a walkthrough. Licence: MIT.

@@ -17,12 +17,14 @@ python3 erasure_helper.py compare package-before.zip package-after.zip
 ```
 
 ```
-Old package: 762269 messages
-New package: 640380 messages
-Removed (in old, not in new):   121948
-Still present (in both):        640321
-New since the old package:      59
-Share of old messages removed:  16.0%
+Old export: 762269 messages
+New export: 640380 messages
+No longer in export (in old, not in new): 121948
+Present in both exports:                  640321
+New in newer export:                      59
+Share of old messages no longer exported: 16.0%
+Note: this shows what Discord's export no longer includes.
+It can't show whether every copy, including backups, has been erased.
 ```
 
 (These are the real figures from the [case study](09-case-study.md).)
@@ -34,8 +36,10 @@ python3 erasure_helper.py compare package-before.zip package-after.zip \
     --report per_channel.csv --remaining remaining.csv
 ```
 
-- **`per_channel.csv`** shows, for every channel, how many messages were removed and how many are still there. It's the clearest way to see the "accessible space" rule at work: channels you'd left go to zero, channels you're still in don't change. **It includes channel names, so don't post it publicly.**
-- **`remaining.csv`** lists every message that's still present, in the `channel_id,message_id` format, ready to send in your follow-up.
+- **`per_channel.csv`** shows, for every channel, how many messages are no longer in the export and how many are still there. It's the clearest way to see the "accessible space" rule at work: channels you'd left go to zero, channels you're still in don't change. **It includes channel names, so don't post it publicly.**
+- **`remaining.csv`** lists every message that's in both exports, in the `channel_id,message_id` format, ready to send in your follow-up.
+
+The script compares each message together with its channel, the same pairs as in the CSV. If it can't read a package reliably (for example, because Discord has changed the export format), it stops with an error rather than reporting a misleading count. It won't write its output over either package; add `--force` if you want it to overwrite an earlier report.
 
 ## Without the script
 
