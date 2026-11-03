@@ -12,7 +12,7 @@ Discord has no button for bulk deleting your message history. If you live in the
 
 ## The short version
 
-1. **Request your data package.** It lists the ID of every message you've sent. ([Step 2](docs/02-get-your-data.md))
+1. **Request your data package.** It lists the IDs of the messages you've sent. ([Step 2](docs/02-get-your-data.md))
 2. **Turn it into a CSV** of `channel_id,message_id`. A script in this repo does that for you. ([Step 3](docs/03-build-the-csv.md))
 3. **Email privacy@discord.com from your account's email address**, citing Article 17, with the CSV attached. ([Step 4](docs/04-send-the-request.md))
 4. **Expect a template first.** Discord's first reply usually says bulk deletion isn't offered. It does have a CSV process, so keep going. ([Step 5](docs/05-replies-decoded.md))
