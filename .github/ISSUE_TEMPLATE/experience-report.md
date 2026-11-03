@@ -15,6 +15,8 @@ people's names and messages from anything you paste. -->
 
 **How you sent it:** email to privacy@discord.com / support form / other
 
+**Account status when you made the request:** active / banned / deleted
+
 **Roughly how many messages, and across how many channels:**
 
 **Had you left the servers or group chats first?** yes / some / no
