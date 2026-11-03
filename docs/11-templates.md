@@ -52,6 +52,14 @@ and that access permissions are "managed dynamically". Being able to
 access a channel is not an exception under Article 17(3), and "managed
 dynamically" is not a reason under Article 12(4).
 
+Discord's stated reason is that other users rely on these messages for
+context. But Discord lets me delete each of the same messages myself,
+one at a time, which affects other users in exactly the same way, and
+it has already erased messages in bulk from servers that other members
+can still read. Please explain why conversation context justifies
+refusing my request, but not individual deletion or the erasure you have
+already carried out.
+
 Please either:
 1. erase the remaining messages, which are listed in the attached file;
    or
@@ -208,14 +216,27 @@ Discord's replies exactly. For example:
   [number] emails over [number] weeks, and I had to follow a community
   guide to find out how the process works. Deleting the remaining
   [number] messages by hand would take [estimate] hours."]
+- Inconsistent justification: Discord says other users rely on these
+  messages for context, but lets me delete each of them myself, and has
+  already erased messages in bulk from servers other members can still
+  read. Context therefore can't explain the refusal.
+- EDPB guidance: the EDPB's case digest on erasure says controllers must
+  facilitate erasure without cumbersome procedures, and its Guidelines
+  03/2022 say the steps to exercise rights should be as few as possible.
 [- Article 38(4): my email to Discord's Data Protection Officer was
-  handled as an ordinary support ticket and closed without a reply.]
+  handled as an ordinary support ticket and closed without a reply. The
+  EDPB case digest describes a similar case (an automated reply
+  redirecting rights requests to a contact form, FR:OSS:D:2022:326) as a
+  cumbersome procedure.]
 
 4. What I ask the authority to do
 - Order Discord to comply with my request (Article 58(2)(c)).
 - Consider ordering Discord to bring its handling of erasure requests
-  into compliance, for example by providing a way for users to delete
-  their messages in bulk (Article 58(2)(d)).
+  into compliance (Article 58(2)(d)), so that users have an effective
+  way to have their messages erased in bulk, whether all of them or all
+  of them in a given conversation or server. I am not asking for a
+  particular feature, only for the right to work in practice at the
+  scale of the data Discord holds.
 - Where the authority considers it appropriate, investigate whether this
   is how Discord handles erasure requests generally.
 
@@ -246,11 +267,11 @@ Some authorities try to settle complaints by agreement between you and the compa
 If you turn down a resolution that only deletes your own messages, your complaint may take longer, because it can then only end with a decision by the authority or a wider resolution. That's the trade-off: a faster personal outcome, or a better chance of changing the process. Both are reasonable choices.
 
 **Why it can be worth it:** a complaint that isn't settled quietly keeps the wider problem in front of the authority. That's how investigations start. If an authority looks into Discord's practices, it has real powers:
-- **It can order Discord to change how it handles erasure** (Article 58(2)(d)), for example to provide a proper way for users to delete their messages.
+- **It can order Discord to change how it handles erasure** (Article 58(2)(d)), for example to provide an effective way for users to have their messages erased at scale. The authority decides how; it doesn't have to be a particular button.
 - **It can fine Discord.** For breaches of data subject rights, including the right to erasure and the rules on answering requests, fines can reach €20 million or 4% of worldwide annual turnover, whichever is higher (Article 83(5)).
 - **It has happened before.** In 2022 France's CNIL fined Discord €800,000 over its data practices, including how long it kept data.
 
-**Your own effort is evidence too.** Discord has to *facilitate* your rights (Article 12(2)), and the GDPR expects companies to make requests easy to make, including electronically (Recital 59). If getting your messages deleted means requesting a data package, waiting weeks, running a script, writing emails that cite law, decoding templates and following a guide like this one, just to *maybe* succeed, that burden is part of the problem. Say so in your complaint: how many steps it took, how long, and what you had to work out for yourself. The fact that a community had to write this guide at all says something.
+**Your own effort is evidence too:** see [Your effort is evidence](#your-effort-is-evidence) below.
 
 None of this is guaranteed. The authority decides whether to investigate and what to do. But every complaint that states this position adds to the evidence that the problem is Discord's process, not one person's request.
 
@@ -259,14 +280,15 @@ If you do want your complaint to be about more than your own data, say so at the
 ```
 I would like to state my position on amicable resolution for the record.
 My complaint concerns not only my own data, but how Discord handles
-erasure requests generally: the lack of any option to delete messages in
-bulk, the undefined "accessible space" criterion, and the absence of
+erasure requests generally: the lack of any effective way to have
+messages erased in bulk, the undefined "accessible space" criterion, and the absence of
 reasons when requests are refused. A resolution limited to deleting my
 own messages would not address these issues, and I would not regard it
 as resolving my complaint. I would be open to an amicable resolution that
-addressed them, for example a commitment by Discord to give users an
-option to delete all their messages, or all their messages in a given
-conversation or server, and to publish how it handles erasure requests.
+addressed them: a commitment by Discord to provide an effective way for
+users to have all their messages, or all their messages in a given
+conversation or server, erased (an option in the app would be one
+example), and to publish how it handles erasure requests.
 If that is not achievable, I ask the authority, or the lead supervisory
 authority, to consider whether these issues warrant an inquiry.
 ```
@@ -274,6 +296,20 @@ authority, to consider whether these issues warrant an inquiry.
 You can't force an authority to open an inquiry, and how amicable resolution works varies between countries. Stating your position still makes it much harder for your complaint to be closed quietly.
 
 ---
+
+## Your effort is evidence
+
+Discord has to *facilitate* your rights (Article 12(2)), and the GDPR expects requests to be easy to make and to act on, including electronically (Recital 59). The EDPB has said that cumbersome procedures fall short of this, and that the steps needed to exercise a right should be as few as possible. If getting your messages deleted means requesting a data package, waiting weeks, running a script, writing emails that cite law, decoding templates and following a guide like this one, just to *maybe* succeed, that burden is part of the problem. The fact that a community had to write this guide at all says something.
+
+A regulator can only act on what it can see, so record it as you go:
+- **How many messages** you'd have to delete by hand: the "still present" figure from [Step 6](06-check-the-result.md)
+- **How long one deletion takes:** time yourself deleting a few hundred messages in one sitting, and note any slowdowns, errors or rate limits. A short screen recording with personal details hidden is even better
+- **The total:** messages × seconds per message, in hours. Present it as a minimum, since real deletion is slower than a timed test
+- **Every step you took:** data package request, waiting time, building the CSV, each email and reply, with dates
+- **Discord's refusal:** the exact words it used to decline bulk processing
+- **What Discord did process:** for example, the messages it removed in bulk from spaces you'd left. That shows a bulk process exists
+
+Put the figures in your complaint under Article 12(2). Specific numbers are much harder to dismiss than "it's a lot of work".
 
 ## UK: complaining to Discord first (section 164A)
 

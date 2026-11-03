@@ -25,7 +25,9 @@ As of 2026, Discord's privacy team will process a CSV of message IDs, but in pra
 
 Discord's first answer usually says bulk deletion isn't offered. That isn't the whole story, and a template reply isn't a legal refusal. Your rights don't depend on Discord having a feature for them.
 
-If all this seems like a lot of work just to use a legal right, that's worth noticing. Discord is required to *make it easy* to exercise your rights (Article 12(2)). The effort this guide asks of you is itself something you can point out to a regulator ([Templates](docs/11-templates.md#amicable-resolution-stating-your-position)).
+If all this seems like a lot of work just to use a legal right, that's worth noticing. Discord is required to *make it easy* to exercise your rights (Article 12(2)). The effort this guide asks of you is itself something you can point out to a regulator ([Templates](docs/11-templates.md#your-effort-is-evidence)).
+
+**What this guide is pushing for** isn't one particular feature. It's for Discord to *effectively facilitate* the erasure of your messages at scale, as the law requires: for example, a way to delete all your messages, or all your messages in a DM, group chat or server. A delete-all button is one way to do that. How Discord does it is up to Discord, as long as it works.
 
 ## Contents
 

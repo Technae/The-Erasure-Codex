@@ -35,7 +35,7 @@ You can complain to the data protection authority **in the country where you liv
 2. The company: **Discord Netherlands BV**
 3. What you asked for, and when (attach your request)
 4. Every reply from Discord, word for word, with dates (attach the emails)
-5. What happened: the before/after figures from [Step 6](06-check-the-result.md)
+5. What happened: the before/after figures from [Step 6](06-check-the-result.md), and a record of the effort involved (see [Your effort is evidence](11-templates.md#your-effort-is-evidence))
 6. What's wrong, in plain words. For example: no answer within a month; a refusal with no legal basis; no information about your right to complain; messages kept that you asked to be erased
 7. What you want: the authority to require Discord to erase your messages and to answer your request properly. You can also ask it to look at whether Discord's process is lawful in general
 

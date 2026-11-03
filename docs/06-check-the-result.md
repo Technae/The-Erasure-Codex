@@ -58,6 +58,15 @@ comm -12 before/ids.txt after/ids.txt | wc -l   # still present
 - **New messages** you've sent since the first package show up as "new", not as failures.
 - **Missing messages:** some users report packages that seem to leave out messages. If a number looks odd, spot-check a few IDs in the app. With Developer Mode on, you can open a message directly at `https://discord.com/channels/@me/CHANNEL_ID/MESSAGE_ID` for a DM, or `https://discord.com/channels/SERVER_ID/CHANNEL_ID/MESSAGE_ID` for a server.
 
+## What a comparison can and can't show
+
+Three different things are easy to confuse:
+1. **A message is missing from your new data package.** That's what the comparison shows: Discord's export no longer includes it.
+2. **A message is gone from Discord's live systems.** That's what you see when it no longer appears in the app. It's the strongest practical check you have.
+3. **Every copy is gone, including backups.** Backups are normally overwritten over a period of time, not instantly. A company may also keep some data for a limited time where an exception applies. You can't see backups, so ask Discord what happens to backup copies, and how long they're kept, if it matters to you.
+
+So report your results precisely: "these messages are no longer in my data package or visible in the app" is accurate. "Discord has erased every copy" is something only Discord can confirm.
+
 ## Keep the evidence
 
 Record the hash of the new package (see [Step 2](02-get-your-data.md)), and keep the output of the comparison with the date. If you complain, these figures, alongside Discord's confirmation emails, are your strongest evidence.

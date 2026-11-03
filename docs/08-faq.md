@@ -24,7 +24,7 @@ You can delete channels, or the whole server, yourself. That removes everyone's 
 No. Their messages are their personal data. You can only ask for your own messages to be erased.
 
 **Discord asked me for ID. Should I send it?**
-Article 12(6) lets a company ask for more information if it has *reasonable doubts* about who you are. If you're writing from your account's registered email, that's normally enough. Ask why they doubt it before sending any documents.
+Article 12(6) lets a company ask for more information if it has *reasonable doubts* about who you are. If you're writing from your account's registered email, that's normally enough. Ask why they doubt it before sending any documents. The EDPB's case digest on erasure says that requiring ID by default isn't acceptable.
 
 **My data package seems to be missing messages.**
 Others have reported the same. Note what seems to be missing and how you know (for example, a message you can see in the app that isn't in the package), and mention it in your follow-up. You also have a right of access under Article 15 to a complete copy of your data.

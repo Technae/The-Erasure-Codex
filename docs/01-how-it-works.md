@@ -12,6 +12,10 @@ If you're in the **EU or EEA**, the GDPR applies. If you're in the **UK**, the U
 
 Article 17(3) lists the only situations where erasure can be refused: freedom of expression and information, a legal obligation, public health, archiving or research, and legal claims. "Other users would like to keep reading your messages" isn't on that list as such. Discord might try to argue that it falls under freedom of expression and information, or that it's a compelling ground under Article 21, but as of 2026 its replies don't cite any of these. They don't cite any article at all.
 
+**The delete-button argument.** Discord's stated reason for keeping your messages is that other users rely on them, and that removing them would leave conversations "missing important context". But Discord already lets you delete any of those same messages yourself, one at a time, and that disrupts the conversation in exactly the same way. Discord's own CSV process also removes messages in bulk from servers you've left, where other members can still read the conversation. So conversation context can't explain why Discord refuses to process the messages you can still open. This doesn't prove Discord must build a bulk-delete tool. It does show that its justification is inconsistent, and that a refusal needs a better legal explanation than the one it gives.
+
+**National rules.** The GDPR applies across the EU and EEA, but countries can add limited restrictions, for example to protect freedom of expression (Articles 23 and 85). This guide doesn't cover them country by country. If one might apply to you, your data protection authority can tell you.
+
 **Are your messages personal data?** Generally yes, when they're linked to your account. Discord itself says so: its data package gives you your messages as part of your data, and one of its own template replies calls them "part of the sender's personal data". Some messages contain more about you than others, and that can matter if Discord argues about a specific message, but it isn't the test Discord applies in practice (see below).
 
 ## What Discord actually does (as of 2026)
