@@ -24,7 +24,7 @@ Send a formal request to Discord's Data Protection Officer (`dpo@discord.com`) a
 
 ## Complaining in the EU / EEA
 
-You can complain to the data protection authority **in the country where you live**, even though Discord's EU company is in the Netherlands. Your authority will deal with the other authorities for you. You don't need to work out which one leads.
+You can complain to the data protection authority **in the country where you live** (or where you work, or where the infringement took place), even though Discord's EU company is in the Netherlands. Your authority will deal with the other authorities for you. You don't need to work out which one leads.
 
 - **Find your authority:** the [European Data Protection Board's list of members](https://www.edpb.europa.eu/about-edpb/about-edpb/members_en) has the website for each country. Most have an online complaint form in your language.
 - **It's free,** and you don't need a lawyer.

@@ -82,13 +82,15 @@ The helper script's `compare … --remaining remaining.csv` option writes that f
 
 ```
 Thank you. You have not erased [number] of the messages I asked you to
-erase, and have not stated a legal basis for keeping them. Unless I
+erase, and have not given reasons for keeping them: you have not identified
+the purpose and legal basis, or explained why it applies to these
+messages. Unless I
 receive that information, or confirmation that they have been erased,
 within the one-month period under Article 12(3), I will complain to
 [your data protection authority].
 ```
 
-UK users: under UK law you must complain to the company before you can go to the ICO. Make it explicit: *"Please treat this as a data protection complaint under section 164A of the Data Protection Act 2018."* Discord then has 30 days to acknowledge it.
+UK users: the ICO generally expects you to complain to the company before you go to it. Make it explicit: *"Please treat this as a data protection complaint under section 164A of the Data Protection Act 2018."* Discord then has 30 days to acknowledge it.
 
 ---
 
@@ -116,7 +118,7 @@ If a month passes with no reply and no notice of an extension, Discord has misse
 ## General tips
 
 - **Answer what they said, briefly.** Long replies get templated answers too.
-- **Repeat the key question every time:** which exception do you rely on? A refusal without a legal basis is the strongest thing you can show a regulator.
+- **Repeat the key question every time:** which exception do you rely on, and why does it apply to these messages? A refusal without real reasons (Article 12(4)) is the strongest thing you can show a regulator.
 - **Save every reply,** with its date. Use your email client's "download message" or "show original" option to keep a full copy.
 - **Stay calm.** Your messages may end up in front of a regulator, so write as if they'll read them.
 

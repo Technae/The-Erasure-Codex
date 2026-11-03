@@ -27,10 +27,10 @@ No. The law doesn't require it. In practice, leaving is what currently gets mess
 You can delete channels, or the whole server, yourself. That removes everyone's messages, not just yours, so warn other members first. For servers you own but want to keep, include those channels in your CSV like any other.
 
 **Does this cover other people's messages to me?**
-No. Their messages are their personal data. You can only ask for your own messages to be erased.
+Mostly not. This guide's CSV process covers messages you sent. You can't ask for someone else's messages to be erased just because they were sent to you. But a message written by someone else can contain personal data about *you*, for example your name, address or photo. You can ask for that to be erased, subject to the same Article 17 conditions and the rights of the person who wrote it.
 
 **Discord asked me for ID. Should I send it?**
-Article 12(6) lets a company ask for more information if it has *reasonable doubts* about who you are. If you're writing from your account's registered email, that's normally enough. Ask why they doubt it before sending any documents. The EDPB's case digest on erasure says that requiring ID by default isn't acceptable. There are better ways to show the account is yours, and what to do if Discord insists: see [Proving it's your account](12-banned-accounts.md#proving-its-your-account).
+Article 12(6) lets a company ask for more information if it has *reasonable doubts* about who you are. If you're writing from your account's registered email, that's normally enough. Ask why they doubt it before sending any documents. An EDPB-commissioned case digest on erasure says that requiring ID by default isn't acceptable. There are better ways to show the account is yours, and what to do if Discord insists: see [Proving it's your account](12-banned-accounts.md#proving-its-your-account).
 
 **My data package seems to be missing messages.**
 Others have reported the same. Note what seems to be missing and how you know (for example, a message you can see in the app that isn't in the package), and mention it in your follow-up. You also have a right of access under Article 15 to a complete copy of your data ([general access request](11-templates.md#access-request-everything-discord-holds-about-you-general-dsar)).

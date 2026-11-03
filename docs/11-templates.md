@@ -99,11 +99,12 @@ Earlier tickets: [ticket numbers].
 On [date] I asked Discord to erase my messages. [Number] of them were not
 erased. For those messages, please tell me:
 
-1. the purposes for which Discord is keeping them, and the legal basis
-   under Article 6 for each purpose (Article 15(1)(a));
+1. the purposes for which Discord is keeping them (Article 15(1)(a)),
+   and the legal basis under Article 6 for each purpose, which Discord
+   must in any case tell me (Article 13(1)(c));
 2. if the legal basis is legitimate interests, what those interests are
-   and how Discord balanced them against mine, including whether a
-   written assessment exists;
+   (Article 13(1)(d)), how Discord balanced them against mine, and
+   whether a written assessment exists;
 3. how long Discord will keep them, or the criteria used to decide
    (Article 15(1)(d));
 4. the recipients or categories of recipients (Article 15(1)(c));
@@ -195,7 +196,8 @@ covers, where you hold them:
 
 2. Information about the processing (Article 15(1) and (2))
 For each category of personal data, please tell me:
-  a) the purposes of the processing and the legal basis relied on;
+  a) the purposes of the processing, and the legal basis relied on
+     (which you must tell me under Articles 13(1)(c) and 14(1)(c));
   b) the recipients or categories of recipients, including processors
      and any recipients outside the EEA, and the safeguards for those
      transfers (Article 15(2));
@@ -212,7 +214,7 @@ Kind regards,
 [name or username]
 ```
 
-UK users: change "GDPR" to "UK GDPR", "the EEA" to "the UK", and "Discord Netherlands BV" to "Discord".
+UK users: change "GDPR" to "UK GDPR", "the EEA" to "the UK", and "Discord Netherlands BV" to "Discord Inc." (the controller its privacy policy names outside the EEA).
 
 ---
 
@@ -285,12 +287,13 @@ Discord's replies exactly. For example:
   messages for context, but lets me delete each of them myself, and has
   already erased messages in bulk from servers other members can still
   read. Context therefore can't explain the refusal.
-- EDPB guidance: the EDPB's case digest on erasure says controllers must
-  facilitate erasure without cumbersome procedures, and its Guidelines
-  03/2022 say the steps to exercise rights should be as few as possible.
+- EDPB material: the EDPB-commissioned one-stop-shop case digest on
+  erasure says controllers must facilitate erasure without cumbersome
+  procedures, and the EDPB's Guidelines 03/2022 say the steps to exercise
+  rights should be as few as possible.
 [- Article 38(4): my email to Discord's Data Protection Officer was
   handled as an ordinary support ticket and closed without a reply. The
-  EDPB case digest describes a similar case (an automated reply
+  same case digest describes a comparable case (an automated reply
   redirecting rights requests to a contact form, FR:OSS:D:2022:326) as a
   cumbersome procedure.]
 
@@ -329,9 +332,9 @@ slow down your own result. See the next section before including it.]
 
 Some authorities try to settle complaints by agreement between you and the company, which is called an "amicable resolution". Often that's the quickest way to get your own messages deleted: Discord agrees to erase them, and the complaint is closed. The catch is that nothing changes for anyone else.
 
-If you turn down a resolution that only deletes your own messages, your complaint may take longer, because it can then only end with a decision by the authority or a wider resolution. That's the trade-off: a faster personal outcome, or a better chance of changing the process. Both are reasonable choices.
+If you turn down a resolution that only deletes your own messages, your complaint may take longer. Declining doesn't oblige the authority to open a wider inquiry, and it can still close the complaint on another lawful basis. That's the trade-off: a faster personal outcome, or a better chance of changing the process. Both are reasonable choices.
 
-**Why it can be worth it:** a complaint that isn't settled quietly keeps the wider problem in front of the authority. That's how investigations start. If an authority looks into Discord's practices, it has real powers:
+**Why it can be worth it:** a complaint that isn't settled with a personal fix keeps the wider problem in front of the authority, and complaints are one of the ways investigations start. If an authority looks into Discord's practices, it has real powers:
 - **It can order Discord to change how it handles erasure** (Article 58(2)(d)), for example to provide an effective way for users to have their messages erased at scale. The authority decides how; it doesn't have to be a particular button.
 - **It can fine Discord.** For breaches of data subject rights, including the right to erasure and the rules on answering requests, fines can reach €20 million or 4% of worldwide annual turnover, whichever is higher (Article 83(5)).
 - **It has happened before.** In 2022 France's CNIL fined Discord €800,000 over its data practices, including how long it kept data.
@@ -358,13 +361,13 @@ If that is not achievable, I ask the authority, or the lead supervisory
 authority, to consider whether these issues warrant an inquiry.
 ```
 
-You can't force an authority to open an inquiry, and how amicable resolution works varies between countries. Stating your position still makes it much harder for your complaint to be closed quietly.
+You can't force an authority to open an inquiry, and how amicable resolution works varies between countries. (In Ireland, for example, a complaint resolved amicably is treated as withdrawn.) Stating your position helps the authority understand that deleting your messages alone doesn't address your complaint. The authority still decides what to investigate and what to do.
 
 ---
 
 ## Your effort is evidence
 
-Discord has to *facilitate* your rights (Article 12(2)), and the GDPR expects requests to be easy to make and to act on, including electronically (Recital 59). The EDPB has said that cumbersome procedures fall short of this, and that the steps needed to exercise a right should be as few as possible. If getting your messages deleted means requesting a data package, waiting weeks, running a script, writing emails that cite law, decoding templates and following a guide like this one, just to *maybe* succeed, that burden is part of the problem. The fact that a community had to write this guide at all says something.
+Discord has to *facilitate* your rights (Article 12(2)), and the GDPR expects requests to be easy to make and to act on, including electronically (Recital 59). An EDPB-commissioned case digest says cumbersome procedures fall short of this, and the EDPB's guidelines on deceptive design say the steps needed to exercise a right should be as few as possible. If getting your messages deleted means requesting a data package, waiting weeks, running a script, writing emails that cite law, decoding templates and following a guide like this one, just to *maybe* succeed, that burden is part of the problem. The fact that a community had to write this guide at all says something.
 
 A regulator can only act on what it can see, so record it as you go:
 - **How many messages** you'd have to delete by hand: the "still present" figure from [Step 6](06-check-the-result.md)
@@ -378,7 +381,7 @@ Put the figures in your complaint under Article 12(2). Specific numbers are much
 
 ## UK: complaining to Discord first (section 164A)
 
-Since 19 June 2026, UK users generally need to complain to the company before going to the ICO. Reply in the same thread, or email `privacy@discord.com`:
+Since 19 June 2026, UK users generally need to complain to the company before going to the ICO. The company must acknowledge the complaint within 30 days and tell you the outcome without undue delay. Reply in the same thread, or email `privacy@discord.com`:
 
 ```
 Subject: Data protection complaint under section 164A of the Data
@@ -404,7 +407,7 @@ Kind regards,
 [name or username]
 ```
 
-**Then, if it isn't resolved,** complain to the ICO at [ico.org.uk/make-a-complaint](https://ico.org.uk/make-a-complaint/data-protection-complaints/). The EU complaint template above works as a starting point: change "GDPR" to "UK GDPR", remove the amicable-resolution paragraph unless it applies, and add your section 164A complaint and Discord's response (or the lack of one) to the timeline and the evidence.
+**Then, if it isn't resolved,** complain to the ICO at [ico.org.uk/make-a-complaint](https://ico.org.uk/make-a-complaint/data-protection-complaints/). The EU complaint template above works as a starting point, with these changes: replace "Complaint under Article 77 GDPR" with "Complaint under section 165 of the Data Protection Act 2018" (Article 77 no longer applies in the UK); change "GDPR" to "UK GDPR" and the controller to "Discord Inc."; remove the amicable-resolution paragraph unless it applies; and add your section 164A complaint and Discord's response (or the lack of one) to the timeline and the evidence.
 
 ---
 

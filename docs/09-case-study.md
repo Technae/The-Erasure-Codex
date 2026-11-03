@@ -9,7 +9,7 @@ This is one user's request, from Ireland, with real figures and Discord's real r
 - **762,269** messages in the February 2026 data package
 - **121,948** removed by mid-March (16%), almost all in servers and group chats the user had already left
 - **640,321** still present: everything the user could still open
-- By September 2026, **99.3% of the messages still in the account (635,544 of 640,314) were in DMs**. Only 4,339 were left in server channels and 364 in group chats. You can't leave a DM, so the "access" rule spares almost nothing else
+- By September 2026, **99.3% of the messages still in the account (635,544 of 640,314) were in DMs**. Only 4,339 were left in server channels, 364 in group chats, 64 in threads and 3 in voice channels. You can't leave a DM, so the "access" rule spares almost nothing else
 - Complaint filed with the Irish Data Protection Commission (DPC) in March/April 2026. In June it moved to the DPC's Cross Border Assessment team, and as of November 2026 it had no case officer
 - Four formal requests to Discord's Data Protection Officer were open in November 2026, with deadlines of 4, 9, 9 and 23 November
 

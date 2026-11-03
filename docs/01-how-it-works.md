@@ -7,26 +7,26 @@
 If you're in the **EU or EEA**, the GDPR applies. If you're in the **UK**, the UK GDPR applies, and it's nearly identical for this purpose. Both give you:
 
 - **The right to erasure (Article 17).** You can ask for your personal data to be erased. The usual grounds are that Discord no longer needs it for the purpose it was collected for (17(1)(a)), or that you object to its processing and Discord has no overriding legitimate grounds to continue (17(1)(c), together with Article 21).
-- **The right to object (Article 21).** Where a company relies on "legitimate interests", as Discord says it does when it keeps your messages for other users, you can object. It must then stop unless it can show *compelling* legitimate grounds that override yours.
+- **The right to object (Article 21).** Where a company relies on "legitimate interests", you can object. Discord's replies refer to other users' legitimate interests when it keeps your messages, though it hasn't clearly said which legal basis it relies on. It must then stop unless it can show *compelling* legitimate grounds that override yours.
 - **The right to a proper answer (Article 12).** Discord must reply within one month. If it doesn't do what you asked, it must tell you why and that you can complain to a data protection authority or a court. Requests are free.
 
-Article 17(3) lists the only situations where erasure can be refused: freedom of expression and information, a legal obligation, public health, archiving or research, and legal claims. "Other users would like to keep reading your messages" isn't on that list as such. Discord might try to argue that it falls under freedom of expression and information, or that it's a compelling ground under Article 21, but as of 2026 its replies don't cite any of these. They don't cite any article at all.
+Article 17(3) lists specific exceptions to the right to erasure: freedom of expression and information, a legal obligation, public health, archiving or research, and legal claims. A company can also argue that none of the Article 17(1) grounds applies in the first place, and a few other rules can limit requests (for example, where a request is manifestly excessive). But an unpublished "accessible space" rule isn't a statutory exception. "Other users would like to keep reading your messages" isn't on that list as such. Discord might try to argue that it falls under freedom of expression and information, or that it's a compelling ground under Article 21, but as of 2026 its replies don't cite any of these. They don't cite any article at all.
 
 ### Which erasure ground applies?
 
-Article 17(1) lists several grounds for erasure. Which one fits depends on the **legal basis** Discord uses to keep your messages, and Discord hasn't said clearly which that is. Its own documents point two ways:
+Article 17(1) lists several grounds for erasure. Which one fits depends on the **legal basis** Discord uses to keep your messages, and Discord hasn't said clearly which that is. Different purposes can have different bases, and its own documents point two ways:
 
 | If Discord keeps your messages on the basis of… | What points to this | Your ground for erasure | To refuse, Discord must show… |
 |---|---|---|---|
-| **Legitimate interests** (Article 6(1)(f)) | Template replies say other users "have a legitimate interest in having access to content sent to them" | Object under Article 21(1). Erasure then follows under **17(1)(c)** | Compelling legitimate grounds that override your interests, rights and freedoms, or an Article 17(3) exception |
-| **Contract** (Article 6(1)(b)) | The privacy policy says messages are stored to display them "as you direct" | **17(1)(a):** the messages are no longer necessary. Once you ask for them to be erased, keeping them isn't needed to do what you directed | That keeping them is still necessary for its contract *with you*, or an Article 17(3) exception |
+| **Legitimate interests** (Article 6(1)(f)) | Template replies say other users "have a legitimate interest in having access to content sent to them". That suggests legitimate interests are part of Discord's justification, though it hasn't formally said so | Object under Article 21(1). Erasure then follows under **17(1)(c)** | Compelling legitimate grounds that override your interests, rights and freedoms, or an Article 17(3) exception |
+| **Contract** (Article 6(1)(b)) | The privacy policy lists storing and displaying your messages "as you direct" under fulfilling its contract with you | **17(1)(a):** the messages are no longer necessary for that purpose. Your erasure request is strong evidence of what you now direct, but it doesn't settle the question by itself: the test is whether keeping them is still necessary for the purpose Discord relies on | Why keeping them is still necessary for its contract *with you*, or an Article 17(3) exception |
 
 Three points follow from this:
 - **Contract only covers the contract with you.** Article 6(1)(b) applies to a contract "to which the data subject is party", meaning you. Other users wanting to keep reading your messages isn't part of your contract. If that's Discord's reason, it's relying on legitimate interests, and you can object.
 - **If Discord has no valid basis at all** for keeping a message, **17(1)(d)** applies (unlawful processing). That's a fallback, not something to lead with.
-- **The Article 17(3) exceptions apply whichever basis it is,** and Discord has to say which one it relies on.
+- **The Article 17(3) exceptions apply whichever basis it is.** If Discord relies on one, its reasons for refusing should say so.
 
-That's why the templates cite both 17(1)(a) and 17(1)(c): you don't know which basis Discord will rely on, and citing both covers each case. They also ask Discord to state the legal basis for anything it keeps, so it has to commit to one.
+That's why the templates cite both 17(1)(a) and 17(1)(c): you don't know which basis Discord will rely on, and citing both covers each case. They also ask Discord to state the legal basis and purpose for anything it keeps, so it has to commit to one. (Strictly, Article 12(4) requires *reasons* and a notice of your right to complain, not an article number. But asking for the basis and the exception makes vague reasons easy to spot.)
 
 What's still uncertain is how authorities will treat conversations other people can still read. Discord could argue freedom of expression and information (17(3)(a)) for those. The clearest cases are ones where nobody else is left to read the messages, such as DMs with users who have deleted their accounts.
 

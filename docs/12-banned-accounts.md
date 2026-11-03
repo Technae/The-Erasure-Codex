@@ -25,6 +25,7 @@ Discord's data package tool only works from a logged-in account, and deleting an
 
 The legal test is whether Discord can still identify you:
 - **If Discord can still link your messages to your old account,** for example because they still exist, shown as "Deleted User", but are tied to the account record, it can identify you. Then it must act on your request. Under Articles 11(2) and 12(2), it can refuse only if it *demonstrates* that it can't identify you, and you can give it extra information so that it can.
+- **The "Deleted User" label doesn't settle it either way.** What matters is whether the messages, any identifiers Discord kept, or their context still make you identifiable by means reasonably likely to be used.
 - **If Discord has truly anonymised the data,** so it can no longer be linked to you by any reasonably likely means, the GDPR no longer applies to that data. But Discord should then be able to tell you so.
 
 **Send a formal Article 15 request, not an informal request for your data package.** An informal email may be handled as an ordinary support ticket. A formal request starts the one-month legal deadline, and if Discord ignores it or refuses without reasons, you have a clear complaint.
@@ -58,7 +59,7 @@ So if you want your ordinary messages erased, Discord's own rule supports your r
 
 ## Proving it's your account
 
-**Don't send ID documents by default.** Discord can ask for more information only if it has *reasonable doubts* about who you are (Article 12(6)), and the EDPB's case digest on erasure says that requiring ID by default isn't acceptable. An ID document also isn't much use here: Discord usually doesn't know your legal name, so a passport shows who you are, not that you own the account.
+**Don't send ID documents by default.** Discord can ask for more information only if it has *reasonable doubts* about who you are (Article 12(6)), and an EDPB-commissioned case digest on erasure says that requiring ID by default isn't acceptable. An ID document also isn't much use here: Discord usually doesn't know your legal name, so a passport shows who you are, not that you own the account.
 
 **Better ways to show the account is yours**, roughly strongest first:
 1. **Write from the account's registered email.** That's how Discord itself identifies you: it sends data packages and account notices there.
@@ -74,7 +75,7 @@ So if you want your ordinary messages erased, Discord's own rule supports your r
 
 ## How to use the templates
 
-Choose the words in square brackets that fit, such as **[disabled/deleted]**, and delete the rest. Lines marked **[Banned accounts: …]** or **[Deleted accounts: …]** are only for that case. UK users: change "GDPR" to "UK GDPR" and "Discord Netherlands BV" to "Discord".
+Choose the words in square brackets that fit, such as **[disabled/deleted]**, and delete the rest. Lines marked **[Banned accounts: …]** or **[Deleted accounts: …]** are only for that case. UK users: change "GDPR" to "UK GDPR" and "Discord Netherlands BV" to "Discord Inc.", and for complaints see the [UK steps](11-templates.md#uk-complaining-to-discord-first-section-164a) (complaints to the ICO are now under section 165 of the Data Protection Act 2018, not Article 77).
 
 ## Step 1: Ask for your data (access request)
 
