@@ -8,17 +8,20 @@ A quick reference to the provisions this guide relies on. The article numbers ar
 
 | Article | What it says, in short | Why it matters here |
 |---|---|---|
+| **6(1)(b)** | Processing necessary for a contract *with you* | Discord's privacy policy says messages are stored to display them "as you direct". If that's the basis, your ground is 17(1)(a). See [which ground applies](01-how-it-works.md#which-erasure-ground-applies) |
+| **6(1)(f)** | Processing based on legitimate interests | What Discord's template replies describe (other users' interest in reading your messages). If that's the basis, you can object (Article 21) and rely on 17(1)(c) |
 | **12(1)** | Information must be concise, transparent, clear and easy to access | A first reply saying bulk deletion "isn't offered", when a CSV process exists, is hard to square with this |
 | **12(2)** | The company must *facilitate* the exercise of your rights | Building your own CSV, or deleting hundreds of thousands of messages by hand, isn't much facilitation |
 | **Recital 59** | Explains 12(2): there should be mechanisms to request and obtain erasure, free of charge, including electronically where data is processed electronically | Discord processes everything electronically, but has no electronic way to request erasure at scale |
 | **12(3)** | Answer within one month; extend by two months only with notice and reasons within the first month | Your deadline |
 | **12(4)** | If it doesn't act, it must say why and tell you about your right to complain and go to court | Template replies don't do this |
-| **12(5)** | Requests are free; refusing as "manifestly unfounded or excessive" is possible, but the company has to prove it | Asking for your own messages to be erased is neither |
+| **12(5)** | Requests are free; refusing as "manifestly unfounded or excessive" is possible, but the company has to prove it. In *Brillen Rottler* (C-526/24, 2026), the CJEU held that even a first request can be excessive if the company shows it was made with abusive intent, rather than to protect the person's rights | Asking for your own messages to be erased is neither. Make each request about your own data, for your own reasons ([FAQ](08-faq.md)) |
 | **12(6)** | It can ask for more information only if it has reasonable doubts about who you are | Writing from your registered email is normally enough |
 | **15** | Right of access: a copy of your data and information about its use (purposes, recipients, retention) | Your data package, and questions about analytics data |
 | **17(1)** | Where a ground applies, the company must erase *without undue delay* | Separate from the 12(3) deadline to tell you what it has done |
 | **17(1)(a)** | Erasure when the data is no longer necessary for its purpose | Old messages you no longer want kept |
-| **17(1)(c)** | Erasure when you object under Article 21(1) and there are no overriding legitimate grounds | Discord relies on "legitimate interests" for keeping messages for others |
+| **17(1)(c)** | Erasure when you object under Article 21(1) and there are no overriding legitimate grounds | Discord's replies describe "legitimate interests" for keeping messages for others |
+| **17(1)(d)** | Erasure when the data has been processed unlawfully | A fallback, if Discord has no valid legal basis at all |
 | **17(3)** | The only exceptions: freedom of expression and information, legal obligation, public interest in public health, archiving or research, legal claims | Discord's replies cite none of them |
 | **21(1)** | Right to object to processing based on legitimate interests; the company must stop unless it shows *compelling* legitimate grounds | Make the objection explicit in your request |
 | **25** | Data protection by design and by default | The argument that a platform holding this much data should be designed so that erasure works at that scale. The law doesn't prescribe a particular feature, only that the right is effective |
@@ -42,6 +45,7 @@ A quick reference to the provisions this guide relies on. The article numbers ar
 ## Discord's own statements
 
 - Its privacy policy names **Discord Netherlands BV** as the data controller for users in the EEA.
+- Its [Terms of Service](https://discord.com/terms) (effective 29 September 2025) say you have "certain rights that, by law, can't be limited by these terms", and that Discord doesn't intend to restrict them. So nothing in Discord's terms or help pages can take away your GDPR rights.
 - Its help article on data retention says content is kept after account deletion so that other users keep access to it.
 - Its template replies say Discord "balances the privacy interests of the user against the interests other users have in a conversation". As far as we know, it has never published that balancing assessment or given one to a user who asked.
 - Its template replies also describe your messages as "part of the sender's personal data".

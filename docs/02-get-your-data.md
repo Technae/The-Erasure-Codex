@@ -20,13 +20,14 @@ Things to know:
 - **Deleting or disabling your account before the link arrives cancels the request.**
 - **Messages in servers you've left are still included.** The "Servers" folder only lists servers you're in now, but the "Messages" folder covers everything you've sent. Some users have reported packages that seem to be missing messages, so treat it as very good rather than perfect.
 - **If you can't get into your account**, Discord's help page says to contact privacy@discord.com.
+- **The package isn't everything Discord holds.** Discord's [data package article](https://support.discord.com/hc/en-us/articles/360004957991) says it leaves out support and Trust & Safety correspondence, and that a message you delete "is no longer stored in Discord", so it won't be in the package. But Discord's [retention article](https://support.discord.com/hc/en-us/articles/5431812448791) says public posts may be kept for 180 days to two years after deletion, for example to train safety models. If you want everything, use the [general access request](11-templates.md#access-request-everything-discord-holds-about-you-general-dsar).
 
 ## What's inside
 
 | Folder | What it holds |
 |---|---|
 | `Account/` | Your account details, settings, connections, sessions |
-| `Activity/` | Analytics and other event data (subfolders such as reporting, analytics, modeling, tns) |
+| `Activity/` | Analytics and other event data (subfolders such as reporting, analytics, modeling, tns). Discord says the tns (Trust & Safety) data "is retained for up to 2 years" |
 | `Messages/` | One subfolder per channel or DM you've written in, plus an index of channel names |
 | `Servers/` | Servers you're currently in |
 

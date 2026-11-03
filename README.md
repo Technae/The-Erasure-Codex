@@ -29,6 +29,8 @@ If all this seems like a lot of work just to use a legal right, that's worth not
 
 **What this guide is pushing for** isn't one particular feature. It's for Discord to *effectively facilitate* the erasure of your messages at scale, as the law requires: for example, a way to delete all your messages, or all your messages in a DM, group chat or server. A delete-all button is one way to do that. How Discord does it is up to Discord, as long as it works.
 
+**What this guide is for:** helping you know your options and use your own rights. Make each request about your own data, for your own reasons ([why that matters](docs/08-faq.md)).
+
 ## Contents
 
 | | Page | What it covers |
@@ -43,7 +45,8 @@ If all this seems like a lot of work just to use a legal right, that's worth not
 | 8 | [FAQ](docs/08-faq.md) | Scripts, account deletion, deleted users, servers you own, and more |
 | 9 | [Case study](docs/09-case-study.md) | One 2026 request in full: 762,269 messages, what was deleted, and what wasn't |
 | 10 | [Legal reference](docs/10-legal-reference.md) | The articles, precedents and guidance this guide relies on |
-| 11 | [Templates](docs/11-templates.md) | Writing to Discord's Data Protection Officer, and complaining to an authority (EU and UK) |
+| 11 | [Templates](docs/11-templates.md) | Writing to Discord's Data Protection Officer, a full access request, and complaining to an authority (EU and UK) |
+| 12 | [Deleted or banned accounts](docs/12-banned-accounts.md) | Getting your data and erasing your ordinary messages when your account is deleted or banned |
 
 The helper script is in [`scripts/`](scripts/). It uses plain Python, reads your package without changing it, and doesn't connect to anything.
 

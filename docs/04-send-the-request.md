@@ -41,10 +41,10 @@ continued processing of these messages under Article 21(1), on
 Article 17(1)(c).
 
 If you do not erase any of these messages, please tell me, as Article
-12(4) requires, which messages you are keeping, which exception under
-Article 17(3) or which compelling legitimate grounds under Article 21(1)
-you rely on for them, and that I can complain to a supervisory authority
-and seek a judicial remedy.
+12(4) requires, which messages you are keeping, the legal basis on which
+you keep them, which exception under Article 17(3) or which compelling
+legitimate grounds under Article 21(1) you rely on for them, and that I
+can complain to a supervisory authority and seek a judicial remedy.
 
 [Optional: I also object under Article 21(1) to the processing of the
 analytics and other activity data linked to my account, including the
@@ -88,10 +88,10 @@ continued processing of these messages under Article 21(1), on
 Article 17(1)(c).
 
 If you do not erase any of these messages, please tell me, as Article
-12(4) requires, which messages you are keeping, which exception under
-Article 17(3) or which compelling legitimate grounds under Article 21(1)
-you rely on for them, and that I can complain to the Information
-Commissioner's Office.
+12(4) requires, which messages you are keeping, the legal basis on which
+you keep them, which exception under Article 17(3) or which compelling
+legitimate grounds under Article 21(1) you rely on for them, and that I
+can complain to the Information Commissioner's Office.
 
 Please respond within one month of receiving this request, as
 Article 12(3) requires, and confirm in writing which messages have been

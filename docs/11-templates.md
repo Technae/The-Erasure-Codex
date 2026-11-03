@@ -1,6 +1,6 @@
 # 11. Templates: Discord's DPO and data protection authorities
 
-[← Legal reference](10-legal-reference.md) · [Contents](../README.md)
+[← Legal reference](10-legal-reference.md) · [Contents](../README.md) · [Next: Deleted or banned accounts →](12-banned-accounts.md)
 
 This page collects templates for the later stages: writing to **Discord's Data Protection Officer (DPO)**, and **complaining to a data protection authority**. For the first request, see [Step 4](04-send-the-request.md). For replies to Discord's support templates, see [Step 5](05-replies-decoded.md).
 
@@ -148,6 +148,71 @@ Please respond within one month, as Article 12(3) requires.
 Kind regards,
 [name or username]
 ```
+
+---
+
+## Access request: everything Discord holds about you (general DSAR)
+
+The data package is Discord's own export, and it isn't the same as your full right of access. It mostly covers what you created. Your right under Article 15 covers **all** personal data Discord holds about you, plus information about how it's used. Discord's own [data package article](https://support.discord.com/hc/en-us/articles/360004957991) says the package leaves out support and Trust & Safety correspondence, and messages you've deleted, even though its [retention article](https://support.discord.com/hc/en-us/articles/5431812448791) says deleted public posts may be kept for up to two years. Your right also covers other things the package may leave out, such as security and login logs, and anything Discord has inferred about you or received from elsewhere.
+
+Use this when you want the full picture. Keep it to **your own** data. Asking about Discord's systems in general is easy to brush aside, while asking what it does with *your* data isn't. A very broad request can take Discord longer, and it may extend the deadline by up to two months for complex requests, but only if it tells you so within the first month.
+
+```
+Subject: Access request under Article 15 GDPR – [username]
+
+To: privacy@discord.com
+Cc: dpo@discord.com
+
+Dear Discord Netherlands BV,
+
+I am making a request for access under Article 15 of the General Data
+Protection Regulation (GDPR). I live in [country].
+
+My account: [username], user ID [user ID], registered email [this
+address].
+
+1. A copy of my personal data (Article 15(3))
+Please provide a copy of all personal data you hold about me, in a
+commonly used electronic format. I understand that the standard data
+package does not include everything, so please make sure the copy also
+covers, where you hold them:
+  a) records about me held by your support and Trust & Safety teams,
+     including reports, warnings, decisions and correspondence;
+  b) security, login and device records, including IP addresses and
+     device identifiers;
+  c) analytics, activity and event data, and any inferences, scores,
+     segments or classifications derived from my data;
+  d) personal data about me that you received from other sources, such
+     as connected accounts, partners or other users' reports;
+  e) messages or other content I sent that is no longer visible in the
+     app, because I deleted it or because you deleted it after an
+     erasure request, but that you still hold in any system (for
+     example for safety, model-training or legal reasons). For each
+     item, please give the message ID, the channel ID and the date it
+     was deleted, and tell me the purpose, legal basis and retention
+     period for keeping it. If you hold none, please say so;
+  f) any other personal data about me not included in the data package.
+
+2. Information about the processing (Article 15(1) and (2))
+For each category of personal data, please tell me:
+  a) the purposes of the processing and the legal basis relied on;
+  b) the recipients or categories of recipients, including processors
+     and any recipients outside the EEA, and the safeguards for those
+     transfers (Article 15(2));
+  c) the retention period, or the criteria used to determine it;
+  d) where data was not collected from me, its source;
+  e) whether any automated decision-making, including profiling, is
+     applied to me, and if so meaningful information about the logic
+     involved and its significance and envisaged consequences.
+
+Please respond within one month, as Article 12(3) requires. This request
+is free of charge (Article 12(5)).
+
+Kind regards,
+[name or username]
+```
+
+UK users: change "GDPR" to "UK GDPR", "the EEA" to "the UK", and "Discord Netherlands BV" to "Discord".
 
 ---
 
@@ -368,4 +433,4 @@ Kind regards,
 
 One update with everything new is more useful to a case officer than several partial ones.
 
-[← Legal reference](10-legal-reference.md) · [Contents](../README.md)
+[← Legal reference](10-legal-reference.md) · [Contents](../README.md) · [Next: Deleted or banned accounts →](12-banned-accounts.md)

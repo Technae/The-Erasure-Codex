@@ -65,6 +65,8 @@ Three different things are easy to confuse:
 2. **A message is gone from Discord's live systems.** That's what you see when it no longer appears in the app. It's the strongest practical check you have.
 3. **Every copy is gone, including backups.** Backups are normally overwritten over a period of time, not instantly. A company may also keep some data for a limited time where an exception applies. You can't see backups, so ask Discord what happens to backup copies, and how long they're kept, if it matters to you.
 
+Discord's own pages don't fully agree here. Its [data package article](https://support.discord.com/hc/en-us/articles/360004957991) says a deleted message "is no longer stored in Discord". Its [retention article](https://support.discord.com/hc/en-us/articles/5431812448791) says public posts may be kept for 180 days to two years after deletion. So a message missing from your package may still exist in another Discord system. If that matters to you, ask, using the [general access request](11-templates.md#access-request-everything-discord-holds-about-you-general-dsar).
+
 So report your results precisely: "these messages are no longer in my data package or visible in the app" is accurate. "Discord has erased every copy" is something only Discord can confirm.
 
 ## Keep the evidence
