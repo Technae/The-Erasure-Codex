@@ -162,7 +162,8 @@ object to the continued processing of these messages under Article
 [Banned accounts: This request covers my ordinary messages only. It
 does not cover any content you rely on in connection with the decision
 to disable my account, which you may need to keep under Article 17(3).
-I have left out the channels concerned.]
+I have left out the channels concerned. Please do not delete my
+account as part of handling this request.]
 
 Your replies to other users say that you process deletion for spaces a
 user no longer has access to. Because my account is [disabled/deleted],

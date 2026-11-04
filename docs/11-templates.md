@@ -69,6 +69,9 @@ Please either:
    complain to a supervisory authority and seek a judicial remedy, as
    Article 12(4) requires.
 
+As in my original request, I am asking for my messages to be erased,
+not my account. Please do not delete, deactivate or disable my account.
+
 The one-month period under Article 12(3) ran from my original request
 on [date]. Please reply in writing.
 

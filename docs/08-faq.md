@@ -5,6 +5,9 @@
 **Can't I just use a script to delete my messages myself?**
 Tools that automate your account (often called self-bots) exist, but Discord's terms don't allow automating user accounts, and Discord can terminate accounts for it. [Undiscord](https://github.com/victornpb/undiscord)'s own README warns that using it could get your account terminated. The GDPR route puts the work on Discord, which is where the law puts it.
 
+**Will an erasure request delete my account?**
+It shouldn't. A request under Article 17 covers what you ask for and nothing more, so ask for your messages, not "all your personal data", and say plainly that you want to keep your account. The templates in this guide include that line. It matters because at least one user has reported an agent deleting their whole account partway through a message request without being asked, which also left them unable to follow up. If it happens to you, reply in the same thread straight away, point to the line in your request, and include it in any complaint.
+
 **Does deleting my account delete my messages?**
 No. Discord says it anonymises them: your username is replaced with "Deleted User", and your email and IP addresses are removed. The messages stay. Make your erasure request, and check the result, **before** you delete your account. Once your account is deleted or pending deletion, you can't make requests through it. You can still make them by email (see [Deleted or banned accounts](12-banned-accounts.md)), but it's harder.
 

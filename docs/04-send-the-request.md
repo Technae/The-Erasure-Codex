@@ -40,6 +40,10 @@ Article 17(3). I am relying on Article 17(1)(a) and, as I object to the
 continued processing of these messages under Article 21(1), on
 Article 17(1)(c).
 
+This request covers these messages only. I want to keep my account.
+Please do not delete, deactivate or disable it as part of handling this
+request.
+
 If you do not erase any of these messages, please tell me, as Article
 12(4) requires, which messages you are keeping, the legal basis on which
 you keep them, which exception under Article 17(3) or which compelling
@@ -87,6 +91,10 @@ Article 17(3). I am relying on Article 17(1)(a) and, as I object to the
 continued processing of these messages under Article 21(1), on
 Article 17(1)(c).
 
+This request covers these messages only. I want to keep my account.
+Please do not delete, deactivate or disable it as part of handling this
+request.
+
 If you do not erase any of these messages, please tell me, as Article
 12(4) requires, which messages you are keeping, the legal basis on which
 you keep them, which exception under Article 17(3) or which compelling
@@ -104,6 +112,7 @@ Kind regards,
 ## Before you press send
 
 - [ ] Sent **from your account's email address**
+- [ ] The email says you want to **keep your account** (the templates include this line; don't remove it)
 - [ ] The CSV is attached, or the link works in a private browser window
 - [ ] The numbers in the email match the CSV (the `summary` command gives you both)
 - [ ] You've saved a copy of the email, the CSV, and its hash (`sha256sum messages_to_delete.csv`)
@@ -111,6 +120,7 @@ Kind regards,
 
 ## Tips
 
+- **Ask for your messages, not "all your data".** Broad wording like "delete all my personal data" can be read as a request to delete your account. At least one user has reported an agent deleting their whole account partway through a message request without being asked. Keep the line saying you want to keep your account.
 - **Write in plain, calm language.** You don't need legal jargon beyond the article numbers, and threats don't help. A clear, polite request makes any later complaint much stronger.
 - **Don't send ID documents** unless Discord gives a real reason to doubt who you are. Sending from your registered email is normally enough.
 - **One request, one thread.** If you want to add something later, reply in the same thread rather than starting a new ticket, so your deadline and history stay together.
