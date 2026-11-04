@@ -56,9 +56,14 @@ The helper script is in [`scripts/`](scripts/). It uses plain Python, reads your
 
 Discord's handling changes, sometimes month to month. If you've made a request, your experience helps others: open an issue using the **Experience report** template, or read [CONTRIBUTING.md](CONTRIBUTING.md). Corrections are just as welcome, especially from people who know the law better than we do.
 
-## Background
+## Background and credits
 
-This guide continues the work of the community [Discordomicon](https://web.archive.org/web/20260708064954/https://discordomicon.github.io/removal/overview/) guide, which went offline in 2026 (Wayback Machine copies exist from January 2025 to July 2026), and of the long-running [Undiscord discussion #429](https://github.com/victornpb/undiscord/discussions/429), where hundreds of users have compared notes since 2022. None of the Discordomicon's text is reused here.
+This guide builds on work by others. Thank you to:
+
+- **No Text To Speech**, whose video [Fixing Discord's Biggest Privacy Flaw with a Loophole](https://www.youtube.com/watch?v=g5FbRfwMEuo) (September 2024) explained the GDPR route clearly enough for many people, including this guide's author, to try it.
+- **[Undiscord discussion #429](https://github.com/victornpb/undiscord/discussions/429)**, "Bulk Deleting Discord Messages and GDPR Compliance", started by abigailwillow in 2022. The video links to it, and hundreds of users have compared requests, replies and results there since. Much of what this guide says about Discord's handling comes from their reports.
+- **ishnz**, whose [bulk_deletion_helper](https://github.com/ishnz/bulk_deletion_helper) made the requests behind this guide possible ([Build the CSV](docs/03-build-the-csv.md), Option B).
+- The community **[Discordomicon](https://web.archive.org/web/20260708064954/https://discordomicon.github.io/removal/overview/)** guide, which went offline in 2026 (Wayback Machine copies exist from January 2025 to July 2026). None of its text is reused here.
 
 ## Licence
 

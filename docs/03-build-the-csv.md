@@ -56,7 +56,23 @@ On Windows, use `python` or `py` instead of `python3` if that's what works.
 
 To find a channel's ID in Discord, turn on **User Settings → Advanced → Developer Mode**, then right-click the channel or DM and choose **Copy Channel ID**.
 
-## Option B: jq and a terminal
+## Option B: ishnz's bulk_deletion_helper
+
+[bulk_deletion_helper](https://github.com/ishnz/bulk_deletion_helper) by ishnz is the tool linked in No Text To Speech's video, and the one this guide's author used for the requests in the [case study](09-case-study.md). Without it, this guide probably wouldn't exist. It's a set of small Python scripts that read your package locally. They don't connect to the internet or ask for your token.
+
+1. **Extract a copy** of your package (keep the original ZIP untouched).
+2. Put `dumpallmessages.py` in the extracted folder, next to the `Messages` folder.
+3. Run it:
+
+```bash
+python3 dumpallmessages.py
+```
+
+It writes `messages.csv` in the same folder, with one `channel_id,message_id` line per message (its header line reads `channelid,messageid`, which Discord has accepted). The repository also has scripts to include or leave out a list of channels; see its README.
+
+Good to know: it expects the current package layout (a `Messages` folder with a `messages.json` in each channel folder), and it has no option to split large files, so see "How big is too big?" below if yours is large.
+
+## Option C: jq and a terminal
 
 If you have [`jq`](https://jqlang.org/) and an **extracted copy** of a recent package (not your original):
 
@@ -70,7 +86,7 @@ done > ../../messages_to_delete.csv
 
 Older packages use `messages/` and `messages.csv` instead, so the script in Option A is easier for those.
 
-## Option C: other tools
+## Option D: other tools
 
 Community tools that read data packages exist, such as [undiscord-package-util](https://github.com/dorifor/undiscord-package-util), which the old Discordomicon guide linked to. Check what any tool does before trusting it with your package, and never use one that asks for your Discord token or password. Building the CSV only needs the package.
 
