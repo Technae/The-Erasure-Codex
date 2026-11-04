@@ -22,6 +22,8 @@ Keep a simple log:
 
 Send a formal request to Discord's Data Protection Officer (`dpo@discord.com`) and give it the full month. So far, mail to the DPO has only drawn support templates, but even silence is useful: an unanswered request to the person responsible for data protection is clear, simple evidence that Discord missed its deadline under Article 12(3). [Templates](11-templates.md) has ready-to-use DPO emails.
 
+However frustrating the replies get, aim your complaint at Discord as a company, not at the individual staff who sent them. Name the company in your complaint, not the agent who signed a template; the regulator deals with Discord, not its employees.
+
 ## Complaining in the EU / EEA
 
 You can complain to the data protection authority **in the country where you live** (or where you work, or where the infringement took place), even though Discord's EU company is in the Netherlands. Your authority will deal with the other authorities for you. You don't need to work out which one leads.

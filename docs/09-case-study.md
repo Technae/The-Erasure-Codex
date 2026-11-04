@@ -31,7 +31,7 @@ The user sent CSVs listing every message in the data package, four in all, betwe
 
 On 10 March, asked to define "access", Discord replied that it was "unable to provide further internal details, as access permissions are managed dynamically".
 
-## The test that shows the rule
+## The case that shows the rule
 
 The user has two accounts. Both accounts asked for the DM *between them* to be erased. That DM involves no third party at all. **Both accounts received "submitted for deletion" confirmations (12 and 18 March 2026). Nothing was deleted.** Its 2,509 messages were still present in a September 2026 package.
 

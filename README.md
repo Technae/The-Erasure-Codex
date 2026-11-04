@@ -31,6 +31,8 @@ If all this seems like a lot of work just to use a legal right, that's worth not
 
 **What this guide is for:** helping you know your options and use your own rights. Make each request about your own data, for your own reasons ([why that matters](docs/08-faq.md)).
 
+**Keep it about Discord, not its staff.** Your request is with Discord as a company, and the people answering tickets don't set its policy. Don't name, harass or publish personal information about individual employees. It hurts real people, it can be unlawful, and it gives Discord and regulators a reason to look away from your complaint. Put your frustration into formal requests and complaints to your data protection authority. That's what gets results.
+
 ## Contents
 
 | | Page | What it covers |
