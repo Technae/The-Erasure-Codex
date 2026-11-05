@@ -152,13 +152,103 @@ class HelperTests(unittest.TestCase):
         self.assertNotEqual(code, 0)
         self.assertIn("has a message ID", err)
 
-    def test_some_records_skipped_are_reported(self):
+    def test_skipped_records_stop_the_run(self):
         files = json_files({DM: (1, ["1"])})
         files[f"Messages/c{DM}/messages.json"] = json.dumps([{"ID": 1}, {"x": 2}]).encode()
         pkg = make_zip(self.p("partial.zip"), files)
+        for args in (["summary", pkg], ["csv", pkg, "-o", self.p("p.csv")]):
+            code, _, err = run(*args)
+            self.assertNotEqual(code, 0)
+            self.assertIn("would be incomplete", err)
+        self.assertFalse(os.path.exists(self.p("p.csv")))
+
+    def test_allow_incomplete_continues_and_says_so(self):
+        files = json_files({DM: (1, ["1"])})
+        files[f"Messages/c{DM}/messages.json"] = json.dumps([{"ID": 1}, {"x": 2}]).encode()
+        pkg = make_zip(self.p("partial.zip"), files)
+        code, out, err = run("summary", pkg, "--allow-incomplete")
+        self.assertEqual(code, 0)
+        self.assertIn("INCOMPLETE", out)
+        code, _, err = run("csv", pkg, "-o", self.p("p.csv"), "--allow-incomplete")
+        self.assertEqual(code, 0)
+        self.assertIn("INCOMPLETE", err)
+        self.assertEqual(read_rows(self.p("p.csv"))[1:], [[DM, "1"]])
+
+    def test_failed_run_leaves_no_partial_csv(self):
+        files = json_files({DM: (1, ["1", "2"]), SERVER: (0, ["3"])})
+        files[f"Messages/c{SERVER}/messages.json"] = b"[{broken"
+        pkg = make_zip(self.p("late.zip"), files)
+        code, _, _ = run("csv", pkg, "-o", self.p("late.csv"))
+        self.assertNotEqual(code, 0)
+        self.assertFalse(os.path.exists(self.p("late.csv")))
+        # With --force, an existing file is left exactly as it was.
+        with open(self.p("late.csv"), "w") as fh:
+            fh.write("previous\n")
+        code, _, _ = run("csv", pkg, "-o", self.p("late.csv"), "--force")
+        self.assertNotEqual(code, 0)
+        self.assertEqual(read_bytes(self.p("late.csv")), b"previous\n")
+        self.assertEqual([f for f in os.listdir(self.d) if f.endswith(".tmp")], [])
+
+    def test_failed_compare_keeps_existing_report(self):
+        files = json_files({DM: (1, ["1"])})
+        files[f"Messages/c{DM}/messages.json"] = b"[{broken"
+        bad = make_zip(self.p("bad.zip"), files)
+        with open(self.p("rep.csv"), "w") as fh:
+            fh.write("previous\n")
+        code, _, _ = run("compare", self.old, bad, "--report", self.p("rep.csv"), "--force")
+        self.assertNotEqual(code, 0)
+        self.assertEqual(read_bytes(self.p("rep.csv")), b"previous\n")
+
+    def test_csv_header_with_spaces(self):
+        files = {
+            "messages/index.json": json.dumps({DM: "x"}).encode(),
+            f"messages/{DM}/channel.json": json.dumps({"id": DM, "type": 1}).encode(),
+            f"messages/{DM}/messages.csv": b" ID ,Timestamp,Contents,Attachments\n5001,t,a,\n",
+        }
+        pkg = make_zip(self.p("spaces.zip"), files)
+        code, _, err = run("csv", pkg, "-o", self.p("sp.csv"))
+        self.assertEqual(code, 0, err)
+        self.assertEqual(read_rows(self.p("sp.csv"))[1:], [[DM, "5001"]])
+
+    def test_unrecognised_message_file_is_an_error(self):
+        files = json_files({DM: (1, ["1"])})
+        files[f"Messages/c{SERVER}/channel.json"] = json.dumps({"id": SERVER, "type": 0}).encode()
+        files[f"Messages/c{SERVER}/messages.ndjson"] = b"{}"
+        pkg = make_zip(self.p("unknown.zip"), files)
+        code, _, err = run("summary", pkg)
+        self.assertNotEqual(code, 0)
+        self.assertIn("doesn't recognise", err)
+
+    def test_messages_without_channel_id_is_an_error(self):
+        files = json_files({DM: (1, ["1"])})
+        files["Messages/oddfolder/messages.json"] = json.dumps([{"ID": 5}]).encode()
+        pkg = make_zip(self.p("odd.zip"), files)
+        code, _, err = run("summary", pkg)
+        self.assertNotEqual(code, 0)
+        self.assertIn("no readable channel ID", err)
+
+    def test_other_folders_are_reported(self):
+        files = json_files({DM: (1, ["1"])})
+        files["Messages/notes/readme.txt"] = b"hi"
+        pkg = make_zip(self.p("other.zip"), files)
         code, _, err = run("summary", pkg)
         self.assertEqual(code, 0)
-        self.assertIn("skipped 1 message records", err)
+        self.assertIn("aren't channel folders", err)
+
+    def test_corrupt_zip_gives_clean_error(self):
+        pkg = self.p("corrupt.zip")
+        with zipfile.ZipFile(pkg, "w", zipfile.ZIP_STORED) as z:
+            for name, data in json_files({DM: (1, ["1" * 18])}).items():
+                z.writestr(name, data)
+        raw = bytearray(read_bytes(pkg))
+        i = raw.find(b'"Timestamp"')
+        raw[i:i + 3] = b"XXX"                    # damage a file's contents (CRC mismatch)
+        with open(pkg, "wb") as fh:
+            fh.write(raw)
+        code, _, err = run("summary", pkg)
+        self.assertNotEqual(code, 0)
+        self.assertIn("error:", err)
+        self.assertNotIn("Traceback", err)
 
     def test_missing_message_file_is_reported(self):
         files = json_files({DM: (1, ["1"])})
@@ -246,6 +336,15 @@ class HelperTests(unittest.TestCase):
                            "--report", self.p("same.csv"), "--remaining", self.p("same.csv"))
         self.assertNotEqual(code, 0)
         self.assertIn("more than one output", err)
+
+    def test_refuses_to_overwrite_input_list(self):
+        with open(self.p("keep.txt"), "w") as fh:
+            fh.write(DM + "\n")
+        code, _, err = run("csv", self.old, "--exclude", self.p("keep.txt"),
+                           "-o", self.p("keep.txt"), "--force")
+        self.assertNotEqual(code, 0)
+        self.assertIn("also an input file", err)
+        self.assertEqual(read_bytes(self.p("keep.txt")), (DM + "\n").encode())
 
     def test_existing_output_needs_force(self):
         open(self.p("exists.csv"), "w").close()

@@ -22,7 +22,7 @@ Article 17(1) lists several grounds for erasure. Which one fits depends on the *
 | **Contract** (Article 6(1)(b)) | The privacy policy lists storing and displaying your messages "as you direct" under fulfilling its contract with you | **17(1)(a):** the messages are no longer necessary for that purpose. Your erasure request is strong evidence of what you now direct, but it doesn't settle the question by itself: the test is whether keeping them is still necessary for the purpose Discord relies on | Why keeping them is still necessary for its contract *with you*, or an Article 17(3) exception |
 
 Three points follow from this:
-- **Contract only covers the contract with you.** Article 6(1)(b) applies to a contract "to which the data subject is party", meaning you. Other users wanting to keep reading your messages isn't part of your contract. If that's Discord's reason, it's relying on legitimate interests, and you can object.
+- **Contract only covers the contract with you.** Article 6(1)(b) applies to a contract "to which the data subject is party", meaning you. Other users wanting to keep reading your messages isn't part of your contract. If that's Discord's reason, it points to legitimate interests rather than contract, and you can object. Either way, the safest request is to ask Discord to state the purpose and legal basis for keeping each set of messages, and why keeping them is still necessary.
 - **If Discord has no valid basis at all** for keeping a message, **17(1)(d)** applies (unlawful processing). That's a fallback, not something to lead with.
 - **The Article 17(3) exceptions apply whichever basis it is.** If Discord relies on one, its reasons for refusing should say so.
 

@@ -14,7 +14,7 @@ You don't need to write it by hand. Use the helper script, or one of the alterna
 
 ## Option A: the helper script (recommended)
 
-[`scripts/erasure_helper.py`](../scripts/erasure_helper.py) is a single file that uses only standard Python 3. It reads your package **directly from the ZIP**, without extracting or changing it, and doesn't connect to the internet. If it meets a file it can't read reliably, it stops with an error instead of quietly giving you a smaller CSV. Read it before running it if you like: it's short.
+[`scripts/erasure_helper.py`](../scripts/erasure_helper.py) is a single file that uses only standard Python 3. It reads your package **directly from the ZIP**, without extracting or changing it, and doesn't connect to the internet. If it meets a file or message record it can't read reliably, it stops with an error instead of quietly giving you a smaller CSV, and it only puts the CSV in place once the whole run has succeeded, so a failed run never leaves a half-written file. Read it before running it if you like: it's short.
 
 **1. Install Python 3** if you don't have it ([python.org](https://www.python.org/downloads/)). On Linux and macOS it's usually already there.
 
@@ -50,9 +50,10 @@ On Windows, use `python` or `py` instead of `python3` if that's what works.
 |---|---|
 | `--exclude keep.txt` | Leave out the channels listed in `keep.txt` (one channel ID per line), e.g. chats you want to keep |
 | `--only these.txt` | Include only the channels listed in `these.txt` |
-| `--split 100000` | Split into several files of at most 100,000 lines (`messages_to_delete_part1.csv`, `_part2`, …), if one file is too big to send |
+| `--split 100000` | Split into several files of at most 100,000 messages each, plus the header line (`messages_to_delete_part1.csv`, `_part2`, …), if one file is too big to send |
 | `--no-header` | Leave out the `channel_id,message_id` header line |
-| `--force` | Overwrite an output file that already exists. Without it, the script won't replace an existing file, and it never writes over the package itself |
+| `--force` | Overwrite an output file that already exists. Without it, the script won't replace an existing file, and it never writes over the package itself or over the `--only`/`--exclude` lists |
+| `--allow-incomplete` | Only if the script stops because some message records can't be read: write the CSV anyway, leaving those records out. It warns you how many. Please also [open an issue](https://github.com/Technae/The-Erasure-Codex/issues) so the script can be fixed |
 
 To find a channel's ID in Discord, turn on **User Settings → Advanced → Developer Mode**, then right-click the channel or DM and choose **Copy Channel ID**.
 

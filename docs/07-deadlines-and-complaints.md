@@ -10,6 +10,8 @@ If the month ends and you have neither an answer nor a notice of extension, the 
 
 Counting: a month runs from the day Discord received your request to the same date the following month. If that falls on a weekend or public holiday, it moves to the next working day.
 
+In the UK, if Discord reasonably asks you to confirm who you are, the month starts when it receives that information (Article 12A; see the [legal reference](10-legal-reference.md)).
+
 Keep a simple log:
 
 | Date | What happened | Evidence |
@@ -18,9 +20,9 @@ Keep a simple log:
 | 2 Feb | Template: "we don't offer bulk deletion" | Email |
 | … | … | … |
 
-## Before you complain: write to the DPO
+## Optional: write to the DPO
 
-Send a formal request to Discord's Data Protection Officer (`dpo@discord.com`) and give it the full month. So far, mail to the DPO has only drawn support templates, but even silence is useful: an unanswered request to the person responsible for data protection is clear, simple evidence that Discord missed its deadline under Article 12(3). [Templates](11-templates.md) has ready-to-use DPO emails.
+Writing to Discord's Data Protection Officer (`dpo@discord.com`) is optional, not a required step before you complain. It doesn't restart or extend the deadline on your original request: that still runs from when Discord received it. Only a genuinely new request (for example, an access request you hadn't made before) has its own one-month period. So far, mail to the DPO has only drawn support templates, but even silence is useful: an unanswered message to the person responsible for data protection adds to the evidence that Discord missed its deadline under Article 12(3). [Templates](11-templates.md) has ready-to-use DPO emails.
 
 However frustrating the replies get, aim your complaint at Discord as a company, not at the individual staff who sent them. Name the company in your complaint, not the agent who signed a template; the regulator deals with Discord, not its employees.
 
@@ -45,15 +47,16 @@ You can complain to the data protection authority **in the country where you liv
 
 Keep it factual. Let the evidence show the problem. Words like "malicious" don't help, while dates, quotes and numbers do.
 
-**After you complain:** you can still write to Discord, and anything new it sends is worth forwarding to the authority with your case reference. If the authority hasn't handled your complaint, or told you how it's progressing, within three months, Article 78(2) lets you take the authority to court. That's rarely needed, but worth knowing.
+**After you complain:** you can still write to Discord, and anything new it sends is worth forwarding to the authority with your case reference. In the EU/EEA, if the authority hasn't handled your complaint, or told you how it's progressing, within three months, Article 78(2) lets you take the authority to court. That's rarely needed, but worth knowing. (UK: see section 166 below.)
 
 ## Complaining in the UK
 
-The process changed on **19 June 2026**. Under section 164A of the Data Protection Act 2018, you now generally need to **complain to the company first**:
+The process changed on **19 June 2026**. Under section 164A of the Data Protection Act 2018, you can complain to the company itself. The ICO says you can complain to it at any time, but recommends **complaining to the company first**, and in most cases will ask you to:
 
 1. Write to Discord (reply in the same thread) saying clearly that it's **a data protection complaint under section 164A of the Data Protection Act 2018**, and what you're complaining about.
 2. Discord must **acknowledge it within 30 days**, investigate, and tell you the outcome without undue delay.
-3. If you're not satisfied with the outcome, or Discord doesn't respond, complain to the **Information Commissioner's Office (ICO)**: [ico.org.uk/make-a-complaint](https://ico.org.uk/make-a-complaint/data-protection-complaints/). Include the same evidence as above, plus your section 164A complaint and Discord's response.
+3. If you're not satisfied with the outcome, or Discord doesn't respond, complain to the **Information Commissioner's Office (ICO)**: [ico.org.uk/make-a-complaint](https://ico.org.uk/make-a-complaint/data-protection-complaints/). Include the same evidence as above, plus your section 164A complaint and Discord's response. The ICO asks you to complain within three months of your last contact with the company.
+4. If the ICO doesn't take appropriate steps on your complaint or keep you informed, section 166 of the Data Protection Act 2018 lets you apply to the tribunal for an order requiring it to.
 
 ## Other options
 

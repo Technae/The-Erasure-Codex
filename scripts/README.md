@@ -3,7 +3,8 @@
 A small, dependency-free Python 3 script for working with a Discord data package when making an erasure request.
 
 - Reads the package **directly from the .zip** (or an extracted folder) and never changes it: it refuses to write output over the package or into an extracted package folder
-- Stops with a clear error if a file isn't in a format it recognises, rather than reporting a smaller count
+- Stops with a clear error if a file or message record isn't in a format it recognises, rather than reporting a smaller count (`--allow-incomplete` overrides this for unreadable records, and says so)
+- Writes output to a temporary file and only puts it in place once the whole run has succeeded, so a failed run never leaves a partial CSV or damages an earlier one
 - Works with both the current JSON layout and older CSV layouts
 - Doesn't connect to the internet, and never needs your token or password
 
@@ -13,8 +14,9 @@ A small, dependency-free Python 3 script for working with a Discord data package
 | `python3 erasure_helper.py csv package.zip -o messages_to_delete.csv` | Write the `channel_id,message_id` CSV Discord asks for |
 | `python3 erasure_helper.py compare old.zip new.zip` | Show how many messages are no longer in the newer export |
 
-Options for `csv`: `--exclude FILE`, `--only FILE` (channel IDs, one per line), `--split N`, `--no-header`, `--force`.
-Options for `compare`: `--report FILE` (per-channel counts, includes channel names, keep private), `--remaining FILE` (IDs in both exports, ready to resend), `--force`.
+Options for `summary`: `--allow-incomplete`.
+Options for `csv`: `--exclude FILE`, `--only FILE` (channel IDs, one per line), `--split N` (messages per file, plus the header), `--no-header`, `--force`, `--allow-incomplete`.
+Options for `compare`: `--report FILE` (per-channel counts, includes channel names, keep private), `--remaining FILE` (IDs in both exports, ready to resend), `--force`, `--allow-incomplete`.
 
 The comparison counts `(channel_id, message_id)` pairs. It shows what Discord's export no longer includes, not whether every copy has been erased.
 

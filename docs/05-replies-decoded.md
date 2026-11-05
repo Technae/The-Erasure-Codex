@@ -90,7 +90,7 @@ within the one-month period under Article 12(3), I will complain to
 [your data protection authority].
 ```
 
-UK users: the ICO generally expects you to complain to the company before you go to it. Make it explicit: *"Please treat this as a data protection complaint under section 164A of the Data Protection Act 2018."* Discord then has 30 days to acknowledge it.
+UK users: the ICO recommends complaining to the company before you go to it, and in most cases will ask you to. Make it explicit: *"Please treat this as a data protection complaint under section 164A of the Data Protection Act 2018."* Discord then has 30 days to acknowledge it.
 
 ---
 

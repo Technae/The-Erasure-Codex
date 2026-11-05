@@ -186,7 +186,7 @@ Kind regards,
 
 ## Step 3: If Discord doesn't answer
 
-Send a short deadline notice in the same thread the day after the month runs out ([DPO template 4](11-templates.md#dpo-template-4-the-deadline-has-passed)). Then complain to your data protection authority ([Deadlines and complaints](07-deadlines-and-complaints.md)). UK users need to complain to Discord first under section 164A ([template](11-templates.md#uk-complaining-to-discord-first-section-164a)).
+Send a short deadline notice in the same thread the day after the month runs out ([DPO template 4](11-templates.md#dpo-template-4-the-deadline-has-passed)). Then complain to your data protection authority ([Deadlines and complaints](07-deadlines-and-complaints.md)). UK users: the ICO recommends complaining to Discord first under section 164A, and in most cases will ask you to ([template](11-templates.md#uk-complaining-to-discord-first-section-164a)).
 
 ### Complaint template: access request ignored
 

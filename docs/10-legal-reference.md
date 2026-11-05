@@ -2,7 +2,7 @@
 
 [← Case study](09-case-study.md) · [Contents](../README.md) · [Next: Templates →](11-templates.md)
 
-A quick reference to the provisions this guide relies on. The article numbers are the same in the GDPR and the UK GDPR. Read the full text at [EUR-Lex](https://eur-lex.europa.eu/eli/reg/2016/679/oj) (GDPR) or [legislation.gov.uk](https://www.legislation.gov.uk/eur/2016/679/contents) (UK GDPR).
+A quick reference to the provisions this guide relies on. Most article numbers are the same in the GDPR and the UK GDPR, but UK law has since added some provisions and removed others. The differences that matter here are in the UK note below. Read the full text at [EUR-Lex](https://eur-lex.europa.eu/eli/reg/2016/679/oj) (GDPR) or [legislation.gov.uk](https://www.legislation.gov.uk/eur/2016/679/contents) (UK GDPR).
 
 ## The articles
 
@@ -15,7 +15,7 @@ A quick reference to the provisions this guide relies on. The article numbers ar
 | **Recital 59** | Explains 12(2): there should be mechanisms to request and obtain erasure, free of charge, including electronically where data is processed electronically | Discord processes everything electronically, but has no electronic way to request erasure at scale |
 | **12(3)** | Answer within one month; extend by two months only with notice and reasons within the first month | Your deadline |
 | **12(4)** | If it doesn't act, it must say why and tell you about your right to complain and go to court | Template replies don't do this |
-| **12(5)** | Requests are free; refusing as "manifestly unfounded or excessive" is possible, but the company has to prove it. In *Brillen Rottler* (C-526/24, 2026), the CJEU held that even a first request can be excessive if the company shows it was made with abusive intent, rather than to protect the person's rights | Asking for your own messages to be erased is neither. Make each request about your own data, for your own reasons ([FAQ](08-faq.md)) |
+| **12(5)** | Requests are free; refusing as "manifestly unfounded or excessive" is possible, but the company has to prove it. In *Brillen Rottler* (C-526/24, 2026), the CJEU held that even a first request can be excessive if the company shows it was made with abusive intent, rather than to protect the person's rights. That case concerned an access request (Article 15); it isn't a ruling that an erasure request can be refused because the person also wants to understand or challenge the company's practices | Asking for your own messages to be erased is neither. Make each request about your own data, for your own reasons ([FAQ](08-faq.md)) |
 | **12(6)** | It can ask for more information only if it has reasonable doubts about who you are | Writing from your registered email is normally enough |
 | **15** | Right of access: a copy of your data and information about its use (purposes, recipients, retention, source, automated decisions) | Your data package, and questions about analytics data. Article 15 doesn't list the legal basis itself; the templates ask for it because Discord had to tell you it anyway (Articles 13(1)(c) and 14(1)(c)) |
 | **17(1)** | Where a ground applies, the company must erase *without undue delay* | Separate from the 12(3) deadline to tell you what it has done |
@@ -27,16 +27,17 @@ A quick reference to the provisions this guide relies on. The article numbers ar
 | **25** | Data protection by design and by default | The argument that a platform holding this much data should be designed so that erasure works at that scale. The law doesn't prescribe a particular feature, only that the right is effective |
 | **38(4)** | You can contact the Data Protection Officer about your rights | Discord's DPO address feeds into its general support queue |
 | **77** | Right to complain to a supervisory authority, in particular where you live, work or where the infringement took place (EU/EEA only; see the UK note below) | Step 7 |
-| **78(2)** | Court remedy if the authority doesn't handle your complaint or tell you its progress within three months | A fallback |
+| **78(2)** | Court remedy if the authority doesn't handle your complaint or tell you its progress within three months (EU/EEA; in the UK, see section 166 below) | A fallback |
 | **79, 82** | Court action against the company; compensation | Costly; get advice |
 
 **National restrictions:** EU and EEA countries can add limited restrictions to these rights (Article 23) and must reconcile data protection with freedom of expression (Article 85). Ireland's Data Protection Act 2018, for example, has provisions on both. This guide doesn't cover them country by country.
 
 **UK only:** the UK complaints system changed on 19 June 2026 (Data (Use and Access) Act 2025, section 103).
 - **Section 164A** of the Data Protection Act 2018 gives you the right to complain to the company. It must acknowledge your complaint within 30 days and tell you the outcome without undue delay. The 30 days is for the acknowledgement, not for resolving the complaint.
-- **Article 77 has been removed from the UK GDPR.** Complaints to the ICO are now made under **section 165** of the Data Protection Act 2018. The ICO generally expects you to complain to the company first.
+- **Article 77 has been removed from the UK GDPR.** Complaints to the ICO are now made under **section 165** of the Data Protection Act 2018. The ICO says you can complain to it at any time, but recommends giving the company the chance to finish its complaints process first, and in most cases it will ask you to do that. It also asks you to complain within three months of your last contact with the company.
 - **Controller:** Discord's privacy policy names Discord Netherlands BV for the EEA and Discord Inc. for everyone else, including the UK. It names VeraSafe as its UK representative.
-- **Response times:** since 5 February 2026, a new Article 12A of the UK GDPR lets the response period pause while a company waits for information it reasonably needs, such as confirmation of who you are.
+- **Response times (Article 12A):** since 5 February 2026, the UK GDPR sets out how the one-month period is counted. It starts from the latest of: when the company receives your request, when it receives information it reasonably asked for to confirm who you are (Article 12(6)), or when any fee is paid. For **access requests (Article 15) only**, the clock can also pause while the company waits for information it reasonably needs to identify what your request covers, for example where it holds a large amount of information about you. This isn't a general pause for any question the company asks, and none of it applies to EU/EEA requests.
+- **Section 166** of the Data Protection Act 2018 is the UK route if the ICO doesn't take appropriate steps on your complaint or keep you informed: you can apply to the tribunal for an order requiring it to. Use this instead of Article 78(2) in the UK.
 
 ## Decisions and guidance worth knowing
 

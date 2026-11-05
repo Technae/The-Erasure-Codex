@@ -20,16 +20,18 @@ The Codex is long because the process is. Your job is to turn it into a conversa
 
 - **This isn't legal advice, and you're not a lawyer.** Say so once, plainly. Suggest a data protection organisation or lawyer if the situation is unusual or high-stakes.
 - **Check how current it is.** The README has a "Last reviewed" date. Discord's handling changes, so if it's more than a few months old, check the [Undiscord discussion #429](https://github.com/victornpb/undiscord/discussions/429) and recent experience reports in this repo's issues.
-- **The person stays in charge.** They send the emails, from their own account's email address. Never ask for their Discord password or token. Nothing in this process needs them.
+- **The person stays in charge.** You can draft and explain, but they decide, and they send the emails from their own account's email address.
+- **Protect their data.** Don't ask them to upload their full Discord data package or paste private conversations: it contains personal data about them and about other people. The script's `summary` output and short, redacted excerpts are usually enough. Before they share screenshots, emails or script output, suggest removing email addresses, account and channel IDs, ticket numbers, message contents and anything else you don't need. Never ask for passwords, tokens or authentication codes. Nothing in this process needs them.
+- **Keep evidence and conclusions apart.** Make clear what comes from the person's own correspondence, what Discord publicly documents, what other users have reported (the case study and discussion threads contain user reports, not independently verified findings), and what is a legal argument rather than an established ruling.
 
 ## Ask these first
 
 Ask a few at a time, in plain language, not all at once.
 
-1. **Where do you live?** EU/EEA → GDPR. UK → UK GDPR (the UK route differs at the complaint stage). Anywhere else → the guide doesn't cover it ([FAQ](https://github.com/Technae/The-Erasure-Codex/blob/main/docs/08-faq.md)).
+1. **Where do you live?** EU/EEA → GDPR. UK → UK GDPR (the UK route differs at the complaint stage). Anywhere else → the guide doesn't cover it ([FAQ](https://github.com/Technae/The-Erasure-Codex/blob/main/docs/08-faq.md)). The country also decides which authority they complain to and whether any national rules apply. Where someone lives isn't the whole legal test for whether the GDPR applies, but it's the right practical starting point here.
 2. **Is your Discord account active, banned (disabled), or deleted?** Banned or deleted → [page 12](https://github.com/Technae/The-Erasure-Codex/blob/main/docs/12-banned-accounts.md) is their main route.
 3. **What do you want erased?** Everything, particular DMs or servers, or also analytics/activity data?
-4. **Do you have your data package yet?** If not, that's the first step, and it can take up to 30 days.
+4. **Do you have your data package yet?** If their account is active and they haven't requested it, that's the first step, and it can take up to 30 days. If they're banned or their account is deleted, go to [page 12](https://github.com/Technae/The-Erasure-Codex/blob/main/docs/12-banned-accounts.md) instead: they may need to make a formal access request by email.
 5. **Have you already contacted Discord about this?** If yes: when, and what did Discord reply? Ask them to paste the reply.
 6. **Are you comfortable running a small script on your computer?** This decides how you help them build the CSV.
 
@@ -50,26 +52,26 @@ Ask a few at a time, in plain language, not all at once.
 
 ## Rules to follow
 
-- **Keep the "keep my account" line** in every request template, unless the person explicitly wants their account deleted. Don't reword requests into "delete all my personal data", which can be read as an account deletion request.
-- **Don't let them delete their account** while a request is open or before they've checked the result. It cancels pending data package requests and doesn't remove their messages.
+- **Keep the account where the request is about messages.** Keep the "I want to keep my account" line in message-erasure requests, unless the person explicitly wants their account deleted. Don't reword requests into "delete all my personal data", which can be read as an account deletion request. You don't need to add the line to unrelated access requests or complaints.
+- **Warn before account deletion.** Deleting an account doesn't erase its messages, cancels a pending data package request, and makes checking the result and following up harder. Recommend keeping the account until they've got their package and checked the result, but explain the consequences and let them decide.
 - **Don't suggest sending ID** by default. Sending from the account's registered email is normally enough ([page 12, "Proving it's your account"](https://github.com/Technae/The-Erasure-Codex/blob/main/docs/12-banned-accounts.md#proving-its-your-account)).
-- **Count deadlines by calendar month,** from the day Discord received the request to the same date the next month, moved to the next working day if that's a weekend or public holiday ([page 7](https://github.com/Technae/The-Erasure-Codex/blob/main/docs/07-deadlines-and-complaints.md#the-deadline)). Discord can extend by up to two months only if it says so, with reasons, within the first month.
+- **Count deadlines by calendar month,** from the day Discord received the request to the same date the next month, moved to the next working day if that's a weekend or public holiday ([page 7](https://github.com/Technae/The-Erasure-Codex/blob/main/docs/07-deadlines-and-complaints.md#the-deadline)). Discord can extend by up to two months only if it says so, with reasons, within the first month. Writing to the DPO or sending a reminder doesn't restart the deadline. UK only: if Discord reasonably asks for identity information, the month starts when it gets it, and for access requests the clock can pause for genuine clarification (Article 12A, [legal reference](https://github.com/Technae/The-Erasure-Codex/blob/main/docs/10-legal-reference.md)).
 - **Each request is about the person's own data, for their own reasons.** Don't frame requests as tests, experiments or campaign tactics ([why](https://github.com/Technae/The-Erasure-Codex/blob/main/docs/08-faq.md)).
 - **Keep it aimed at Discord, not its staff.** Never help name, target or publish anything about individual employees.
-- **Quote Discord exactly.** "Submitted for deletion" isn't proof of deletion. Only a comparison of data packages shows what's gone.
+- **Quote Discord exactly.** "Submitted for deletion" isn't proof of deletion. Comparing data packages shows what's no longer in the newer export, and spot-checking in the app shows what's no longer visible. Neither proves that every copy, including backups, has been erased ([page 6](https://github.com/Technae/The-Erasure-Codex/blob/main/docs/06-check-the-result.md)).
 - **Don't overstate.** Where the guide says the law is uncertain, say it's uncertain. Don't promise outcomes, fines, or that a regulator will act quickly.
 - **Use calm, plain language** in anything the person sends. Threats and legal jargon beyond the article numbers don't help.
 
 ## Helping with the script
 
-You can't run the helper script for them. Take it slowly:
+Guide them to run the script on their own computer. Don't ask them to upload their data package to you, even if your environment could run code on it. Take it slowly:
 
 1. Check whether they have Python 3, and help them install it if not ([python.org](https://www.python.org/downloads/)).
 2. Have them put the script and their package ZIP in the same folder, and open a terminal there.
 3. Give them one command at a time from [page 3](https://github.com/Technae/The-Erasure-Codex/blob/main/docs/03-build-the-csv.md), starting with `summary`, and ask them to paste the output back.
 4. Explain what each output means before the next step.
 
-If the script stops with an error, ask for the exact message rather than guessing. If the terminal is too much for them, [Option B](https://github.com/Technae/The-Erasure-Codex/blob/main/docs/03-build-the-csv.md#option-b-ishnzs-bulk_deletion_helper) is an alternative. Never suggest tools that ask for their Discord token or password.
+If the script stops with an error, ask for the exact message rather than guessing. If it stops because some message records can't be read, `--allow-incomplete` lets it continue, but explain first that those messages will be left out of the CSV, and suggest reporting the error as an issue. If the terminal is too much for them, [Option B](https://github.com/Technae/The-Erasure-Codex/blob/main/docs/03-build-the-csv.md#option-b-ishnzs-bulk_deletion_helper) is an alternative. Never suggest tools that ask for their Discord token or password.
 
 ## Filling in templates
 
@@ -77,7 +79,9 @@ Fill in the placeholders with the person's own details (username, user ID, email
 
 ## If something in the guide looks wrong
 
-Tell the person, and suggest they report it by opening an issue on this repository, so it can be checked and fixed for everyone.
+Check the current legislation, relevant court judgments and official supervisory-authority guidance before correcting a legal point. If they conflict with the guide, explain the difference rather than quietly replacing the guide's position. Never claim to have checked a page, file or source you didn't actually open.
+
+Then tell the person, and suggest they report it by opening an issue on this repository, so it can be fixed for everyone. Remind them not to post their personal correspondence, data package contents or account details in a public issue: the problem can be described without them.
 
 ---
 
@@ -93,7 +97,7 @@ Discord has no button for bulk deleting your message history. If you live in the
 >
 > **Independent project. Not legal advice.** Discord is a trademark of Discord Inc. This guide isn't affiliated with or endorsed by Discord. This is written by users, from real requests and Discord's real replies. Where the law is uncertain, the guide says so. If your situation is unusual, ask a lawyer or a data protection organisation.
 
-> **Getting help from an AI assistant?** This guide is long, and an AI assistant can take you through just the parts that apply to you. Give it [AI-GUIDE.md](https://github.com/Technae/The-Erasure-Codex/blob/main/AI-GUIDE.md), or the whole guide in one file: [CODEX-FULL.md](https://github.com/Technae/The-Erasure-Codex/blob/main/CODEX-FULL.md). Check what it tells you against the pages here, and never give it, or anyone, your Discord password or token.
+> **Getting help from an AI assistant?** This guide is long, and an AI assistant can take you through just the parts that apply to you. Give it [AI-GUIDE.md](https://github.com/Technae/The-Erasure-Codex/blob/main/AI-GUIDE.md), or the whole guide in one file: [CODEX-FULL.md](https://github.com/Technae/The-Erasure-Codex/blob/main/CODEX-FULL.md). Check what it tells you against the pages here. Don't upload your whole data package or private conversations to it, and never give it, or anyone, your Discord password or token.
 
 ---
 
@@ -141,7 +145,7 @@ The helper script is in [`scripts/`](https://github.com/Technae/The-Erasure-Code
 
 ## Help keep this accurate
 
-Discord's handling changes, sometimes month to month. If you've made a request, your experience helps others: open an issue using the **Experience report** template, or read [CONTRIBUTING.md](https://github.com/Technae/The-Erasure-Codex/blob/main/CONTRIBUTING.md). Corrections are just as welcome, especially from people who know the law better than we do.
+Discord's handling changes, sometimes month to month. If you've made a request, your experience helps others: open an issue using the **Experience report** template, or read [CONTRIBUTING.md](https://github.com/Technae/The-Erasure-Codex/blob/main/CONTRIBUTING.md). Corrections are just as welcome, especially from people who know the law better than we do. What has changed, and why, is recorded in the [changelog](https://github.com/Technae/The-Erasure-Codex/blob/main/CHANGELOG.md).
 
 ## Background and credits
 
@@ -187,7 +191,7 @@ Article 17(1) lists several grounds for erasure. Which one fits depends on the *
 | **Contract** (Article 6(1)(b)) | The privacy policy lists storing and displaying your messages "as you direct" under fulfilling its contract with you | **17(1)(a):** the messages are no longer necessary for that purpose. Your erasure request is strong evidence of what you now direct, but it doesn't settle the question by itself: the test is whether keeping them is still necessary for the purpose Discord relies on | Why keeping them is still necessary for its contract *with you*, or an Article 17(3) exception |
 
 Three points follow from this:
-- **Contract only covers the contract with you.** Article 6(1)(b) applies to a contract "to which the data subject is party", meaning you. Other users wanting to keep reading your messages isn't part of your contract. If that's Discord's reason, it's relying on legitimate interests, and you can object.
+- **Contract only covers the contract with you.** Article 6(1)(b) applies to a contract "to which the data subject is party", meaning you. Other users wanting to keep reading your messages isn't part of your contract. If that's Discord's reason, it points to legitimate interests rather than contract, and you can object. Either way, the safest request is to ask Discord to state the purpose and legal basis for keeping each set of messages, and why keeping them is still necessary.
 - **If Discord has no valid basis at all** for keeping a message, **17(1)(d)** applies (unlawful processing). That's a fallback, not something to lead with.
 - **The Article 17(3) exceptions apply whichever basis it is.** If Discord relies on one, its reasons for refusing should say so.
 
@@ -313,7 +317,7 @@ You don't need to write it by hand. Use the helper script, or one of the alterna
 
 ## Option A: the helper script (recommended)
 
-[`scripts/erasure_helper.py`](https://github.com/Technae/The-Erasure-Codex/blob/main/scripts/erasure_helper.py) is a single file that uses only standard Python 3. It reads your package **directly from the ZIP**, without extracting or changing it, and doesn't connect to the internet. If it meets a file it can't read reliably, it stops with an error instead of quietly giving you a smaller CSV. Read it before running it if you like: it's short.
+[`scripts/erasure_helper.py`](https://github.com/Technae/The-Erasure-Codex/blob/main/scripts/erasure_helper.py) is a single file that uses only standard Python 3. It reads your package **directly from the ZIP**, without extracting or changing it, and doesn't connect to the internet. If it meets a file or message record it can't read reliably, it stops with an error instead of quietly giving you a smaller CSV, and it only puts the CSV in place once the whole run has succeeded, so a failed run never leaves a half-written file. Read it before running it if you like: it's short.
 
 **1. Install Python 3** if you don't have it ([python.org](https://www.python.org/downloads/)). On Linux and macOS it's usually already there.
 
@@ -349,9 +353,10 @@ On Windows, use `python` or `py` instead of `python3` if that's what works.
 |---|---|
 | `--exclude keep.txt` | Leave out the channels listed in `keep.txt` (one channel ID per line), e.g. chats you want to keep |
 | `--only these.txt` | Include only the channels listed in `these.txt` |
-| `--split 100000` | Split into several files of at most 100,000 lines (`messages_to_delete_part1.csv`, `_part2`, …), if one file is too big to send |
+| `--split 100000` | Split into several files of at most 100,000 messages each, plus the header line (`messages_to_delete_part1.csv`, `_part2`, …), if one file is too big to send |
 | `--no-header` | Leave out the `channel_id,message_id` header line |
-| `--force` | Overwrite an output file that already exists. Without it, the script won't replace an existing file, and it never writes over the package itself |
+| `--force` | Overwrite an output file that already exists. Without it, the script won't replace an existing file, and it never writes over the package itself or over the `--only`/`--exclude` lists |
+| `--allow-incomplete` | Only if the script stops because some message records can't be read: write the CSV anyway, leaving those records out. It warns you how many. Please also [open an issue](https://github.com/Technae/The-Erasure-Codex/issues) so the script can be fixed |
 
 To find a channel's ID in Discord, turn on **User Settings → Advanced → Developer Mode**, then right-click the channel or DM and choose **Copy Channel ID**.
 
@@ -622,7 +627,7 @@ within the one-month period under Article 12(3), I will complain to
 [your data protection authority].
 ```
 
-UK users: the ICO generally expects you to complain to the company before you go to it. Make it explicit: *"Please treat this as a data protection complaint under section 164A of the Data Protection Act 2018."* Discord then has 30 days to acknowledge it.
+UK users: the ICO recommends complaining to the company before you go to it, and in most cases will ask you to. Make it explicit: *"Please treat this as a data protection complaint under section 164A of the Data Protection Act 2018."* Discord then has 30 days to acknowledge it.
 
 ---
 
@@ -686,7 +691,7 @@ Note: this shows what Discord's export no longer includes.
 It can't show whether every copy, including backups, has been erased.
 ```
 
-(These are the real figures from the [case study](https://github.com/Technae/The-Erasure-Codex/blob/main/docs/09-case-study.md).)
+(These are the real figures from the [case study](https://github.com/Technae/The-Erasure-Codex/blob/main/docs/09-case-study.md), comparing the February and March 2026 packages. The case study's later figure of 640,314 comes from a September package.)
 
 Two options make the result more useful:
 
@@ -698,7 +703,7 @@ python3 erasure_helper.py compare package-before.zip package-after.zip \
 - **`per_channel.csv`** shows, for every channel, how many messages are no longer in the export and how many are still there. It's the clearest way to see the "accessible space" rule at work: channels you'd left go to zero, channels you're still in don't change. **It includes channel names, so don't post it publicly.**
 - **`remaining.csv`** lists every message that's in both exports, in the `channel_id,message_id` format, ready to send in your follow-up.
 
-The script compares each message together with its channel, the same pairs as in the CSV. If it can't read a package reliably (for example, because Discord has changed the export format), it stops with an error rather than reporting a misleading count. It won't write its output over either package; add `--force` if you want it to overwrite an earlier report.
+The script compares each message together with its channel, the same pairs as in the CSV. If it can't read a package reliably (for example, because Discord has changed the export format, or some message records have no readable ID), it stops with an error rather than reporting a misleading count. It won't write its output over either package, and a failed run leaves any earlier report untouched; add `--force` if you want it to overwrite an earlier report.
 
 ## Without the script
 
@@ -751,6 +756,8 @@ If the month ends and you have neither an answer nor a notice of extension, the 
 
 Counting: a month runs from the day Discord received your request to the same date the following month. If that falls on a weekend or public holiday, it moves to the next working day.
 
+In the UK, if Discord reasonably asks you to confirm who you are, the month starts when it receives that information (Article 12A; see the [legal reference](https://github.com/Technae/The-Erasure-Codex/blob/main/docs/10-legal-reference.md)).
+
 Keep a simple log:
 
 | Date | What happened | Evidence |
@@ -759,9 +766,9 @@ Keep a simple log:
 | 2 Feb | Template: "we don't offer bulk deletion" | Email |
 | … | … | … |
 
-## Before you complain: write to the DPO
+## Optional: write to the DPO
 
-Send a formal request to Discord's Data Protection Officer (`dpo@discord.com`) and give it the full month. So far, mail to the DPO has only drawn support templates, but even silence is useful: an unanswered request to the person responsible for data protection is clear, simple evidence that Discord missed its deadline under Article 12(3). [Templates](https://github.com/Technae/The-Erasure-Codex/blob/main/docs/11-templates.md) has ready-to-use DPO emails.
+Writing to Discord's Data Protection Officer (`dpo@discord.com`) is optional, not a required step before you complain. It doesn't restart or extend the deadline on your original request: that still runs from when Discord received it. Only a genuinely new request (for example, an access request you hadn't made before) has its own one-month period. So far, mail to the DPO has only drawn support templates, but even silence is useful: an unanswered message to the person responsible for data protection adds to the evidence that Discord missed its deadline under Article 12(3). [Templates](https://github.com/Technae/The-Erasure-Codex/blob/main/docs/11-templates.md) has ready-to-use DPO emails.
 
 However frustrating the replies get, aim your complaint at Discord as a company, not at the individual staff who sent them. Name the company in your complaint, not the agent who signed a template; the regulator deals with Discord, not its employees.
 
@@ -786,15 +793,16 @@ You can complain to the data protection authority **in the country where you liv
 
 Keep it factual. Let the evidence show the problem. Words like "malicious" don't help, while dates, quotes and numbers do.
 
-**After you complain:** you can still write to Discord, and anything new it sends is worth forwarding to the authority with your case reference. If the authority hasn't handled your complaint, or told you how it's progressing, within three months, Article 78(2) lets you take the authority to court. That's rarely needed, but worth knowing.
+**After you complain:** you can still write to Discord, and anything new it sends is worth forwarding to the authority with your case reference. In the EU/EEA, if the authority hasn't handled your complaint, or told you how it's progressing, within three months, Article 78(2) lets you take the authority to court. That's rarely needed, but worth knowing. (UK: see section 166 below.)
 
 ## Complaining in the UK
 
-The process changed on **19 June 2026**. Under section 164A of the Data Protection Act 2018, you now generally need to **complain to the company first**:
+The process changed on **19 June 2026**. Under section 164A of the Data Protection Act 2018, you can complain to the company itself. The ICO says you can complain to it at any time, but recommends **complaining to the company first**, and in most cases will ask you to:
 
 1. Write to Discord (reply in the same thread) saying clearly that it's **a data protection complaint under section 164A of the Data Protection Act 2018**, and what you're complaining about.
 2. Discord must **acknowledge it within 30 days**, investigate, and tell you the outcome without undue delay.
-3. If you're not satisfied with the outcome, or Discord doesn't respond, complain to the **Information Commissioner's Office (ICO)**: [ico.org.uk/make-a-complaint](https://ico.org.uk/make-a-complaint/data-protection-complaints/). Include the same evidence as above, plus your section 164A complaint and Discord's response.
+3. If you're not satisfied with the outcome, or Discord doesn't respond, complain to the **Information Commissioner's Office (ICO)**: [ico.org.uk/make-a-complaint](https://ico.org.uk/make-a-complaint/data-protection-complaints/). Include the same evidence as above, plus your section 164A complaint and Discord's response. The ICO asks you to complain within three months of your last contact with the company.
+4. If the ICO doesn't take appropriate steps on your complaint or keep you informed, section 166 of the Data Protection Act 2018 lets you apply to the tribunal for an order requiring it to.
 
 ## Other options
 
@@ -825,7 +833,7 @@ No. Discord says it anonymises them: your username is replaced with "Deleted Use
 You can usually still open them, so under Discord's "access" rule they tend to be kept. But nobody else is left to benefit from keeping them, which makes "other users have a legitimate interest" hard to apply. Point that out in your follow-up, and list those channel IDs separately.
 
 **I want to help change how Discord handles this. Can I make a request for that reason?**
-Make each request about **your own data, for your own reasons**: you want your messages erased, or you want to know what Discord holds about you. Those are the purposes the rights exist for. In 2026 the EU's Court of Justice held that a company can refuse even a first request if it shows the request was made with abusive intent rather than to protect the person's rights (Brillen Rottler, C-526/24). A real request about your own messages is nothing like that. So keep requests to your own data, ask for what you actually want, and don't send requests just to test Discord or to build a case. If you later share your result, that helps other people know their options, but it should be a side effect, not the reason for the request.
+Make each request about **your own data, for your own reasons**: you want your messages erased, or you want to know what Discord holds about you. Those are the purposes the rights exist for. In 2026 the EU's Court of Justice held that a company can refuse even a first request if it shows the request was made with abusive intent rather than to protect the person's rights (Brillen Rottler, C-526/24). That case was about an access request, not erasure, but the principle is worth keeping in mind. A real request about your own messages is nothing like that. So keep requests to your own data, ask for what you actually want, and don't send requests just to test Discord or to build a case. If you later share your result, that helps other people know their options, but it should be a side effect, not the reason for the request.
 
 **Does my data package include messages I deleted?**
 No. Discord's [data package article](https://support.discord.com/hc/en-us/articles/360004957991) says a message you delete is "no longer stored in Discord" and won't be in your package. But Discord's [retention article](https://support.discord.com/hc/en-us/articles/5431812448791) says some public posts may be kept for 180 days to two years after deletion. If Discord still holds any deleted messages, your package won't show them. To ask about them, use item 1(e) of the [general access request](https://github.com/Technae/The-Erasure-Codex/blob/main/docs/11-templates.md#access-request-everything-discord-holds-about-you-general-dsar).
@@ -959,7 +967,7 @@ From reports in Undiscord #429 (user reports, not verified):
 # 10. Legal reference
 
 
-A quick reference to the provisions this guide relies on. The article numbers are the same in the GDPR and the UK GDPR. Read the full text at [EUR-Lex](https://eur-lex.europa.eu/eli/reg/2016/679/oj) (GDPR) or [legislation.gov.uk](https://www.legislation.gov.uk/eur/2016/679/contents) (UK GDPR).
+A quick reference to the provisions this guide relies on. Most article numbers are the same in the GDPR and the UK GDPR, but UK law has since added some provisions and removed others. The differences that matter here are in the UK note below. Read the full text at [EUR-Lex](https://eur-lex.europa.eu/eli/reg/2016/679/oj) (GDPR) or [legislation.gov.uk](https://www.legislation.gov.uk/eur/2016/679/contents) (UK GDPR).
 
 ## The articles
 
@@ -972,7 +980,7 @@ A quick reference to the provisions this guide relies on. The article numbers ar
 | **Recital 59** | Explains 12(2): there should be mechanisms to request and obtain erasure, free of charge, including electronically where data is processed electronically | Discord processes everything electronically, but has no electronic way to request erasure at scale |
 | **12(3)** | Answer within one month; extend by two months only with notice and reasons within the first month | Your deadline |
 | **12(4)** | If it doesn't act, it must say why and tell you about your right to complain and go to court | Template replies don't do this |
-| **12(5)** | Requests are free; refusing as "manifestly unfounded or excessive" is possible, but the company has to prove it. In *Brillen Rottler* (C-526/24, 2026), the CJEU held that even a first request can be excessive if the company shows it was made with abusive intent, rather than to protect the person's rights | Asking for your own messages to be erased is neither. Make each request about your own data, for your own reasons ([FAQ](https://github.com/Technae/The-Erasure-Codex/blob/main/docs/08-faq.md)) |
+| **12(5)** | Requests are free; refusing as "manifestly unfounded or excessive" is possible, but the company has to prove it. In *Brillen Rottler* (C-526/24, 2026), the CJEU held that even a first request can be excessive if the company shows it was made with abusive intent, rather than to protect the person's rights. That case concerned an access request (Article 15); it isn't a ruling that an erasure request can be refused because the person also wants to understand or challenge the company's practices | Asking for your own messages to be erased is neither. Make each request about your own data, for your own reasons ([FAQ](https://github.com/Technae/The-Erasure-Codex/blob/main/docs/08-faq.md)) |
 | **12(6)** | It can ask for more information only if it has reasonable doubts about who you are | Writing from your registered email is normally enough |
 | **15** | Right of access: a copy of your data and information about its use (purposes, recipients, retention, source, automated decisions) | Your data package, and questions about analytics data. Article 15 doesn't list the legal basis itself; the templates ask for it because Discord had to tell you it anyway (Articles 13(1)(c) and 14(1)(c)) |
 | **17(1)** | Where a ground applies, the company must erase *without undue delay* | Separate from the 12(3) deadline to tell you what it has done |
@@ -984,16 +992,17 @@ A quick reference to the provisions this guide relies on. The article numbers ar
 | **25** | Data protection by design and by default | The argument that a platform holding this much data should be designed so that erasure works at that scale. The law doesn't prescribe a particular feature, only that the right is effective |
 | **38(4)** | You can contact the Data Protection Officer about your rights | Discord's DPO address feeds into its general support queue |
 | **77** | Right to complain to a supervisory authority, in particular where you live, work or where the infringement took place (EU/EEA only; see the UK note below) | Step 7 |
-| **78(2)** | Court remedy if the authority doesn't handle your complaint or tell you its progress within three months | A fallback |
+| **78(2)** | Court remedy if the authority doesn't handle your complaint or tell you its progress within three months (EU/EEA; in the UK, see section 166 below) | A fallback |
 | **79, 82** | Court action against the company; compensation | Costly; get advice |
 
 **National restrictions:** EU and EEA countries can add limited restrictions to these rights (Article 23) and must reconcile data protection with freedom of expression (Article 85). Ireland's Data Protection Act 2018, for example, has provisions on both. This guide doesn't cover them country by country.
 
 **UK only:** the UK complaints system changed on 19 June 2026 (Data (Use and Access) Act 2025, section 103).
 - **Section 164A** of the Data Protection Act 2018 gives you the right to complain to the company. It must acknowledge your complaint within 30 days and tell you the outcome without undue delay. The 30 days is for the acknowledgement, not for resolving the complaint.
-- **Article 77 has been removed from the UK GDPR.** Complaints to the ICO are now made under **section 165** of the Data Protection Act 2018. The ICO generally expects you to complain to the company first.
+- **Article 77 has been removed from the UK GDPR.** Complaints to the ICO are now made under **section 165** of the Data Protection Act 2018. The ICO says you can complain to it at any time, but recommends giving the company the chance to finish its complaints process first, and in most cases it will ask you to do that. It also asks you to complain within three months of your last contact with the company.
 - **Controller:** Discord's privacy policy names Discord Netherlands BV for the EEA and Discord Inc. for everyone else, including the UK. It names VeraSafe as its UK representative.
-- **Response times:** since 5 February 2026, a new Article 12A of the UK GDPR lets the response period pause while a company waits for information it reasonably needs, such as confirmation of who you are.
+- **Response times (Article 12A):** since 5 February 2026, the UK GDPR sets out how the one-month period is counted. It starts from the latest of: when the company receives your request, when it receives information it reasonably asked for to confirm who you are (Article 12(6)), or when any fee is paid. For **access requests (Article 15) only**, the clock can also pause while the company waits for information it reasonably needs to identify what your request covers, for example where it holds a large amount of information about you. This isn't a general pause for any question the company asks, and none of it applies to EU/EEA requests.
+- **Section 166** of the Data Protection Act 2018 is the UK route if the ICO doesn't take appropriate steps on your complaint or keep you informed: you can apply to the tribunal for an order requiring it to. Use this instead of Article 78(2) in the UK.
 
 ## Decisions and guidance worth knowing
 
@@ -1650,7 +1659,7 @@ Kind regards,
 
 ## Step 3: If Discord doesn't answer
 
-Send a short deadline notice in the same thread the day after the month runs out ([DPO template 4](https://github.com/Technae/The-Erasure-Codex/blob/main/docs/11-templates.md#dpo-template-4-the-deadline-has-passed)). Then complain to your data protection authority ([Deadlines and complaints](https://github.com/Technae/The-Erasure-Codex/blob/main/docs/07-deadlines-and-complaints.md)). UK users need to complain to Discord first under section 164A ([template](https://github.com/Technae/The-Erasure-Codex/blob/main/docs/11-templates.md#uk-complaining-to-discord-first-section-164a)).
+Send a short deadline notice in the same thread the day after the month runs out ([DPO template 4](https://github.com/Technae/The-Erasure-Codex/blob/main/docs/11-templates.md#dpo-template-4-the-deadline-has-passed)). Then complain to your data protection authority ([Deadlines and complaints](https://github.com/Technae/The-Erasure-Codex/blob/main/docs/07-deadlines-and-complaints.md)). UK users: the ICO recommends complaining to Discord first under section 164A, and in most cases will ask you to ([template](https://github.com/Technae/The-Erasure-Codex/blob/main/docs/11-templates.md#uk-complaining-to-discord-first-section-164a)).
 
 ### Complaint template: access request ignored
 
@@ -1743,7 +1752,8 @@ Use the general [EU complaint template](https://github.com/Technae/The-Erasure-C
 A small, dependency-free Python 3 script for working with a Discord data package when making an erasure request.
 
 - Reads the package **directly from the .zip** (or an extracted folder) and never changes it: it refuses to write output over the package or into an extracted package folder
-- Stops with a clear error if a file isn't in a format it recognises, rather than reporting a smaller count
+- Stops with a clear error if a file or message record isn't in a format it recognises, rather than reporting a smaller count (`--allow-incomplete` overrides this for unreadable records, and says so)
+- Writes output to a temporary file and only puts it in place once the whole run has succeeded, so a failed run never leaves a partial CSV or damages an earlier one
 - Works with both the current JSON layout and older CSV layouts
 - Doesn't connect to the internet, and never needs your token or password
 
@@ -1753,8 +1763,9 @@ A small, dependency-free Python 3 script for working with a Discord data package
 | `python3 erasure_helper.py csv package.zip -o messages_to_delete.csv` | Write the `channel_id,message_id` CSV Discord asks for |
 | `python3 erasure_helper.py compare old.zip new.zip` | Show how many messages are no longer in the newer export |
 
-Options for `csv`: `--exclude FILE`, `--only FILE` (channel IDs, one per line), `--split N`, `--no-header`, `--force`.
-Options for `compare`: `--report FILE` (per-channel counts, includes channel names, keep private), `--remaining FILE` (IDs in both exports, ready to resend), `--force`.
+Options for `summary`: `--allow-incomplete`.
+Options for `csv`: `--exclude FILE`, `--only FILE` (channel IDs, one per line), `--split N` (messages per file, plus the header), `--no-header`, `--force`, `--allow-incomplete`.
+Options for `compare`: `--report FILE` (per-channel counts, includes channel names, keep private), `--remaining FILE` (IDs in both exports, ready to resend), `--force`, `--allow-incomplete`.
 
 The comparison counts `(channel_id, message_id)` pairs. It shows what Discord's export no longer includes, not whether every copy has been erased.
 
