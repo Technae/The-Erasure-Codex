@@ -8,6 +8,8 @@ Discord has no button for bulk deleting your message history. If you live in the
 >
 > **Independent project. Not legal advice.** Discord is a trademark of Discord Inc. This guide isn't affiliated with or endorsed by Discord. This is written by users, from real requests and Discord's real replies. Where the law is uncertain, the guide says so. If your situation is unusual, ask a lawyer or a data protection organisation.
 
+> **Getting help from an AI assistant?** This guide is long, and an AI assistant can take you through just the parts that apply to you. Give it [AI-GUIDE.md](AI-GUIDE.md), or the whole guide in one file: [CODEX-FULL.md](CODEX-FULL.md). Check what it tells you against the pages here, and never give it, or anyone, your Discord password or token.
+
 ---
 
 ## The short version
@@ -64,6 +66,10 @@ This guide builds on work by others. Thank you to:
 - **[Undiscord discussion #429](https://github.com/victornpb/undiscord/discussions/429)**, "Bulk Deleting Discord Messages and GDPR Compliance", started by abigailwillow in 2022. The video links to it, and hundreds of users have compared requests, replies and results there since. Much of what this guide says about Discord's handling comes from their reports.
 - **ishnz**, whose [bulk_deletion_helper](https://github.com/ishnz/bulk_deletion_helper) made the requests behind this guide possible ([Build the CSV](docs/03-build-the-csv.md), Option B).
 - The community **[Discordomicon](https://web.archive.org/web/20260708064954/https://discordomicon.github.io/removal/overview/)** guide, which went offline in 2026 (Wayback Machine copies exist from January 2025 to July 2026). None of its text is reused here.
+
+## How this guide was made
+
+This guide comes from my own erasure requests to Discord between February and November 2026: the emails, Discord's replies, and the data packages I compared before and after. I wrote it with help from Claude (Anthropic's AI assistant) for legal research, structure, drafting and checking claims against sources. I also used ChatGPT for a second opinion on the legal content and to audit the helper script. Every legal point links to the law or to Discord's own published pages, and the helper script was tested against real data packages. I maintain this guide and I'm responsible for what's in it. If you find something wrong, please [open an issue](https://github.com/Technae/The-Erasure-Codex/issues) so I can fix it.
 
 ## Licence
 

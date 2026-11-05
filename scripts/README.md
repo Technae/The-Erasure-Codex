@@ -20,4 +20,6 @@ The comparison counts `(channel_id, message_id)` pairs. It shows what Discord's 
 
 **Tests:** `python3 -m unittest test_erasure_helper -v` (run from this folder) checks the script against small mock packages, including malformed ones. Please run it before submitting changes.
 
+**For maintainers:** `python3 scripts/build_full.py` (run from the repository root) rebuilds [`CODEX-FULL.md`](../CODEX-FULL.md), the whole guide in one file, from the individual pages. Run it after changing any page.
+
 See [Step 3](../docs/03-build-the-csv.md) and [Step 6](../docs/06-check-the-result.md) for a walkthrough. Licence: MIT.
