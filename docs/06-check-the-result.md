@@ -2,7 +2,7 @@
 
 [← Discord's replies, decoded](05-replies-decoded.md) · [Contents](../README.md) · [Next: Deadlines and complaints →](07-deadlines-and-complaints.md)
 
-A confirmation email tells you what Discord *submitted*, not what it deleted. The only way to know is to compare a data package from before your request with one from afterwards.
+A confirmation email tells you what Discord *submitted*, not what it deleted. Comparing a data package from before your request with one from afterwards shows which messages are no longer in the export, and spot-checking in the app shows whether they're still visible. Neither proves that every copy has been erased (see below).
 
 ## When to request the second package
 

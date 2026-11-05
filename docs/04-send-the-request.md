@@ -6,7 +6,7 @@
 
 - **Email:** `privacy@discord.com`, with `dpo@discord.com` (Discord's Data Protection Officer) in copy.
 - **Send it from the email address registered to your Discord account.** Discord uses that to confirm the request is yours.
-- **Address it to the right company.** Discord's privacy policy names **Discord Netherlands BV** as the data controller for users in the EEA, and its policies have also named it for the UK. Check the current policy at [discord.com/privacy](https://discord.com/privacy) if you're unsure.
+- **Address it to the right company.** Discord's current privacy policy names **Discord Netherlands BV** as the data controller for users in the EEA, and **Discord Inc.** for everyone else, including users in the UK. It names VeraSafe as its UK representative. Check the current policy at [discord.com/privacy](https://discord.com/privacy) if you're unsure.
 
 You can also use Discord's support form, but email gives you your own dated copy of everything, which is what you'll want if you complain later. Either way, Discord's replies come through its ticket system, and each ticket has a number. Note it down.
 
@@ -36,24 +36,39 @@ Please erase the [number] messages listed in the attached CSV file
 (channel_id, message_id), sent from my account across [number] channels.
 This includes messages in channels and direct messages that I can still
 access: being able to access a channel is not an exception under
-Article 17(3). I am relying on Article 17(1)(a) and, as I object to the
-continued processing of these messages under Article 21(1), on
+Article 17(3).
+
+I rely on Article 17(1)(a), as these messages are no longer necessary
+for the purposes for which they were collected or processed.
+
+To the extent that you keep these messages on the basis of legitimate
+interests (Article 6(1)(f)), I also object under Article 21(1), on
+grounds relating to my particular situation: [in a sentence or two, in
+your own words, why you object]. Where that objection applies, I rely on
 Article 17(1)(c).
 
 This request covers these messages only. I want to keep my account.
 Please do not delete, deactivate or disable it as part of handling this
 request.
 
-If you do not erase any of these messages, please tell me, as Article
-12(4) requires, which messages you are keeping, the legal basis on which
-you keep them, which exception under Article 17(3) or which compelling
-legitimate grounds under Article 21(1) you rely on for them, and that I
-can complain to a supervisory authority and seek a judicial remedy.
+If you do not take action on any part of this request, please give me
+your reasons and tell me that I can complain to a supervisory authority
+and seek a judicial remedy, as Article 12(4) requires.
 
-[Optional: I also object under Article 21(1) to the processing of the
-analytics and other activity data linked to my account, including the
-data in the Activity folder of my data package, and ask for its erasure
-under Article 17(1)(c).]
+To help me understand and, if necessary, challenge your decision, please
+also identify the messages or groups of messages you are keeping, the
+purposes and legal basis for keeping them, and whether you consider that
+no Article 17(1) ground applies, or rely on an exception under Article
+17(3) or another justification under Article 21(1) (including the
+establishment, exercise or defence of legal claims), and why it applies
+to those messages.
+
+[Optional: To the extent that you process the analytics and other
+activity data linked to my account, including the data in the Activity
+folder of my data package, on the basis of legitimate interests, I also
+object to that processing under Article 21(1), on grounds relating to my
+particular situation: [why you object], and ask for its erasure under
+Article 17(1)(c).]
 
 Please respond within one month of receiving this request, as
 Article 12(3) requires, and confirm in writing which messages have been
@@ -87,19 +102,33 @@ Please erase the [number] messages listed in the attached CSV file
 (channel_id, message_id), sent from my account across [number] channels.
 This includes messages in channels and direct messages that I can still
 access: being able to access a channel is not an exception under
-Article 17(3). I am relying on Article 17(1)(a) and, as I object to the
-continued processing of these messages under Article 21(1), on
+Article 17(3).
+
+I rely on Article 17(1)(a), as these messages are no longer necessary
+for the purposes for which they were collected or processed.
+
+To the extent that you keep these messages on the basis of legitimate
+interests (Article 6(1)(f)), I also object under Article 21(1), on
+grounds relating to my particular situation: [in a sentence or two, in
+your own words, why you object]. Where that objection applies, I rely on
 Article 17(1)(c).
 
 This request covers these messages only. I want to keep my account.
 Please do not delete, deactivate or disable it as part of handling this
 request.
 
-If you do not erase any of these messages, please tell me, as Article
-12(4) requires, which messages you are keeping, the legal basis on which
-you keep them, which exception under Article 17(3) or which compelling
-legitimate grounds under Article 21(1) you rely on for them, and that I
-can complain to the Information Commissioner's Office.
+If you do not take action on any part of this request, please give me
+your reasons and tell me how I can complain (to you under section 164A
+of the Data Protection Act 2018, and to the Information Commissioner)
+and seek a judicial remedy, as Article 12(4) requires.
+
+To help me understand and, if necessary, challenge your decision, please
+also identify the messages or groups of messages you are keeping, the
+purposes and legal basis for keeping them, and whether you consider that
+no Article 17(1) ground applies, or rely on an exception under Article
+17(3) or another justification under Article 21(1) (including the
+establishment, exercise or defence of legal claims), and why it applies
+to those messages.
 
 Please respond within one month of receiving this request, as
 Article 12(3) requires, and confirm in writing which messages have been
@@ -113,10 +142,15 @@ Kind regards,
 
 - [ ] Sent **from your account's email address**
 - [ ] The email says you want to **keep your account** (the templates include this line; don't remove it)
+- [ ] You've filled in **why you object** in your own words (see below), or removed the objection paragraph if you don't want to object
 - [ ] The CSV is attached, or the link works in a private browser window
 - [ ] The numbers in the email match the CSV (the `summary` command gives you both)
 - [ ] You've saved a copy of the email, the CSV, and its hash (`sha256sum messages_to_delete.csv`)
 - [ ] You've written down today's date. **The one-month deadline starts when Discord receives your request.**
+
+## Why you object, in your own words
+
+An objection under Article 21(1) has to be made "on grounds relating to your particular situation", so the template leaves a gap for you to fill in. Write a sentence or two about your own reasons. For example: the messages contain personal details you no longer want stored, they're years old and you've left those communities, or you're worried about what they reveal about you. Use your real reasons, not a stock paragraph. It doesn't need to be long or legal. If you'd rather not object, delete that paragraph: the request still stands on Article 17(1)(a).
 
 ## Tips
 

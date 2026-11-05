@@ -19,13 +19,13 @@ Discord has no button for bulk deleting your message history. If you live in the
 3. **Email privacy@discord.com from your account's email address**, citing Article 17, with the CSV attached. ([Step 4](docs/04-send-the-request.md))
 4. **Expect a template first.** Discord's first reply usually says bulk deletion isn't offered. It does have a CSV process, so keep going. ([Step 5](docs/05-replies-decoded.md))
 5. **Check the result** by comparing an old and a new data package. A confirmation email isn't proof. ([Step 6](docs/06-check-the-result.md))
-6. **Write to Discord's Data Protection Officer, then complain to your data protection authority** if Discord refuses without a legal reason or doesn't answer within a month. It's free. ([Step 7](docs/07-deadlines-and-complaints.md), [templates](docs/11-templates.md))
+6. **Optionally escalate to Discord's Data Protection Officer, then complain to your data protection authority** if Discord refuses without adequate reasons or doesn't answer within the deadline. It's free. ([Step 7](docs/07-deadlines-and-complaints.md), [templates](docs/11-templates.md))
 
 ## What to expect
 
 As of 2026, Discord's privacy team will process a CSV of message IDs, but in practice **it only deletes messages in spaces you can no longer access**: servers you've left, group chats you've left, deleted channels. Messages anywhere you can still open, including DMs, are usually left alone, and Discord won't define "access" beyond saying it's "managed dynamically". [Step 1](docs/01-how-it-works.md) explains what that means for you before you start, including what leaving a server or group chat costs you.
 
-Discord's first answer usually says bulk deletion isn't offered. That isn't the whole story, and a template reply isn't a legal refusal. Your rights don't depend on Discord having a feature for them.
+Discord's first answer usually says bulk deletion isn't offered. That isn't the whole story. A template reply isn't necessarily a complete or properly reasoned answer, even when it amounts to a refusal. Your rights don't depend on Discord having a feature for them.
 
 If all this seems like a lot of work just to use a legal right, that's worth noticing. Discord is required to *make it easy* to exercise your rights (Article 12(2)). The effort this guide asks of you is itself something you can point out to a regulator ([Templates](docs/11-templates.md#your-effort-is-evidence)).
 

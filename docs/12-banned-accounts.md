@@ -15,7 +15,7 @@ The steps are the same for both. Where something applies only to deleted or only
 
 **It covers your ordinary messages:** everyday conversations in servers, group chats and DMs.
 
-**If you're banned, it doesn't cover whatever Discord says you were banned for.** Discord can lawfully keep content connected to a ban, for example where it's needed for legal claims (Article 17(3)(e)), where a law requires it to keep or report something, or while an appeal or complaint about the ban can still be made. The templates below have an optional line that says so, so your request is about ordinary messages only.
+**If you're banned, it doesn't cover whatever Discord says you were banned for.** Discord may be able to keep particular records connected to a ban where they're needed to comply with a legal obligation (Article 17(3)(b)) or to establish, exercise or defend legal claims (Article 17(3)(e)). Records genuinely needed to deal with an actual or reasonably expected appeal may also be kept where there's a legal basis for it. But the mere possibility of an appeal doesn't automatically justify keeping everything connected with a ban. The templates below have an optional line that leaves ban-related content out, so your request is about ordinary messages only.
 
 Many people in ban-appeal communities report bans they believe were automated mistakes. If that's you, you can also ask Discord, as part of the access request, whether the decision was automated (Article 15(1)(h)). That information can help an appeal too. But the appeal itself is a separate process, outside this guide.
 
@@ -28,7 +28,7 @@ The legal test is whether Discord can still identify you:
 - **The "Deleted User" label doesn't settle it either way.** What matters is whether the messages, any identifiers Discord kept, or their context still make you identifiable by means reasonably likely to be used.
 - **If Discord has truly anonymised the data,** so it can no longer be linked to you by any reasonably likely means, the GDPR no longer applies to that data. But Discord should then be able to tell you so.
 
-**Send a formal Article 15 request, not an informal request for your data package.** An informal email may be handled as an ordinary support ticket. A formal request starts the one-month legal deadline, and if Discord ignores it or refuses without reasons, you have a clear complaint.
+**Make a clear Article 15 access request.** Say that you want a copy of your personal data, and what you need. You don't have to cite Article 15 or use legal wording for a request to count. But making it explicit, and separate from a question about Discord's data package tool, makes it harder to misread as an ordinary support question. The one-month deadline runs from when Discord receives it, and if Discord ignores it or refuses without reasons, you have a clear complaint.
 
 Add this paragraph to the templates below, where they say so:
 
@@ -131,7 +131,7 @@ Kind regards,
 [name or username]
 ```
 
-**Diary the deadline:** one month from the day you send it. If the package arrives, keep it as evidence ([Get your data package](02-get-your-data.md)) and use it to build your CSV ([Build the CSV](03-build-the-csv.md)).
+**Diary the deadline:** one month from when Discord receives it. If the package arrives, keep it as evidence ([Get your data package](02-get-your-data.md)) and use it to build your CSV ([Build the CSV](03-build-the-csv.md)).
 
 ## Step 2: Ask for your ordinary messages to be erased
 
@@ -155,9 +155,14 @@ account.]
 [Deleted accounts: the identification paragraph above.]
 
 Please erase the [number] messages listed in the attached CSV file
-(channel_id, message_id). I am relying on Article 17(1)(a) and, as I
-object to the continued processing of these messages under Article
-21(1), on Article 17(1)(c).
+(channel_id, message_id). I rely on Article 17(1)(a), as these messages
+are no longer necessary for the purposes for which they were collected
+or processed.
+
+To the extent that you keep these messages on the basis of legitimate
+interests, I also object under Article 21(1), on grounds relating to my
+particular situation: [in a sentence or two, in your own words, why you
+object]. Where that objection applies, I rely on Article 17(1)(c).
 
 [Banned accounts: This request covers my ordinary messages only. It
 does not cover any content you rely on in connection with the decision
@@ -170,11 +175,13 @@ user no longer has access to. Because my account is [disabled/deleted],
 I no longer have access to any space on Discord, so on your own
 criterion all of these messages should be processed.
 
-If you do not erase any of them, please tell me which messages you are
-keeping, the legal basis on which you keep them, and which exception
-under Article 17(3) or which compelling legitimate grounds under Article
-21(1) you rely on, and that I can complain to a supervisory authority,
-as Article 12(4) requires.
+If you do not take action on any part of this request, please give me
+your reasons and tell me that I can complain to a supervisory authority
+and seek a judicial remedy, as Article 12(4) requires. To help me
+understand your decision, please also identify the messages you are
+keeping, the purposes and legal basis for keeping them, and any
+exception under Article 17(3) or justification under Article 21(1)
+(including legal claims) you rely on.
 
 Please respond within one month, as Article 12(3) requires.
 

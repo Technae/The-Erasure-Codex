@@ -2,7 +2,7 @@
 
 [← Send the request](04-send-the-request.md) · [Contents](../README.md) · [Next: Check the result →](06-check-the-result.md)
 
-Discord's privacy team mostly replies with templates. Recognising them saves you a lot of frustration, because **a template isn't a legal refusal**. Each section below quotes the template as users have received it in 2026, explains what it means, and gives a reply you can adapt.
+Discord's privacy team mostly replies with templates. Recognising them saves you a lot of frustration. **A template isn't necessarily a complete or properly reasoned answer**, though it may still be a refusal: look at what it actually says. Does it explain what Discord won't erase, why it's keeping it, and how you can challenge the decision? Each section below quotes the template as users have received it in 2026, explains what it means, and gives a reply you can adapt.
 
 Always reply **in the same email thread**, keeping the quoted text and the `[XXXXXX-XXXXX]` tag.
 
@@ -24,10 +24,12 @@ request. Your reply mentions helping with specific messages; please
 process the attached CSV (channel_id, message_id), which lists the
 messages I want erased.
 
-If you will not erase some or all of them, please tell me which messages
-you are keeping, which exception under Article 17(3) or which compelling
-legitimate grounds under Article 21(1) you rely on, and that I can
-complain to a supervisory authority, as Article 12(4) requires.
+If you will not erase some or all of them, please give me your reasons
+and tell me that I can complain to a supervisory authority and seek a
+judicial remedy, as Article 12(4) requires. Please also say which
+messages you are keeping and what exception or other justification you
+rely on (for example under Article 17(3), or Article 21(1), including
+legal claims).
 ```
 
 ---
@@ -61,9 +63,10 @@ Thank you. Comparing my data packages from [date] and [date],
 [number] of the [number] messages I asked you to erase are still present.
 They are listed in the attached file.
 
-Please erase them, or tell me which exception under Article 17(3) or
-which compelling legitimate grounds under Article 21(1) you rely on for
-each group of messages you are keeping. Please also explain what you
+Please erase them, or explain your reasons for keeping each group of
+messages, including any exception under Article 17(3) or other
+justification under Article 21(1) (such as legal claims) that you rely
+on. Please also explain what you
 mean by spaces I "have access to", since that is not a ground for refusal
 in the GDPR.
 ```
@@ -78,7 +81,7 @@ The helper script's `compare … --remaining remaining.csv` option writes that f
 
 **What it means:** Discord won't define "access". This is the point where many people give up. Don't: you now have a clear record that Discord has refused part of your request without giving a legal reason.
 
-**Reply:** send one final, short message, escalate to the Data Protection Officer ([DPO template 1](11-templates.md#dpo-template-1-escalating-an-erasure-request)), then move on to [Step 7](07-deadlines-and-complaints.md).
+**Reply:** send one final, short message, optionally escalate to the Data Protection Officer ([DPO template 1](11-templates.md#dpo-template-1-escalating-an-erasure-request)), then move on to [Step 7](07-deadlines-and-complaints.md). Escalating doesn't restart the deadline on your original request.
 
 ```
 Thank you. You have not erased [number] of the messages I asked you to

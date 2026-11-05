@@ -10,7 +10,7 @@ If the month ends and you have neither an answer nor a notice of extension, the 
 
 Counting: a month runs from the day Discord received your request to the same date the following month. If that falls on a weekend or public holiday, it moves to the next working day.
 
-In the UK, if Discord reasonably asks you to confirm who you are, the month starts when it receives that information (Article 12A; see the [legal reference](10-legal-reference.md)).
+In the UK, Article 12A counts the month from the latest of: when Discord receives your request, when it receives identity information it reasonably asked for, or when any fee is paid. For access requests only, the clock can also pause while Discord waits for information it reasonably needs to identify what you're asking for. See the [legal reference](10-legal-reference.md).
 
 Keep a simple log:
 
@@ -28,7 +28,7 @@ However frustrating the replies get, aim your complaint at Discord as a company,
 
 ## Complaining in the EU / EEA
 
-You can complain to the data protection authority **in the country where you live** (or where you work, or where the infringement took place), even though Discord's EU company is in the Netherlands. Your authority will deal with the other authorities for you. You don't need to work out which one leads.
+You can complain to the data protection authority **in the country where you live** (or where you work, or where the infringement took place), even though Discord's EU company is in the Netherlands. In a cross-border case, the authorities involved coordinate under the GDPR's cooperation procedure, and the one you complain to isn't necessarily the one that leads. You don't need to work out which one leads yourself.
 
 - **Find your authority:** the [European Data Protection Board's list of members](https://www.edpb.europa.eu/about-edpb/about-edpb/members_en) has the website for each country. Most have an online complaint form in your language.
 - **It's free,** and you don't need a lawyer.
@@ -55,8 +55,8 @@ The process changed on **19 June 2026**. Under section 164A of the Data Protecti
 
 1. Write to Discord (reply in the same thread) saying clearly that it's **a data protection complaint under section 164A of the Data Protection Act 2018**, and what you're complaining about.
 2. Discord must **acknowledge it within 30 days**, investigate, and tell you the outcome without undue delay.
-3. If you're not satisfied with the outcome, or Discord doesn't respond, complain to the **Information Commissioner's Office (ICO)**: [ico.org.uk/make-a-complaint](https://ico.org.uk/make-a-complaint/data-protection-complaints/). Include the same evidence as above, plus your section 164A complaint and Discord's response. The ICO asks you to complain within three months of your last contact with the company.
-4. If the ICO doesn't take appropriate steps on your complaint or keep you informed, section 166 of the Data Protection Act 2018 lets you apply to the tribunal for an order requiring it to.
+3. If you're not satisfied with the outcome, or Discord doesn't respond, complain to the **Information Commissioner's Office (ICO)**: [ico.org.uk/make-a-complaint](https://ico.org.uk/make-a-complaint/data-protection-complaints/). Include the same evidence as above, plus your section 164A complaint and Discord's response. The ICO's guidance asks you to complain within three months of your last meaningful contact with the company. That's the ICO's expectation, not a legal time limit, but it's worth keeping to.
+4. If the ICO doesn't take appropriate steps on your complaint, or doesn't tell you how it's progressing within three months (and every three months after that while it's unresolved), section 166 of the Data Protection Act 2018 lets you apply to the tribunal for an order requiring it to.
 
 ## Other options
 

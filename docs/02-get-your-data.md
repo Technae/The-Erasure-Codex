@@ -5,7 +5,7 @@
 Your data package is a ZIP file from Discord with a copy of your data. You need it for two reasons:
 
 1. **It lists the IDs of the messages you've sent**, which Discord asks for in the CSV. (Some users report packages missing messages; see below.)
-2. **It's your "before" picture.** Comparing it with a later package is the only reliable way to see what was really deleted ([Step 6](06-check-the-result.md)).
+2. **It's your "before" picture.** Comparing it with a later package shows which messages are no longer in the export, and spot-checks in the app show whether they're still visible. Neither proves every copy is gone ([Step 6](06-check-the-result.md)).
 
 ## How to request it
 

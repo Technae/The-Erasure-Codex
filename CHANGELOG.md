@@ -27,11 +27,23 @@ Entries before 5 November 2026 were written up afterwards from the working notes
 - **Legal basis (page 1):** other users' interests now "point to" legitimate interests rather than proving Discord relies on them. *Why:* a fair inference, not a certainty.
 - **Compare example (page 6)** now says which packages its figures come from. *Why:* it looked inconsistent with the case study's later figure.
 
+### Changed: templates and consistency (third review)
+- **Objections now include your own reasons.** The request templates (pages 4 and 12, and DPO template 3) leave a gap to say briefly why you object, and page 4 explains what to write. *Why:* Article 21(1) requires an objection "on grounds relating to your particular situation"; just writing "I object" doesn't meet that.
+- **Article 21's legal-claims alternative** is now included wherever the guide says what Discord must show to keep processing after an objection. *Why:* Discord can also continue where processing is needed to establish, exercise or defend legal claims, not only where it shows compelling legitimate grounds.
+- **What Article 12(4) requires is now kept separate** from the extra detail the templates ask for. *Why:* Article 12(4) requires reasons and information about complaining and judicial remedies; a message-by-message explanation is a reasonable request, not a legal requirement.
+- **UK templates and legal reference:** Discord must now tell UK users about complaining to it (section 164A) and to the ICO (section 165). *Why:* UK Article 12(4) was amended on 19 June 2026.
+- **The EU complaint template** no longer assumes the problem is a missing Article 17(3) exception; it challenges Discord's unexplained decision instead. *Why:* Discord could argue that no Article 17(1) ground applies at all.
+- **DPO deadline wording on pages 11 and 12** now matches page 7: escalating doesn't restart the deadline, and the deadline runs from when Discord receives a request, not when you send it. The README's short version now says the DPO step is optional. *Why:* the pages contradicted each other.
+- **UK controller on page 4** corrected to Discord Inc., matching page 10 and Discord's current privacy policy. *Why:* page 4 still said Discord Netherlands BV.
+- **Smaller accuracy fixes:** a template reply can still be a refusal, even if it's incomplete; comparing packages isn't "the only way" to check deletion; the case study's own-accounts DM has no separate human counterparty, rather than "no third party at all"; the authority you complain to isn't necessarily the lead authority; the ICO's three-month window is its guidance, not a legal time limit; section 166 also covers later three-month periods; a clear access request doesn't need legal wording to count; and the mere possibility of a ban appeal doesn't justify keeping everything connected with a ban. *Why:* each overstated the law or the evidence.
+- **Experience report template:** stronger privacy warning (no data packages, CSVs, `--report` or `--remaining` files), two new questions, and an outcome heading that doesn't equate export changes with deletion. *Why:* GitHub issues are public.
+
 ### Changed: helper script
 - **Output is written to a temporary file first** and only put in place once the whole run succeeds. *Why:* a run that failed halfway could leave a partial CSV that looked complete, or replace an earlier file with an incomplete one.
 - **Unreadable message records now stop the run** instead of being skipped with a warning; `--allow-incomplete` continues knowingly and says so. *Why:* an erasure request or comparison built from an incomplete export shouldn't look finished.
 - **Other fixes:** CSV headers with spaces are read correctly; the `--only`/`--exclude` lists can't be overwritten; unrecognised message files and folders with messages but no channel ID are errors; other unrecognised folders get a warning; unreadable folders and corrupt ZIPs give a clean error. *Why:* all found in an independent code review.
 - `--split` is now described as messages per file, plus the header. Tests increased from 21 to 30.
+- **Checked by hand on real data:** run on the author's February and September 2026 data packages, it gave the same figures as the previous version (762,269 and 640,314 messages; 122,016 no longer in the export), with no warnings. *Why:* tests on mock packages can't cover every real export, so the stricter checks were confirmed not to reject real data.
 
 ---
 

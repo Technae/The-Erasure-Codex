@@ -12,16 +12,18 @@ Fill in the parts in square brackets, and delete anything that doesn't apply to 
 
 Discord has a Data Protection Officer, and the GDPR gives you the right to contact them about your rights (Article 38(4)). In our experience, mail to `dpo@discord.com` ends up in Discord's ordinary support queue. The case study's email to the DPO got a support template and was marked "solved" the next day, with no reply from the DPO. Users in Undiscord #429 report the same.
 
-**Write anyway.** A formal request to the DPO puts it on record that you went to the person responsible for data protection, asked for an answer under the GDPR, and gave Discord the full statutory time to reply. If the one-month deadline passes with no answer and no notice of extension, **that silence is itself an infringement by Discord** of Article 12(3), and if Discord refuses without giving reasons, of Article 12(4). Strictly speaking, the duty to answer belongs to Discord as the controller rather than to the DPO personally, but an unanswered request to the DPO is clear evidence of it. It's also some of the easiest evidence for an authority to act on, because it doesn't depend on any argument about what Discord may keep: either Discord answered in time, or it didn't.
+**Writing is optional, but useful.** It puts on record that you went to the person responsible for data protection and asked for an answer under the GDPR. It doesn't restart or extend the deadline on your original request, which still runs from when Discord received it. A genuinely new request in the same email (for example, an access request you hadn't made before) has its own one-month period.
+
+If the original deadline passes without an adequate response or a valid extension notice, that may be a failure to comply with Article 12(3) and, if Discord refuses without giving reasons, Article 12(4). The duty to answer belongs to Discord as the controller rather than to the DPO personally. An unanswered DPO escalation is useful extra evidence, but it doesn't create a separate deadline. A missed deadline is some of the easiest evidence for an authority to act on, because it doesn't depend on any argument about what Discord may keep: either Discord answered in time, or it didn't.
 
 **How to send it:**
 - **To:** `dpo@discord.com`, **Cc:** `privacy@discord.com`
 - **From** your account's registered email address
 - **Mention your earlier ticket numbers,** so the DPO's office can't treat it as a new, unrelated query
 - **One subject per email,** with the articles in the subject line. Several separate requests are harder to answer with a single template
-- **Diary the deadline:** one month from the day you send it
+- **Diary the original deadline:** one month from when Discord received your original request. A genuinely new request has its own deadline, from when Discord receives it
 
-If it gets a support template and a "solved" status, reply in the same thread (see [Step 5](05-replies-decoded.md)). That keeps the request open, and the deadline running.
+If it gets a support template and a "solved" status, reply in the same thread if further contact is useful (see [Step 5](05-replies-decoded.md)), and keep the correspondence. The ticket may reopen, but its status doesn't reset or extend the legal deadline.
 
 ---
 
@@ -63,11 +65,13 @@ already carried out.
 Please either:
 1. erase the remaining messages, which are listed in the attached file;
    or
-2. tell me, for each group of messages you are keeping, which exception
-   under Article 17(3) or which compelling legitimate grounds under
-   Article 21(1) you rely on, and why it applies, and confirm that I can
-   complain to a supervisory authority and seek a judicial remedy, as
-   Article 12(4) requires.
+2. give me your reasons, and tell me that I can complain to a
+   supervisory authority and seek a judicial remedy, as Article 12(4)
+   requires. To help me understand your decision, please also say, for
+   each group of messages you are keeping, whether you consider that no
+   Article 17(1) ground applies, or which exception under Article 17(3)
+   or other justification under Article 21(1) (including legal claims)
+   you rely on, and why it applies.
 
 As in my original request, I am asking for my messages to be erased,
 not my account. Please do not delete, deactivate or disable my account.
@@ -142,10 +146,15 @@ My account: [username], user ID [user ID], registered email [address].
    package, please tell me the purposes and legal basis, the recipients,
    and the retention period or the criteria used to decide it.
 
-2. Objection and erasure (Articles 21(1) and 17(1)(c)): I object to the
-   continued processing of this data and ask for its erasure. If Discord
-   declines, please state the compelling legitimate grounds or the
-   exception under Article 17(3) relied on, as Article 12(4) requires.
+2. Objection and erasure (Articles 21(1) and 17(1)(c)): to the extent
+   that you process this data on the basis of legitimate interests, I
+   object to that processing, on grounds relating to my particular
+   situation: [in a sentence or two, in your own words, why you object].
+   I ask for its erasure. If you do not act on this, please give me your
+   reasons and tell me that I can complain to a supervisory authority
+   and seek a judicial remedy, as Article 12(4) requires, and say what
+   compelling legitimate grounds, legal claims or Article 17(3)
+   exception you rely on.
 
 Please respond within one month, as Article 12(3) requires.
 
@@ -243,7 +252,7 @@ Kind regards,
 
 ## Complaint template: EU / EEA data protection authority
 
-Most authorities have an online form. Paste the text below into its main box, adjusting it to your case, and attach your evidence. Find your authority in the [EDPB's list of members](https://www.edpb.europa.eu/about-edpb/about-edpb/members_en). You can write in your own language: the authority will deal with the others.
+Most authorities have an online form. Paste the text below into its main box, adjusting it to your case, and attach your evidence. Find your authority in the [EDPB's list of members](https://www.edpb.europa.eu/about-edpb/about-edpb/members_en). You can write in your own language: if the case is cross-border, the authority coordinates with the others.
 
 ```
 Complaint under Article 77 GDPR
@@ -254,11 +263,11 @@ its privacy policy)
 1. Summary
 On [date] I asked Discord to erase my messages under Article 17 GDPR.
 [Number] of the [number] messages I asked to be erased have not been
-erased. Discord has not identified any exception under Article 17(3) or
-any compelling legitimate grounds under Article 21(1) for keeping them,
-and has not told me of my right to complain. [My request to Discord's
-Data Protection Officer of [date] received no reply within the one-month
-period.]
+erased. Discord has not explained why it is keeping them: whether it
+considers that no Article 17(1) ground applies, or which exception under
+Article 17(3) or other justification under Article 21(1) it relies on.
+It has not told me of my right to complain. [My escalation to Discord's
+Data Protection Officer of [date] also went unanswered.]
 
 2. What happened
 [A short timeline: date, what you sent, what Discord replied. Quote
@@ -277,8 +286,13 @@ Discord's replies exactly. For example:
   and no notice of an extension.
 - Article 12(4): no reasons given for not erasing [number] messages, and
   no information about my right to complain.
-- Article 17: messages kept without any exception under Article 17(3),
-  on the basis of an unpublished and undefined "accessible space" rule.
+- Articles 17 and 12(4): Discord has not explained whether it considers
+  the Article 17(1) grounds inapplicable or, if a ground applies, which
+  exception under Article 17(3) or justification under Article 21(1) it
+  relies on. Instead, it has relied on an unpublished and undefined
+  "accessible space" criterion, without explaining how that criterion
+  fits the GDPR or why keeping the messages is necessary for the
+  purposes concerned.
 - Article 12(2) and Recital 59: no practical way to exercise the right.
   Discord offers no deletion option, requires users to build their own
   CSV from a data package that can take weeks to arrive, and tells them
@@ -384,7 +398,7 @@ Put the figures in your complaint under Article 12(2). Specific numbers are much
 
 ## UK: complaining to Discord first (section 164A)
 
-Since 19 June 2026, UK users generally need to complain to the company before going to the ICO. The company must acknowledge the complaint within 30 days and tell you the outcome without undue delay. Reply in the same thread, or email `privacy@discord.com`:
+Since 19 June 2026, UK users can complain to the company under section 164A. The ICO says you can complain to it at any time, but recommends complaining to the company first, and in most cases will ask you to. The company must acknowledge the complaint within 30 days and tell you the outcome without undue delay. Reply in the same thread, or email `privacy@discord.com`:
 
 ```
 Subject: Data protection complaint under section 164A of the Data

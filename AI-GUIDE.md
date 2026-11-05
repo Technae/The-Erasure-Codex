@@ -65,7 +65,7 @@ If the script stops with an error, ask for the exact message rather than guessin
 
 ## Filling in templates
 
-Fill in the placeholders with the person's own details (username, user ID, email, country, numbers from the `summary` output, dates). Show them the finished email and ask them to check every detail before sending. Remind them to save a copy and note the date they sent it.
+Fill in the placeholders with the person's own details (username, user ID, email, country, numbers from the `summary` output, dates). The objection paragraph needs the person's own reasons for objecting (Article 21 requires grounds relating to their particular situation): ask them, and help them put it in a sentence or two, but don't invent reasons or reuse a stock paragraph. If they don't want to object, remove that paragraph. Show them the finished email and ask them to check every detail before sending. Remind them to save a copy and note the date they sent it.
 
 ## If something in the guide looks wrong
 
