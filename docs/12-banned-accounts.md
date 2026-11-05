@@ -17,7 +17,7 @@ The steps are the same for both. Where something applies only to deleted or only
 
 **If you're banned, it doesn't cover whatever Discord says you were banned for.** Discord may be able to keep particular records connected to a ban where they're needed to comply with a legal obligation (Article 17(3)(b)) or to establish, exercise or defend legal claims (Article 17(3)(e)). Records genuinely needed to deal with an actual or reasonably expected appeal may also be kept where there's a legal basis for it. But the mere possibility of an appeal doesn't automatically justify keeping everything connected with a ban. The templates below have an optional line that leaves ban-related content out, so your request is about ordinary messages only.
 
-Many people in ban-appeal communities report bans they believe were automated mistakes. If that's you, you can also ask Discord, as part of the access request, whether the decision was automated (Article 15(1)(h)). Discord's [Information About Local Privacy Laws](https://discord.com/terms/local-laws) page says "We do not conduct any automated decision-making". Its [privacy policy](https://discord.com/privacy), though, says Discord builds "systems and models that can be automated to more swiftly detect, categorize, and take action against prohibited content or conduct". The two can both be true (not every automated system makes the kind of decision Article 22 covers), but if your ban looks automated, it's fair to quote both and ask how your case was decided. That information can help an appeal too. But the appeal itself is a separate process, outside this guide.
+Many people in ban-appeal communities report bans they believe were automated mistakes. If that's you, you can also ask Discord, as part of the access request, whether the decision was automated. Article 15(1)(h) gives you a right to information only about decisions of the kind Article 22 covers: based solely on automated processing, with legal or similarly significant effects. The template asks that question, and separately how automated tools were used. Discord's [Information About Local Privacy Laws](https://discord.com/terms/local-laws) page says "We do not conduct any automated decision-making". Its [privacy policy](https://discord.com/privacy), though, says Discord builds "systems and models that can be automated to more swiftly detect, categorize, and take action against prohibited content or conduct". The two can both be true (not every automated system makes the kind of decision Article 22 covers), but if your ban looks automated, it's fair to quote both and ask how your case was decided. That information can help an appeal too. But the appeal itself is a separate process, outside this guide.
 
 ## Deleted accounts: can Discord still identify you?
 
@@ -75,7 +75,7 @@ So if you want your ordinary messages erased, Discord's own rule supports your r
 
 ## How to use the templates
 
-Choose the words in square brackets that fit, such as **[disabled/deleted]**, and delete the rest. Lines marked **[Banned accounts: …]** or **[Deleted accounts: …]** are only for that case. UK users: change "GDPR" to "UK GDPR" and "Discord Netherlands BV" to "Discord Inc.", and for complaints see the [UK steps](11-templates.md#uk-complaining-to-discord-first-section-164a) (complaints to the ICO are now under section 165 of the Data Protection Act 2018, not Article 77).
+Choose the words in square brackets that fit, such as **[disabled/deleted]**, and delete the rest. Lines marked **[Banned accounts: …]** or **[Deleted accounts: …]** are only for that case. UK users: change "GDPR" to "UK GDPR" and "Discord Netherlands BV" to "Discord Inc.", replace the Article 12(4) sentence with the UK wording below, and for complaints see the [UK steps](11-templates.md#uk-complaining-to-discord-first-section-164a) (complaints to the ICO are now under section 165 of the Data Protection Act 2018, not Article 77).
 
 ## Step 1: Ask for your data (access request)
 
@@ -120,8 +120,12 @@ Please provide:
    basis and retention period for keeping them. If you hold none,
    please say so;
 4. [Banned accounts, optional: whether the decision to disable my
-   account involved automated decision-making, and if so, meaningful
-   information about the logic involved (Article 15(1)(h)).]
+   account was based solely on automated processing, including
+   profiling, with legal or similarly significant effects for me
+   (Article 22); if so, the information Article 15(1)(h) requires,
+   including meaningful information about the logic involved and the
+   significance and envisaged consequences. If not, please say briefly
+   how automated tools were used in reaching the decision.]
 
 Please respond within one month, as Article 12(3) requires. If you need
 more information to confirm my identity, please tell me what your
@@ -135,7 +139,7 @@ Kind regards,
 
 ## Step 2: Ask for your ordinary messages to be erased
 
-Once you have your data package, build the CSV as usual ([Build the CSV](03-build-the-csv.md)). If you're banned and know which channel or messages your ban relates to, leave them out with the script's `--exclude` option. That makes it clear you're not asking for those to be erased.
+Once you have your data package, build the CSV as usual ([Build the CSV](03-build-the-csv.md)). If you're banned and know which channels your ban relates to, leave those channels out with the script's `--exclude` option. That makes it clear you're not asking for those to be erased. `--exclude` works on whole channels. To leave out only particular messages in a channel you otherwise want included, delete those rows from the CSV in a spreadsheet or text editor before sending it, keeping the header line.
 
 ```
 Subject: Erasure request under Article 17 GDPR – [banned/deleted]
@@ -187,6 +191,19 @@ Please respond within one month, as Article 12(3) requires.
 
 Kind regards,
 [name or username]
+```
+
+UK users: replace the paragraph that begins "If you do not take action" with:
+
+```
+If you do not take action on any part of this request, please give me
+your reasons and tell me how I can complain (to you under section 164A
+of the Data Protection Act 2018, and to the Information Commissioner)
+and seek a judicial remedy, as Article 12(4) UK GDPR requires. To help
+me understand your decision, please also identify the messages you are
+keeping, the purposes and legal basis for keeping them, and any
+exception under Article 17(3) or justification under Article 21(1)
+(including legal claims) you rely on.
 ```
 
 **Checking the result:** without account access, the only way to check is to make another access request later and compare the two packages ([Check the result](06-check-the-result.md)). Some users have reported that messages from banned accounts disappear on their own over time, so compare carefully and note the dates.

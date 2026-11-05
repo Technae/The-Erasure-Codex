@@ -72,7 +72,7 @@ Guide them to run the script on their own computer. Don't ask them to upload the
 3. Give them one command at a time from [page 3](https://github.com/Technae/The-Erasure-Codex/blob/main/docs/03-build-the-csv.md), starting with `summary`, and ask them to paste the output back.
 4. Explain what each output means before the next step.
 
-If the script stops with an error, ask for the exact message rather than guessing. If it stops because some message records can't be read, `--allow-incomplete` lets it continue, but explain first that those messages will be left out of the CSV, and suggest reporting the error as an issue. If the terminal is too much for them, [Option B](https://github.com/Technae/The-Erasure-Codex/blob/main/docs/03-build-the-csv.md#option-b-ishnzs-bulk_deletion_helper) is an alternative. Never suggest tools that ask for their Discord token or password.
+If the script stops with an error, ask for the exact message rather than guessing. If it stops because some message records can't be read, `--allow-incomplete` lets it continue, but explain first that those messages (possibly whole channels) will be left out of the CSV, and suggest reporting the error as an issue. If the terminal is too much for them, [Option B](https://github.com/Technae/The-Erasure-Codex/blob/main/docs/03-build-the-csv.md#option-b-ishnzs-bulk_deletion_helper) is an alternative. Never suggest tools that ask for their Discord token or password.
 
 ## Filling in templates
 
@@ -180,7 +180,7 @@ If you're in the **EU or EEA**, the GDPR applies. If you're in the **UK**, the U
 - **The right to object (Article 21).** Where a company relies on "legitimate interests", you can object, on grounds relating to your particular situation (say briefly why, in your own words). Discord's replies refer to other users' legitimate interests when it keeps your messages, though it hasn't clearly said which legal basis it relies on. It must then stop unless it can show *compelling* legitimate grounds that override your interests, rights and freedoms, or that the processing is needed to establish, exercise or defend legal claims.
 - **The right to a proper answer (Article 12).** Discord must reply within one month. If it doesn't do what you asked, it must tell you why and that you can complain to a data protection authority or a court. Requests are free.
 
-Article 17(3) lists specific exceptions to the right to erasure: freedom of expression and information, a legal obligation, public health, archiving or research, and legal claims. A company can also argue that none of the Article 17(1) grounds applies in the first place, and a few other rules can limit requests (for example, where a request is manifestly excessive). But an unpublished "accessible space" rule isn't a statutory exception. "Other users would like to keep reading your messages" isn't on that list as such. Discord might try to argue that it falls under freedom of expression and information, or that it's a compelling ground under Article 21, but the replies quoted in this guide's [case study](https://github.com/Technae/The-Erasure-Codex/blob/main/docs/09-case-study.md) don't cite any of these, or any article at all.
+Article 17(3) lists specific exceptions to the right to erasure: freedom of expression and information, a legal obligation or a task carried out in the public interest or in the exercise of official authority, public health, archiving or research, and legal claims. A company can also argue that none of the Article 17(1) grounds applies in the first place, and a few other rules can limit requests (for example, where a request is manifestly excessive). But an unpublished "accessible space" rule isn't a statutory exception. "Other users would like to keep reading your messages" isn't on that list as such. Discord might try to argue that it falls under freedom of expression and information, or that it's a compelling ground under Article 21, but the replies quoted in this guide's [case study](https://github.com/Technae/The-Erasure-Codex/blob/main/docs/09-case-study.md) don't cite any of these, or any article at all.
 
 ### Which erasure ground applies?
 
@@ -368,7 +368,7 @@ On Windows, use `python` or `py` instead of `python3` if that's what works.
 | `--split 100000` | Split into several files of at most 100,000 messages each, plus the header line (`messages_to_delete_part1.csv`, `_part2`, …), if one file is too big to send |
 | `--no-header` | Leave out the `channel_id,message_id` header line |
 | `--force` | Overwrite an output file that already exists. Without it, the script won't replace an existing file, and it never writes over the package itself or over the `--only`/`--exclude` lists |
-| `--allow-incomplete` | Only if the script stops because some message records can't be read: write the CSV anyway, leaving those records out. It warns you how many. Please also [open an issue](https://github.com/Technae/The-Erasure-Codex/issues) so the script can be fixed |
+| `--allow-incomplete` | Only if the script stops because some message records can't be read: write the CSV anyway, leaving those records out. It warns you how many, and names any channel where no record could be read (that whole channel is left out). Please also [open an issue](https://github.com/Technae/The-Erasure-Codex/issues) so the script can be fixed |
 
 To find a channel's ID in Discord, turn on **User Settings → Advanced → Developer Mode**, then right-click the channel or DM and choose **Copy Channel ID**.
 
@@ -501,7 +501,7 @@ Kind regards,
 
 ## Template: UK
 
-The UK version is the same, with two changes: cite the **UK GDPR**, and say you're in the UK.
+The UK version follows the same structure, but cites the **UK GDPR**, says you're in the UK, and uses the UK complaint routes that amended Article 12(4) requires (a complaint to Discord under section 164A and to the Information Commissioner).
 
 ```
 Subject: Erasure request under Article 17 UK GDPR – [your username]
@@ -590,6 +590,16 @@ An objection under Article 21(1) has to be made "on grounds relating to your par
 Discord's privacy team mostly replies with templates. Recognising them saves you a lot of frustration. **A template isn't necessarily a complete or properly reasoned answer**, though it may still be a refusal: look at what it actually says. Does it explain what Discord won't erase, why it's keeping it, and how you can challenge the decision? Each section below quotes the template as users have received it in 2026, explains what it means, and gives a reply you can adapt.
 
 Always reply **in the same email thread**, keeping the quoted text and the `[XXXXXX-XXXXX]` tag.
+
+**UK users:** these templates use the EU wording for Article 12(4). Wherever a template says *"tell me that I can complain to a supervisory authority and seek a judicial remedy, as Article 12(4) requires"*, write instead:
+
+```
+tell me how I can complain (to you under section 164A of the Data
+Protection Act 2018, and to the Information Commissioner) and seek a
+judicial remedy, as Article 12(4) UK GDPR requires
+```
+
+Since 19 June 2026, UK Article 12(4) requires the company to mention both of those complaint routes.
 
 ---
 
@@ -1044,7 +1054,7 @@ A quick reference to the provisions this guide relies on. Most article numbers a
 | **17(1)(a)** | Erasure when the data is no longer necessary for the purpose it was collected or processed for | The question is whether keeping your messages is still necessary for Discord's purpose. Your request is relevant, but doesn't settle it alone |
 | **17(1)(c)** | Erasure when you object under Article 21(1) and there are no overriding legitimate grounds for the processing | Discord's replies describe "legitimate interests" for keeping messages for others |
 | **17(1)(d)** | Erasure when the data has been processed unlawfully | A fallback, if Discord has no valid legal basis at all |
-| **17(3)** | The specific exceptions: freedom of expression and information, legal obligation, public interest in public health, archiving or research, legal claims | The replies quoted in the case study cite none of them. A company can also argue that no 17(1) ground applies |
+| **17(3)** | The specific exceptions: freedom of expression and information, legal obligation or a public-interest or official-authority task, public interest in public health, archiving or research, legal claims | The replies quoted in the case study cite none of them. A company can also argue that no 17(1) ground applies |
 | **21(1)** | Right to object, on grounds relating to your particular situation, to processing based on legitimate interests (or a public task); the company must stop unless it shows *compelling* legitimate grounds that override your interests, rights and freedoms, or that the processing is needed to establish, exercise or defend legal claims | Make the objection explicit, and give your own reasons briefly ([Step 4](https://github.com/Technae/The-Erasure-Codex/blob/main/docs/04-send-the-request.md#why-you-object-in-your-own-words)) |
 | **25** | Data protection by design and by default | The argument that a platform holding this much data should be designed so that erasure works at that scale. The law doesn't prescribe a particular feature, only that the right is effective |
 | **38(4)** | You can contact the Data Protection Officer about your rights | Discord's DPO address feeds into its general support queue |
@@ -1092,6 +1102,16 @@ This page summarises the law for orientation. It doesn't cover every exception o
 This page collects templates for the later stages: writing to **Discord's Data Protection Officer (DPO)**, and **complaining to a data protection authority**. For the first request, see [Step 4](https://github.com/Technae/The-Erasure-Codex/blob/main/docs/04-send-the-request.md). For replies to Discord's support templates, see [Step 5](https://github.com/Technae/The-Erasure-Codex/blob/main/docs/05-replies-decoded.md).
 
 Fill in the parts in square brackets, and delete anything that doesn't apply to you.
+
+**UK users:** the DPO templates use the EU wording for Article 12(4). Wherever a template says *"tell me that I can complain to a supervisory authority and seek a judicial remedy, as Article 12(4) requires"*, write instead:
+
+```
+tell me how I can complain (to you under section 164A of the Data
+Protection Act 2018, and to the Information Commissioner) and seek a
+judicial remedy, as Article 12(4) UK GDPR requires
+```
+
+Since 19 June 2026, UK Article 12(4) requires the company to mention both of those complaint routes. Also change "GDPR" to "UK GDPR" and the controller to "Discord Inc.".
 
 ---
 
@@ -1564,7 +1584,7 @@ The steps are the same for both. Where something applies only to deleted or only
 
 **If you're banned, it doesn't cover whatever Discord says you were banned for.** Discord may be able to keep particular records connected to a ban where they're needed to comply with a legal obligation (Article 17(3)(b)) or to establish, exercise or defend legal claims (Article 17(3)(e)). Records genuinely needed to deal with an actual or reasonably expected appeal may also be kept where there's a legal basis for it. But the mere possibility of an appeal doesn't automatically justify keeping everything connected with a ban. The templates below have an optional line that leaves ban-related content out, so your request is about ordinary messages only.
 
-Many people in ban-appeal communities report bans they believe were automated mistakes. If that's you, you can also ask Discord, as part of the access request, whether the decision was automated (Article 15(1)(h)). Discord's [Information About Local Privacy Laws](https://discord.com/terms/local-laws) page says "We do not conduct any automated decision-making". Its [privacy policy](https://discord.com/privacy), though, says Discord builds "systems and models that can be automated to more swiftly detect, categorize, and take action against prohibited content or conduct". The two can both be true (not every automated system makes the kind of decision Article 22 covers), but if your ban looks automated, it's fair to quote both and ask how your case was decided. That information can help an appeal too. But the appeal itself is a separate process, outside this guide.
+Many people in ban-appeal communities report bans they believe were automated mistakes. If that's you, you can also ask Discord, as part of the access request, whether the decision was automated. Article 15(1)(h) gives you a right to information only about decisions of the kind Article 22 covers: based solely on automated processing, with legal or similarly significant effects. The template asks that question, and separately how automated tools were used. Discord's [Information About Local Privacy Laws](https://discord.com/terms/local-laws) page says "We do not conduct any automated decision-making". Its [privacy policy](https://discord.com/privacy), though, says Discord builds "systems and models that can be automated to more swiftly detect, categorize, and take action against prohibited content or conduct". The two can both be true (not every automated system makes the kind of decision Article 22 covers), but if your ban looks automated, it's fair to quote both and ask how your case was decided. That information can help an appeal too. But the appeal itself is a separate process, outside this guide.
 
 ## Deleted accounts: can Discord still identify you?
 
@@ -1622,7 +1642,7 @@ So if you want your ordinary messages erased, Discord's own rule supports your r
 
 ## How to use the templates
 
-Choose the words in square brackets that fit, such as **[disabled/deleted]**, and delete the rest. Lines marked **[Banned accounts: …]** or **[Deleted accounts: …]** are only for that case. UK users: change "GDPR" to "UK GDPR" and "Discord Netherlands BV" to "Discord Inc.", and for complaints see the [UK steps](https://github.com/Technae/The-Erasure-Codex/blob/main/docs/11-templates.md#uk-complaining-to-discord-first-section-164a) (complaints to the ICO are now under section 165 of the Data Protection Act 2018, not Article 77).
+Choose the words in square brackets that fit, such as **[disabled/deleted]**, and delete the rest. Lines marked **[Banned accounts: …]** or **[Deleted accounts: …]** are only for that case. UK users: change "GDPR" to "UK GDPR" and "Discord Netherlands BV" to "Discord Inc.", replace the Article 12(4) sentence with the UK wording below, and for complaints see the [UK steps](https://github.com/Technae/The-Erasure-Codex/blob/main/docs/11-templates.md#uk-complaining-to-discord-first-section-164a) (complaints to the ICO are now under section 165 of the Data Protection Act 2018, not Article 77).
 
 ## Step 1: Ask for your data (access request)
 
@@ -1667,8 +1687,12 @@ Please provide:
    basis and retention period for keeping them. If you hold none,
    please say so;
 4. [Banned accounts, optional: whether the decision to disable my
-   account involved automated decision-making, and if so, meaningful
-   information about the logic involved (Article 15(1)(h)).]
+   account was based solely on automated processing, including
+   profiling, with legal or similarly significant effects for me
+   (Article 22); if so, the information Article 15(1)(h) requires,
+   including meaningful information about the logic involved and the
+   significance and envisaged consequences. If not, please say briefly
+   how automated tools were used in reaching the decision.]
 
 Please respond within one month, as Article 12(3) requires. If you need
 more information to confirm my identity, please tell me what your
@@ -1682,7 +1706,7 @@ Kind regards,
 
 ## Step 2: Ask for your ordinary messages to be erased
 
-Once you have your data package, build the CSV as usual ([Build the CSV](https://github.com/Technae/The-Erasure-Codex/blob/main/docs/03-build-the-csv.md)). If you're banned and know which channel or messages your ban relates to, leave them out with the script's `--exclude` option. That makes it clear you're not asking for those to be erased.
+Once you have your data package, build the CSV as usual ([Build the CSV](https://github.com/Technae/The-Erasure-Codex/blob/main/docs/03-build-the-csv.md)). If you're banned and know which channels your ban relates to, leave those channels out with the script's `--exclude` option. That makes it clear you're not asking for those to be erased. `--exclude` works on whole channels. To leave out only particular messages in a channel you otherwise want included, delete those rows from the CSV in a spreadsheet or text editor before sending it, keeping the header line.
 
 ```
 Subject: Erasure request under Article 17 GDPR – [banned/deleted]
@@ -1734,6 +1758,19 @@ Please respond within one month, as Article 12(3) requires.
 
 Kind regards,
 [name or username]
+```
+
+UK users: replace the paragraph that begins "If you do not take action" with:
+
+```
+If you do not take action on any part of this request, please give me
+your reasons and tell me how I can complain (to you under section 164A
+of the Data Protection Act 2018, and to the Information Commissioner)
+and seek a judicial remedy, as Article 12(4) UK GDPR requires. To help
+me understand your decision, please also identify the messages you are
+keeping, the purposes and legal basis for keeping them, and any
+exception under Article 17(3) or justification under Article 21(1)
+(including legal claims) you rely on.
 ```
 
 **Checking the result:** without account access, the only way to check is to make another access request later and compare the two packages ([Check the result](https://github.com/Technae/The-Erasure-Codex/blob/main/docs/06-check-the-result.md)). Some users have reported that messages from banned accounts disappear on their own over time, so compare carefully and note the dates.
@@ -1833,8 +1870,9 @@ Use the general [EU complaint template](https://github.com/Technae/The-Erasure-C
 A small, dependency-free Python 3 script for working with a Discord data package when making an erasure request.
 
 - Reads the package **directly from the .zip** (or an extracted folder) and never changes it: it refuses to write output over the package or into an extracted package folder
-- Stops with a clear error if a file or message record isn't in a format it recognises, rather than reporting a smaller count (`--allow-incomplete` overrides this for unreadable records, and says so)
-- Writes output to a temporary file and only puts it in place once the whole run has succeeded, so a failed run never leaves a partial CSV or damages an earlier one
+- Stops with a clear error if a file or message record isn't in a format it recognises, rather than reporting a smaller count (`--allow-incomplete` overrides this for unreadable records, including a channel where no record can be read, and says so)
+- Only accepts real channel and message IDs (digits only). If a `channel.json` has an invalid ID, it falls back to the folder name, or stops if that isn't an ID either
+- Writes output to temporary files and only puts them in place once the whole run has succeeded. When there are several files, they go in together: if one can't be put in place, the others are rolled back. So a failed run never leaves a partial CSV or damages an earlier one
 - Works with both the current JSON layout and older CSV layouts
 - Doesn't connect to the internet, and never needs your token or password
 

@@ -150,7 +150,92 @@ class HelperTests(unittest.TestCase):
         pkg = make_zip(self.p("noid.zip"), files)
         code, _, err = run("summary", pkg)
         self.assertNotEqual(code, 0)
-        self.assertIn("has a message ID", err)
+        self.assertIn("no message ID could be read", err)
+
+    def test_allow_incomplete_covers_a_channel_with_no_readable_ids(self):
+        files = json_files({DM: (1, ["10", "11"]), SERVER: (0, ["20"])})
+        files[f"Messages/c{SERVER}/messages.json"] = json.dumps(
+            [{"MessageId": 20}, {"MessageId": 21}]).encode()
+        pkg = make_zip(self.p("onebad.zip"), files)
+        out = self.p("ok.csv")
+        code, _, err = run("csv", pkg, "-o", out, "--allow-incomplete")
+        self.assertEqual(code, 0, err)
+        self.assertIn("INCOMPLETE", err)
+        self.assertIn("left out entirely", err)
+        self.assertEqual(read_rows(out), [["channel_id", "message_id"], [DM, "10"], [DM, "11"]])
+        code, _, err = run("summary", pkg, "--allow-incomplete")
+        self.assertEqual(code, 0, err)
+        self.assertIn("INCOMPLETE", err)
+
+    def test_invalid_channel_id_in_channel_json_falls_back_to_folder(self):
+        files = json_files({DM: (1, ["10"])})
+        files[f"Messages/c{DM}/channel.json"] = json.dumps(
+            {"id": "not-a-channel-id", "type": 1}).encode()
+        pkg = make_zip(self.p("badcid.zip"), files)
+        out = self.p("cid.csv")
+        code, _, err = run("csv", pkg, "-o", out)
+        self.assertEqual(code, 0, err)
+        self.assertIn("isn't a valid channel ID", err)
+        self.assertEqual(read_rows(out), [["channel_id", "message_id"], [DM, "10"]])
+
+    def test_invalid_channel_id_with_no_usable_folder_name_is_an_error(self):
+        files = {"Messages/index.json": b"{}",
+                 "Messages/somefolder/channel.json": json.dumps(
+                     {"id": "not-a-channel-id", "type": 1}).encode(),
+                 "Messages/somefolder/messages.json": json.dumps([{"ID": 10}]).encode()}
+        pkg = make_zip(self.p("badcid2.zip"), files)
+        out = self.p("cid2.csv")
+        code, _, err = run("csv", pkg, "-o", out)
+        self.assertNotEqual(code, 0)
+        self.assertIn("no readable channel ID", err)
+        self.assertNotIn("not-a-channel-id,", err)
+        self.assertFalse(os.path.exists(out))
+
+    def test_non_ascii_digits_are_not_ids(self):
+        files = json_files({DM: (1, ["10"])})
+        files[f"Messages/c{DM}/messages.json"] = json.dumps(
+            [{"ID": 10}, {"ID": "\u0661\u0662"}]).encode()
+        pkg = make_zip(self.p("arabic.zip"), files)
+        code, _, err = run("summary", pkg)
+        self.assertNotEqual(code, 0)
+        self.assertIn("no valid", err)
+
+    def test_folder_as_output_is_refused_even_with_force(self):
+        pkg = make_zip(self.p("pkg.zip"), json_files({DM: (1, ["10", "11", "12"])}))
+        out = self.p("split.csv")
+        first = self.p("split_part1.csv")
+        with open(first, "w") as fh:
+            fh.write("keep me\n")
+        os.mkdir(self.p("split_part2.csv"))
+        code, _, err = run("csv", pkg, "-o", out, "--split", "2", "--force")
+        self.assertNotEqual(code, 0)
+        self.assertIn("is a folder", err)
+        self.assertNotIn("Traceback", err)
+        self.assertEqual(read_bytes(first), b"keep me\n")
+
+    def test_failed_commit_rolls_back_earlier_files(self):
+        sys.path.insert(0, os.path.dirname(SCRIPT))
+        import erasure_helper as eh
+        first, second = self.p("a.csv"), self.p("b.csv")
+        with open(first, "w") as fh:
+            fh.write("old\n")
+        with self.assertRaises(eh.PackageError):
+            with eh.Outputs() as outs:
+                outs.open(first).write("new\n")
+                outs.open(second).write("new\n")
+                os.mkdir(second)            # appears after the checks ran
+                outs.commit()
+        self.assertEqual(read_bytes(first), b"old\n")
+        self.assertTrue(os.path.isdir(second))
+        leftovers = [f for f in os.listdir(self.d) if f.endswith((".tmp", ".bak"))]
+        self.assertEqual(leftovers, [])
+
+    def test_missing_output_folder_gives_a_clean_error(self):
+        pkg = make_zip(self.p("pkg2.zip"), json_files({DM: (1, ["10"])}))
+        code, _, err = run("csv", pkg, "-o", self.p("nowhere/out.csv"))
+        self.assertNotEqual(code, 0)
+        self.assertIn("error:", err)
+        self.assertNotIn("Traceback", err)
 
     def test_skipped_records_stop_the_run(self):
         files = json_files({DM: (1, ["1"])})

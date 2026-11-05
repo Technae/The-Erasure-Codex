@@ -45,8 +45,23 @@ class PackageError(Exception):
     """The package isn't in a format this script can read reliably."""
 
 
+_warned = set()
+
+
 def warn(msg):
-    print(f"warning: {msg}", file=sys.stderr)
+    if msg not in _warned:              # the csv command can read a package twice
+        _warned.add(msg)
+        print(f"warning: {msg}", file=sys.stderr)
+
+
+def is_id(s):
+    """A Discord ID: ASCII digits only (str.isdigit() also accepts other scripts)."""
+    return bool(re.fullmatch(r"[0-9]+", s))
+
+
+def is_channel_id(s):
+    """A channel ID, with the same rule as for channel folder names."""
+    return bool(re.fullmatch(r"[0-9]{15,21}", s))
 
 
 class Package:
@@ -143,14 +158,12 @@ class Package:
                     "changed; please open an issue so the script can be updated")
             for msg in data:
                 mid = msg.get("ID", msg.get("id")) if isinstance(msg, dict) else None
-                if mid is not None and str(mid).strip().isdigit():
+                if mid is not None and is_id(str(mid).strip()):
                     ids.append(str(mid).strip())
                 else:
                     self.skipped_records += 1
             if data and not ids:
-                raise PackageError(
-                    f"none of the {len(data)} records in {name} has a message ID. "
-                    "The export format may have changed; please open an issue")
+                self.unreadable_files.append(name)    # no record had an ID
         else:
             try:
                 text = self._read(name).decode("utf-8-sig")
@@ -165,12 +178,16 @@ class Package:
                         f"{name} in {self.path} has no ID column (columns: "
                         f"{', '.join(fields) or 'none'}). Please open an issue")
                 return ids
+            rows = 0
             for row in reader:
                 mid = (row.get("ID") or row.get("id") or "").strip()
-                if mid.isdigit():
+                if is_id(mid):
                     ids.append(mid)
                 else:
                     self.skipped_records += 1
+                rows += 1
+            if rows and not ids:
+                self.unreadable_files.append(name)
         return ids
 
     def channels(self):
@@ -180,7 +197,7 @@ class Package:
         counted in self.duplicates.
         """
         self.skipped_records, self.duplicates, self.missing_files = 0, 0, []
-        self.unknown_folders = []
+        self.unknown_folders, self.unreadable_files = [], []
         folders = OrderedDict()
         for n in self._names:
             if not n.startswith(self._prefix):
@@ -196,8 +213,12 @@ class Package:
                 try:
                     info = self._read_json(base + "channel.json")
                     if isinstance(info, dict):
-                        if info.get("id") is not None:
-                            channel_id = str(info["id"])
+                        raw = info.get("id")
+                        if raw is not None and is_channel_id(str(raw).strip()):
+                            channel_id = str(raw).strip()
+                        elif raw is not None:
+                            warn(f"{base}channel.json has an ID that isn't a valid "
+                                 f"channel ID ({str(raw)[:40]!r}); using the folder name")
                         t = info.get("type")
                         if isinstance(t, int):
                             channel_type = CHANNEL_TYPES.get(t, str(t))
@@ -207,7 +228,7 @@ class Package:
                     warn(f"couldn't read {base}channel.json; using the folder name")
             has_messages = "messages.json" in files or "messages.csv" in files
             if channel_id is None:
-                m = re.fullmatch(r"c?(\d{15,21})", folder)
+                m = re.fullmatch(r"c?([0-9]{15,21})", folder)
                 if not m:
                     if has_messages:
                         raise PackageError(
@@ -247,6 +268,17 @@ class Package:
         Call after reading. Skipped records make the result incomplete, so
         they're an error unless allow_incomplete is set.
         """
+        if self.unreadable_files:
+            n, first = len(self.unreadable_files), self.unreadable_files[0]
+            if not allow_incomplete:
+                raise PackageError(
+                    f"{self.path}: no message ID could be read in {n} message "
+                    f"files (e.g. {first}). The export format may have changed. "
+                    "Nothing was written. Please open an issue; or rerun with "
+                    "--allow-incomplete to continue without those channels")
+            warn(f"{self.path}: INCOMPLETE: no message ID could be read in {n} "
+                 f"message files (e.g. {first}), so those channels are left out "
+                 "entirely. The export format may have changed; please open an issue")
         if self.skipped_records:
             if not allow_incomplete:
                 raise PackageError(
@@ -293,14 +325,17 @@ def check_outputs(outputs, packages, force, inputs=()):
                          "output name, so the package isn't overwritten")
         if r in protected:
             sys.exit(f"error: {out} is also an input file. Choose another output name")
+        if os.path.isdir(r):
+            sys.exit(f"error: {out} is a folder. Give a file name for the output")
         if os.path.exists(r) and not force:
             sys.exit(f"error: {out} already exists. Use --force to overwrite it")
 
 
 class Outputs:
     """Write output files under temporary names, and only move them into
-    place when commit() is called. If anything fails first, the temporary
-    files are removed and existing files are left as they were."""
+    place when commit() is called. If anything fails, before or during the
+    commit, the temporary files are removed and existing files are left as
+    they were."""
 
     def __init__(self):
         self._files = []        # (final path, temp path, file handle)
@@ -314,10 +349,51 @@ class Outputs:
         return fh
 
     def commit(self):
+        """Move every file into place, or none of them.
+
+        Existing files are first moved aside to backup names. If any step
+        fails, the new files already installed are removed, the backups are
+        put back, and a PackageError is raised.
+        """
         for _final, _tmp, fh in self._files:
             fh.close()
-        for final, tmp, _fh in self._files:
-            os.replace(tmp, final)
+        done = []                       # (final, backup or None), installed so far
+        try:
+            for final, tmp, _fh in self._files:
+                backup = None
+                if os.path.lexists(final):
+                    if os.path.isdir(final):
+                        raise OSError(f"{final} is a folder")
+                    fd, backup = tempfile.mkstemp(
+                        dir=os.path.dirname(os.path.abspath(final)),
+                        prefix="." + os.path.basename(final) + ".", suffix=".bak")
+                    os.close(fd)
+                    os.replace(final, backup)
+                try:
+                    os.replace(tmp, final)
+                except OSError:
+                    if backup:
+                        os.replace(backup, final)
+                    raise
+                done.append((final, backup))
+        except OSError as e:
+            for final, backup in reversed(done):
+                try:
+                    if backup:
+                        os.replace(backup, final)
+                    else:
+                        os.remove(final)
+                except OSError:
+                    warn(f"couldn't restore {final}"
+                         + (f"; the earlier version is in {backup}" if backup else ""))
+            raise PackageError(f"couldn't write the output files ({e}). "
+                               "No output files were changed")
+        for _final, backup in done:
+            if backup:
+                try:
+                    os.remove(backup)
+                except OSError:
+                    warn(f"couldn't remove the backup file {backup}")
         self._files = []
 
     def __enter__(self):
@@ -338,7 +414,7 @@ def load_id_set(path):
     ids = set()
     with open(path, encoding="utf-8-sig", newline="") as fh:
         for row in csv.reader(fh):
-            if row and row[0].strip().isdigit():
+            if row and is_id(row[0].strip()):
                 ids.add(row[0].strip())
     return ids
 
@@ -536,6 +612,8 @@ def main():
     try:
         args.func(args)
     except PackageError as e:
+        sys.exit(f"error: {e}")
+    except OSError as e:                # e.g. the output folder doesn't exist
         sys.exit(f"error: {e}")
 
 

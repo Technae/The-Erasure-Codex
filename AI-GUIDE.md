@@ -62,7 +62,7 @@ Guide them to run the script on their own computer. Don't ask them to upload the
 3. Give them one command at a time from [page 3](docs/03-build-the-csv.md), starting with `summary`, and ask them to paste the output back.
 4. Explain what each output means before the next step.
 
-If the script stops with an error, ask for the exact message rather than guessing. If it stops because some message records can't be read, `--allow-incomplete` lets it continue, but explain first that those messages will be left out of the CSV, and suggest reporting the error as an issue. If the terminal is too much for them, [Option B](docs/03-build-the-csv.md#option-b-ishnzs-bulk_deletion_helper) is an alternative. Never suggest tools that ask for their Discord token or password.
+If the script stops with an error, ask for the exact message rather than guessing. If it stops because some message records can't be read, `--allow-incomplete` lets it continue, but explain first that those messages (possibly whole channels) will be left out of the CSV, and suggest reporting the error as an issue. If the terminal is too much for them, [Option B](docs/03-build-the-csv.md#option-b-ishnzs-bulk_deletion_helper) is an alternative. Never suggest tools that ask for their Discord token or password.
 
 ## Filling in templates
 

@@ -53,7 +53,7 @@ On Windows, use `python` or `py` instead of `python3` if that's what works.
 | `--split 100000` | Split into several files of at most 100,000 messages each, plus the header line (`messages_to_delete_part1.csv`, `_part2`, …), if one file is too big to send |
 | `--no-header` | Leave out the `channel_id,message_id` header line |
 | `--force` | Overwrite an output file that already exists. Without it, the script won't replace an existing file, and it never writes over the package itself or over the `--only`/`--exclude` lists |
-| `--allow-incomplete` | Only if the script stops because some message records can't be read: write the CSV anyway, leaving those records out. It warns you how many. Please also [open an issue](https://github.com/Technae/The-Erasure-Codex/issues) so the script can be fixed |
+| `--allow-incomplete` | Only if the script stops because some message records can't be read: write the CSV anyway, leaving those records out. It warns you how many, and names any channel where no record could be read (that whole channel is left out). Please also [open an issue](https://github.com/Technae/The-Erasure-Codex/issues) so the script can be fixed |
 
 To find a channel's ID in Discord, turn on **User Settings → Advanced → Developer Mode**, then right-click the channel or DM and choose **Copy Channel ID**.
 

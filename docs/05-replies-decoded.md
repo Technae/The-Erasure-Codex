@@ -6,6 +6,16 @@ Discord's privacy team mostly replies with templates. Recognising them saves you
 
 Always reply **in the same email thread**, keeping the quoted text and the `[XXXXXX-XXXXX]` tag.
 
+**UK users:** these templates use the EU wording for Article 12(4). Wherever a template says *"tell me that I can complain to a supervisory authority and seek a judicial remedy, as Article 12(4) requires"*, write instead:
+
+```
+tell me how I can complain (to you under section 164A of the Data
+Protection Act 2018, and to the Information Commissioner) and seek a
+judicial remedy, as Article 12(4) UK GDPR requires
+```
+
+Since 19 June 2026, UK Article 12(4) requires the company to mention both of those complaint routes.
+
 ---
 
 ## "We don't offer the ability to delete your messages in bulk right now"

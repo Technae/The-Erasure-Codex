@@ -10,6 +10,16 @@ Entries before 5 November 2026 were written up afterwards from the working notes
 
 ## 5 November 2026
 
+### Changed: fourth review (script and templates)
+- **Helper script: several output files now go in together or not at all.** With `--split`, if one part couldn't be put in place, earlier parts had already replaced the old files. Now the old files are kept aside until every part is in place, and put back if anything fails. Folders given as output names are refused, even with `--force`, and filesystem errors give a plain message instead of a Python traceback. *Why:* a failed run could overwrite an earlier output, contradicting what the documentation promised.
+- **Helper script: channel IDs from `channel.json` are checked.** An invalid ID used to go straight into the CSV. Now the script warns and uses the folder name, or stops if that isn't a channel ID either. IDs must also be plain digits 0–9. *Why:* a CSV with a made-up channel ID would look like a successful result.
+- **Helper script: `--allow-incomplete` now also covers a channel where no message record can be read.** That channel is left out, with a warning that names it and says the result is incomplete. Without the option, the script still stops. *Why:* the option stopped with an error in this case, which the documentation didn't mention. Seven new tests cover these cases (37 in total).
+- **UK Article 12(4) wording on pages 5, 11 and 12.** These templates only had the EU sentence about complaining. Each page now gives UK readers the replacement wording (complaint to Discord under section 164A and to the Information Commissioner). *Why:* only page 4 had been updated for the amended UK Article 12(4).
+- **Page 12: the automated-decision question** now asks whether the ban decision was based *solely* on automated processing with legal or similarly significant effects, which is what Article 15(1)(h) covers, and separately how automated tools were used. *Why:* Article 15(1)(h) doesn't cover every decision where an automated tool was involved.
+- **Page 12: `--exclude`** is described as leaving out whole channels, with a note on removing individual messages from the CSV by hand. *Why:* the option takes channel IDs, not message IDs.
+- **Article 17(3)(b)** is now summarised in full on pages 1 and 10: a legal obligation, or a task carried out in the public interest or in the exercise of official authority. *Why:* the summary left out the second half.
+- **Page 4** no longer says the UK version differs in only two ways. *Why:* it also uses the UK complaint routes.
+
 ### Added
 - **[AI-GUIDE.md](AI-GUIDE.md)**, a page for AI assistants helping someone use the guide: which questions to ask first, which pages fit each situation, and rules to follow. *Why:* the guide is long, and many people will use it with an AI assistant. Without instructions, assistants tend to summarise from memory or overwhelm people with the whole process.
   - Includes rules on protecting the person's data (no uploading the full data package or private conversations), keeping evidence and legal arguments apart, and not claiming to have checked sources they didn't open. *Why:* suggested by an independent review; helping someone shouldn't mean disclosing their conversations again.

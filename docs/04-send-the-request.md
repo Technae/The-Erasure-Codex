@@ -82,7 +82,7 @@ Kind regards,
 
 ## Template: UK
 
-The UK version is the same, with two changes: cite the **UK GDPR**, and say you're in the UK.
+The UK version follows the same structure, but cites the **UK GDPR**, says you're in the UK, and uses the UK complaint routes that amended Article 12(4) requires (a complaint to Discord under section 164A and to the Information Commissioner).
 
 ```
 Subject: Erasure request under Article 17 UK GDPR – [your username]

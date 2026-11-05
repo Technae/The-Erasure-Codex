@@ -3,8 +3,9 @@
 A small, dependency-free Python 3 script for working with a Discord data package when making an erasure request.
 
 - Reads the package **directly from the .zip** (or an extracted folder) and never changes it: it refuses to write output over the package or into an extracted package folder
-- Stops with a clear error if a file or message record isn't in a format it recognises, rather than reporting a smaller count (`--allow-incomplete` overrides this for unreadable records, and says so)
-- Writes output to a temporary file and only puts it in place once the whole run has succeeded, so a failed run never leaves a partial CSV or damages an earlier one
+- Stops with a clear error if a file or message record isn't in a format it recognises, rather than reporting a smaller count (`--allow-incomplete` overrides this for unreadable records, including a channel where no record can be read, and says so)
+- Only accepts real channel and message IDs (digits only). If a `channel.json` has an invalid ID, it falls back to the folder name, or stops if that isn't an ID either
+- Writes output to temporary files and only puts them in place once the whole run has succeeded. When there are several files, they go in together: if one can't be put in place, the others are rolled back. So a failed run never leaves a partial CSV or damages an earlier one
 - Works with both the current JSON layout and older CSV layouts
 - Doesn't connect to the internet, and never needs your token or password
 

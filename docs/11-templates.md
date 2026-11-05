@@ -6,6 +6,16 @@ This page collects templates for the later stages: writing to **Discord's Data P
 
 Fill in the parts in square brackets, and delete anything that doesn't apply to you.
 
+**UK users:** the DPO templates use the EU wording for Article 12(4). Wherever a template says *"tell me that I can complain to a supervisory authority and seek a judicial remedy, as Article 12(4) requires"*, write instead:
+
+```
+tell me how I can complain (to you under section 164A of the Data
+Protection Act 2018, and to the Information Commissioner) and seek a
+judicial remedy, as Article 12(4) UK GDPR requires
+```
+
+Since 19 June 2026, UK Article 12(4) requires the company to mention both of those complaint routes. Also change "GDPR" to "UK GDPR" and the controller to "Discord Inc.".
+
 ---
 
 ## Why write to the DPO even if you don't expect an answer
