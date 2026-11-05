@@ -57,6 +57,7 @@ Ask a few at a time, in plain language, not all at once.
 - **Don't suggest sending ID** by default. Sending from the account's registered email is normally enough ([page 12, "Proving it's your account"](https://github.com/Technae/The-Erasure-Codex/blob/main/docs/12-banned-accounts.md#proving-its-your-account)).
 - **Count deadlines by calendar month,** from the day Discord received the request to the same date the next month, moved to the next working day if that's a weekend or public holiday ([page 7](https://github.com/Technae/The-Erasure-Codex/blob/main/docs/07-deadlines-and-complaints.md#the-deadline)). Discord can extend by up to two months only if it says so, with reasons, within the first month. Writing to the DPO or sending a reminder doesn't restart the deadline. UK only: if Discord reasonably asks for identity information, the month starts when it gets it, and for access requests the clock can pause for genuine clarification (Article 12A, [legal reference](https://github.com/Technae/The-Erasure-Codex/blob/main/docs/10-legal-reference.md)).
 - **Each request is about the person's own data, for their own reasons.** Don't frame requests as tests, experiments or campaign tactics ([why](https://github.com/Technae/The-Erasure-Codex/blob/main/docs/08-faq.md)).
+- **Stay honest and lawful.** Don't help anyone claim to live somewhere they don't, or use self-bots or other tools that automate their account. Both may sometimes work, but the guide only supports lawful, honest routes.
 - **Keep it aimed at Discord, not its staff.** Never help name, target or publish anything about individual employees.
 - **Quote Discord exactly.** "Submitted for deletion" isn't proof of deletion. Comparing data packages shows what's no longer in the newer export, and spot-checking in the app shows what's no longer visible. Neither proves that every copy, including backups, has been erased ([page 6](https://github.com/Technae/The-Erasure-Codex/blob/main/docs/06-check-the-result.md)).
 - **Don't overstate.** Where the guide says the law is uncertain, say it's uncertain. Don't promise outcomes, fines, or that a regulator will act quickly.
@@ -187,11 +188,12 @@ Article 17(1) lists several grounds for erasure. Which one fits depends on the *
 
 | If Discord keeps your messages on the basis of… | What points to this | Your ground for erasure | To refuse, Discord must show… |
 |---|---|---|---|
-| **Legitimate interests** (Article 6(1)(f)) | Template replies say other users "have a legitimate interest in having access to content sent to them". That suggests legitimate interests are part of Discord's justification, though it hasn't formally said so | Object under Article 21(1), giving your own reasons. Erasure then follows under **17(1)(c)** | Compelling legitimate grounds that override your interests, rights and freedoms, or that keeping them is needed for legal claims, or an Article 17(3) exception |
-| **Contract** (Article 6(1)(b)) | The privacy policy lists storing and displaying your messages "as you direct" under fulfilling its contract with you | **17(1)(a):** the messages are no longer necessary for that purpose. Your erasure request is strong evidence of what you now direct, but it doesn't settle the question by itself: the test is whether keeping them is still necessary for the purpose Discord relies on | Why keeping them is still necessary for its contract *with you*, or an Article 17(3) exception |
+| **Legitimate interests** (Article 6(1)(f)) | Template replies say other users "have a legitimate interest in having access to content sent to them". That suggests legitimate interests are part of Discord's justification, though it hasn't formally said so. The privacy policy's list of legitimate interests (security, performance reporting, personalisation, sponsored content, improving and advertising the service) doesn't mention keeping messages for other users | Object under Article 21(1), giving your own reasons. Erasure then follows under **17(1)(c)** | Compelling legitimate grounds that override your interests, rights and freedoms, or that keeping them is needed for legal claims, or an Article 17(3) exception |
+| **Contract** (Article 6(1)(b)) | The privacy policy (effective 29 September 2025) lists storing and displaying your messages "as you direct" under fulfilling its contract with you | **17(1)(a):** the messages are no longer necessary for that purpose. Your erasure request is strong evidence of what you now direct, but it doesn't settle the question by itself: the test is whether keeping them is still necessary for the purpose Discord relies on | Why keeping them is still necessary for its contract *with you*, or an Article 17(3) exception |
 
 Three points follow from this:
 - **Contract only covers the contract with you.** Article 6(1)(b) applies to a contract "to which the data subject is party", meaning you. Other users wanting to keep reading your messages isn't part of your contract. If that's Discord's reason, it points to legitimate interests rather than contract, and you can object. Either way, the safest request is to ask Discord to state the purpose and legal basis for keeping each set of messages, and why keeping them is still necessary.
+- **If Discord relies on legitimate interests to keep your messages for other users,** its privacy policy should say so: Article 13(1)(d) requires it to name the legitimate interests it pursues. The current policy doesn't, so asking which basis Discord relies on is a fair question, not a technicality.
 - **If Discord has no valid basis at all** for keeping a message, **17(1)(d)** applies (unlawful processing). That's a fallback, not something to lead with.
 - **The Article 17(3) exceptions apply whichever basis it is.** If Discord relies on one, its reasons for refusing should say so.
 
@@ -200,6 +202,8 @@ That's why the templates cite both 17(1)(a) and 17(1)(c): you don't know which b
 What's still uncertain is how authorities will treat conversations other people can still read. Discord could argue freedom of expression and information (17(3)(a)) for those. The clearest cases are ones where nobody else is left to read the messages, such as DMs with users who have deleted their accounts.
 
 **The delete-button argument.** Discord's stated reason for keeping your messages is that other users rely on them, and that removing them would leave conversations "missing important context". But Discord already lets you delete any of those same messages yourself, one at a time, and that disrupts the conversation in exactly the same way. Discord's own CSV process also removes messages in bulk from servers you've left, where other members can still read the conversation. So conversation context can't explain why Discord refuses to process the messages you can still open. This doesn't prove Discord must build a bulk-delete tool. It does show that its justification is inconsistent, and that a refusal needs a better legal explanation than the one it gives.
+
+**Discord's own wording.** Discord's [Information About Local Privacy Laws](https://discord.com/terms/local-laws) page (last updated 29 August 2025) says your rights "may be limited by law", for example where fulfilling a request "would adversely affect other individuals". That's a general statement, not an exception in itself. For erasure, a limit has to rest on something specific: an Article 17(3) exception, the Article 21 test, or a national law restriction (below). If Discord relies on it, ask which.
 
 **National rules.** The GDPR applies across the EU and EEA, but countries can add limited restrictions, for example to protect freedom of expression (Articles 23 and 85). This guide doesn't cover them country by country. If one might apply to you, your data protection authority can tell you.
 
@@ -216,7 +220,15 @@ What's still uncertain is how authorities will treat conversations other people 
 | A definition of "access" | "Access permissions are managed dynamically", and nothing more |
 | The legal basis for keeping the rest | Usually no answer |
 
-This "accessible space" rule is the core problem. It isn't in the GDPR, Discord doesn't publish it, and it's applied mechanically. In the [case study](https://github.com/Technae/The-Erasure-Codex/blob/main/docs/09-case-study.md), it kept a DM between two accounts belonging to the same person, after **both** accounts asked for it to be erased. It also kept DMs with users who had already deleted their accounts, where nobody else is left to "keep access".
+This "accessible space" rule is the core problem. It isn't in the GDPR, and it's applied mechanically. Discord's [privacy policy](https://discord.com/privacy) comes closest to it, but only for self-deletion: it says you can delete any message you've sent "if you still have access to the space where you posted it". Nothing in Discord's published policies says that erasure *requests* exclude those same spaces; you only find that out from its replies.
+
+Put the two together and you can see the gap. Discord's [Information About Local Privacy Laws](https://discord.com/terms/local-laws) page says EEA and UK users can exercise their rights, including erasure, "through the Discord app directly or by contacting us". In practice:
+- **In the app,** you can only delete messages one at a time, and only in spaces you can still open.
+- **By contacting Discord,** messages are only deleted in spaces you *can't* open.
+
+Each route covers what the other leaves out, but neither lets you erase messages in bulk anywhere you can still open. That can be most of what you've sent: in the case study, over 99% of the remaining messages are in DMs that can still be opened. That's the heart of the Article 12(2) argument: the right to erasure has to be *facilitated*, not just technically available one message at a time.
+
+In the [case study](https://github.com/Technae/The-Erasure-Codex/blob/main/docs/09-case-study.md), the rule kept a DM between two accounts belonging to the same person, after **both** accounts asked for it to be erased. It also kept DMs with users who had already deleted their accounts, where nobody else is left to "keep access".
 
 ## Decide these before you start
 
@@ -414,6 +426,8 @@ Community tools that read data packages exist, such as [undiscord-package-util](
 - **Email:** `privacy@discord.com`, with `dpo@discord.com` (Discord's Data Protection Officer) in copy.
 - **Send it from the email address registered to your Discord account.** Discord uses that to confirm the request is yours.
 - **Address it to the right company.** Discord's current privacy policy names **Discord Netherlands BV** as the data controller for users in the EEA, and **Discord Inc.** for everyone else, including users in the UK. It names VeraSafe as its UK representative. Check the current policy at [discord.com/privacy](https://discord.com/privacy) if you're unsure.
+
+**By post:** Discord's [Information About Local Privacy Laws](https://discord.com/terms/local-laws) page also gives postal addresses (Discord Netherlands BV in Schiphol for the EEA, Discord Inc. in San Francisco for everyone else). Post is slower, but a tracked or registered letter gives you proof of when it arrived. That can help if your emails are going unanswered, or you can't send from your account's address.
 
 You can also use Discord's support form, but email gives you your own dated copy of everything, which is what you'll want if you complain later. Either way, Discord's replies come through its ticket system, and each ticket has a number. Note it down.
 
@@ -894,7 +908,7 @@ Article 12(6) lets a company ask for more information if it has *reasonable doub
 Others have reported the same. Note what seems to be missing and how you know (for example, a message you can see in the app that isn't in the package), and mention it in your follow-up. You also have a right of access under Article 15 to a complete copy of your data ([general access request](https://github.com/Technae/The-Erasure-Codex/blob/main/docs/11-templates.md#access-request-everything-discord-holds-about-you-general-dsar)).
 
 **Can I ask about the other data in my package?**
-Yes. The `Activity` folders can contain years of analytics events with device, network and location details. You can ask what it's used for, the legal basis and how long it's kept (Article 15), object to it (Article 21), and ask for it to be erased (Article 17). You can also limit future collection in **User Settings → Data & Privacy**.
+Yes. The `Activity` folders can contain years of analytics events with device, network and location details. You can ask what it's used for and how long it's kept (Article 15), and on what legal basis (which Discord should state under Articles 13 and 14), object to it (Article 21), and ask for it to be erased (Article 17). Discord's [Privacy Hub](https://discord.com/safety-privacy) says that when your data is no longer needed, Discord will "anonymize it, aggregate it, or delete it". If you find analytics events from many years ago, that's a fair question to put to Discord. You can also limit future collection in **User Settings → Data & Privacy**.
 
 **How long does all this take?**
 Building and sending the request takes an hour or two. Expect a few weeks of back and forth with Discord, a month or so between data packages, and months if you complain to a regulator.
@@ -903,7 +917,13 @@ Building and sending the request takes an hour or two. Expect a few weeks of bac
 Yes. Deletion or a ban doesn't end your GDPR rights. You can ask for your data and for your ordinary messages to be erased by email. If you're banned, erasure isn't an appeal, and the two can conflict. See [Deleted or banned accounts](https://github.com/Technae/The-Erasure-Codex/blob/main/docs/12-banned-accounts.md).
 
 **I'm not in the EU, EEA or UK.**
-This guide only covers the GDPR and UK GDPR. Some other places, such as California, have their own deletion rights with different rules. If you know them well, consider contributing a section.
+This guide only covers the GDPR and UK GDPR, and European data protection authorities generally can't help you: Discord's EU company only covers EEA users, and everyone else falls under Discord Inc. and their own country's law. But you may still have rights. Discord's [Information About Local Privacy Laws](https://discord.com/terms/local-laws) page has sections for users in Brazil, Canada, the Republic of Korea and certain US states, including California. If you're in one of those places, start there, and look for your own country's privacy regulator. One user in Korea got most of their messages deleted after complaining to the Korean regulator ([Undiscord #429](https://github.com/victornpb/undiscord/discussions/429)).
+
+Wherever you live, Discord's own [privacy policy](https://discord.com/privacy) says that "while local laws may require different things", its users should have "at least the same basic ability to shape their experience no matter where they are in the world". That's worth quoting if you ask Discord to delete your messages from outside the EU.
+
+**Don't claim to live somewhere you don't.** It can't lead to a complaint, because you can only complain to the authority where you actually live, work or were affected. It's a misrepresentation that could get your account banned, and it gives Discord a reason to demand proof of residence from everyone, which makes things harder for the people who do have these rights. Like self-bots, it might sometimes work, but this guide sticks to routes that are lawful and honest.
+
+If you know another country's rules well, consider contributing a section.
 
 **Is any of this legal advice?**
 No. It's what users have learned from their own requests. For anything important, get advice from a lawyer or a data protection organisation.
@@ -1037,7 +1057,7 @@ A quick reference to the provisions this guide relies on. Most article numbers a
 **UK only:** the UK complaints system changed on 19 June 2026 (Data (Use and Access) Act 2025, section 103).
 - **Section 164A** of the Data Protection Act 2018 gives you the right to complain to the company. It must acknowledge your complaint within 30 days and tell you the outcome without undue delay. The 30 days is for the acknowledgement, not for resolving the complaint.
 - **Article 77 has been removed from the UK GDPR.** Complaints to the ICO are now made under **section 165** of the Data Protection Act 2018. The ICO says you can complain to it at any time, but recommends giving the company the chance to finish its complaints process first, and in most cases it will ask you to do that. Its guidance also asks you to complain within three months of your last meaningful contact with the company; that's the ICO's expectation, not a statutory time limit.
-- **Controller:** Discord's privacy policy names Discord Netherlands BV for the EEA and Discord Inc. for everyone else, including the UK. It names VeraSafe as its UK representative.
+- **Controller:** Discord's privacy policy names Discord Netherlands BV for the EEA and Discord Inc. for everyone else, including the UK. It names VeraSafe as its UK representative (contact details on Discord's [Information About Local Privacy Laws](https://discord.com/terms/local-laws) page).
 - **Response times (Article 12A):** since 5 February 2026, the UK GDPR sets out how the one-month period is counted. It starts from the latest of: when the company receives your request, when it receives information it reasonably asked for to confirm who you are (Article 12(6)), or when any fee is paid. For **access requests (Article 15) only**, the clock can also pause while the company waits for information it reasonably needs to identify what your request covers, for example where it holds a large amount of information about you. This isn't a general pause for any question the company asks, and none of it applies to EU/EEA requests.
 - **Article 12(4) (UK version):** when a company doesn't act on a request, it must now tell you about complaining to it under section 164A and to the ICO under section 165, as well as seeking a judicial remedy.
 - **Section 166** of the Data Protection Act 2018 is the UK route if the ICO doesn't take appropriate steps on your complaint or keep you informed of its progress (within three months, and every three months after that while it's unresolved): you can apply to the tribunal for an order requiring it to. Use this instead of Article 78(2) in the UK.
@@ -1356,10 +1376,12 @@ Discord's replies exactly. For example:
 - Articles 17 and 12(4): Discord has not explained whether it considers
   the Article 17(1) grounds inapplicable or, if a ground applies, which
   exception under Article 17(3) or justification under Article 21(1) it
-  relies on. Instead, it has relied on an unpublished and undefined
-  "accessible space" criterion, without explaining how that criterion
-  fits the GDPR or why keeping the messages is necessary for the
-  purposes concerned.
+  relies on. Instead, it has relied on an undefined "accessible space"
+  criterion, without explaining how that criterion fits the GDPR or why
+  keeping the messages is necessary for the purposes concerned. Its
+  privacy policy only says that users can delete their own messages "if
+  you still have access to the space where you posted it"; it doesn't
+  say that erasure requests exclude those spaces.
 - Article 12(2) and Recital 59: no practical way to exercise the right.
   Discord offers no deletion option, requires users to build their own
   CSV from a data package that can take weeks to arrive, and tells them
@@ -1542,7 +1564,7 @@ The steps are the same for both. Where something applies only to deleted or only
 
 **If you're banned, it doesn't cover whatever Discord says you were banned for.** Discord may be able to keep particular records connected to a ban where they're needed to comply with a legal obligation (Article 17(3)(b)) or to establish, exercise or defend legal claims (Article 17(3)(e)). Records genuinely needed to deal with an actual or reasonably expected appeal may also be kept where there's a legal basis for it. But the mere possibility of an appeal doesn't automatically justify keeping everything connected with a ban. The templates below have an optional line that leaves ban-related content out, so your request is about ordinary messages only.
 
-Many people in ban-appeal communities report bans they believe were automated mistakes. If that's you, you can also ask Discord, as part of the access request, whether the decision was automated (Article 15(1)(h)). That information can help an appeal too. But the appeal itself is a separate process, outside this guide.
+Many people in ban-appeal communities report bans they believe were automated mistakes. If that's you, you can also ask Discord, as part of the access request, whether the decision was automated (Article 15(1)(h)). Discord's [Information About Local Privacy Laws](https://discord.com/terms/local-laws) page says "We do not conduct any automated decision-making". Its [privacy policy](https://discord.com/privacy), though, says Discord builds "systems and models that can be automated to more swiftly detect, categorize, and take action against prohibited content or conduct". The two can both be true (not every automated system makes the kind of decision Article 22 covers), but if your ban looks automated, it's fair to quote both and ask how your case was decided. That information can help an appeal too. But the appeal itself is a separate process, outside this guide.
 
 ## Deleted accounts: can Discord still identify you?
 

@@ -289,10 +289,12 @@ Discord's replies exactly. For example:
 - Articles 17 and 12(4): Discord has not explained whether it considers
   the Article 17(1) grounds inapplicable or, if a ground applies, which
   exception under Article 17(3) or justification under Article 21(1) it
-  relies on. Instead, it has relied on an unpublished and undefined
-  "accessible space" criterion, without explaining how that criterion
-  fits the GDPR or why keeping the messages is necessary for the
-  purposes concerned.
+  relies on. Instead, it has relied on an undefined "accessible space"
+  criterion, without explaining how that criterion fits the GDPR or why
+  keeping the messages is necessary for the purposes concerned. Its
+  privacy policy only says that users can delete their own messages "if
+  you still have access to the space where you posted it"; it doesn't
+  say that erasure requests exclude those spaces.
 - Article 12(2) and Recital 59: no practical way to exercise the right.
   Discord offers no deletion option, requires users to build their own
   CSV from a data package that can take weeks to arrive, and tells them

@@ -8,6 +8,8 @@
 - **Send it from the email address registered to your Discord account.** Discord uses that to confirm the request is yours.
 - **Address it to the right company.** Discord's current privacy policy names **Discord Netherlands BV** as the data controller for users in the EEA, and **Discord Inc.** for everyone else, including users in the UK. It names VeraSafe as its UK representative. Check the current policy at [discord.com/privacy](https://discord.com/privacy) if you're unsure.
 
+**By post:** Discord's [Information About Local Privacy Laws](https://discord.com/terms/local-laws) page also gives postal addresses (Discord Netherlands BV in Schiphol for the EEA, Discord Inc. in San Francisco for everyone else). Post is slower, but a tracked or registered letter gives you proof of when it arrived. That can help if your emails are going unanswered, or you can't send from your account's address.
+
 You can also use Discord's support form, but email gives you your own dated copy of everything, which is what you'll want if you complain later. Either way, Discord's replies come through its ticket system, and each ticket has a number. Note it down.
 
 **Keep everything in one thread.** Reply to Discord's emails rather than starting new ones, keep the quoted text, and don't delete the tag in square brackets (like `[ABC123-DEF45]`). That's how the ticket system matches your reply to the request.

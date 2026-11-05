@@ -39,7 +39,7 @@ Article 12(6) lets a company ask for more information if it has *reasonable doub
 Others have reported the same. Note what seems to be missing and how you know (for example, a message you can see in the app that isn't in the package), and mention it in your follow-up. You also have a right of access under Article 15 to a complete copy of your data ([general access request](11-templates.md#access-request-everything-discord-holds-about-you-general-dsar)).
 
 **Can I ask about the other data in my package?**
-Yes. The `Activity` folders can contain years of analytics events with device, network and location details. You can ask what it's used for, the legal basis and how long it's kept (Article 15), object to it (Article 21), and ask for it to be erased (Article 17). You can also limit future collection in **User Settings → Data & Privacy**.
+Yes. The `Activity` folders can contain years of analytics events with device, network and location details. You can ask what it's used for and how long it's kept (Article 15), and on what legal basis (which Discord should state under Articles 13 and 14), object to it (Article 21), and ask for it to be erased (Article 17). Discord's [Privacy Hub](https://discord.com/safety-privacy) says that when your data is no longer needed, Discord will "anonymize it, aggregate it, or delete it". If you find analytics events from many years ago, that's a fair question to put to Discord. You can also limit future collection in **User Settings → Data & Privacy**.
 
 **How long does all this take?**
 Building and sending the request takes an hour or two. Expect a few weeks of back and forth with Discord, a month or so between data packages, and months if you complain to a regulator.
@@ -48,7 +48,13 @@ Building and sending the request takes an hour or two. Expect a few weeks of bac
 Yes. Deletion or a ban doesn't end your GDPR rights. You can ask for your data and for your ordinary messages to be erased by email. If you're banned, erasure isn't an appeal, and the two can conflict. See [Deleted or banned accounts](12-banned-accounts.md).
 
 **I'm not in the EU, EEA or UK.**
-This guide only covers the GDPR and UK GDPR. Some other places, such as California, have their own deletion rights with different rules. If you know them well, consider contributing a section.
+This guide only covers the GDPR and UK GDPR, and European data protection authorities generally can't help you: Discord's EU company only covers EEA users, and everyone else falls under Discord Inc. and their own country's law. But you may still have rights. Discord's [Information About Local Privacy Laws](https://discord.com/terms/local-laws) page has sections for users in Brazil, Canada, the Republic of Korea and certain US states, including California. If you're in one of those places, start there, and look for your own country's privacy regulator. One user in Korea got most of their messages deleted after complaining to the Korean regulator ([Undiscord #429](https://github.com/victornpb/undiscord/discussions/429)).
+
+Wherever you live, Discord's own [privacy policy](https://discord.com/privacy) says that "while local laws may require different things", its users should have "at least the same basic ability to shape their experience no matter where they are in the world". That's worth quoting if you ask Discord to delete your messages from outside the EU.
+
+**Don't claim to live somewhere you don't.** It can't lead to a complaint, because you can only complain to the authority where you actually live, work or were affected. It's a misrepresentation that could get your account banned, and it gives Discord a reason to demand proof of residence from everyone, which makes things harder for the people who do have these rights. Like self-bots, it might sometimes work, but this guide sticks to routes that are lawful and honest.
+
+If you know another country's rules well, consider contributing a section.
 
 **Is any of this legal advice?**
 No. It's what users have learned from their own requests. For anything important, get advice from a lawyer or a data protection organisation.

@@ -18,11 +18,12 @@ Article 17(1) lists several grounds for erasure. Which one fits depends on the *
 
 | If Discord keeps your messages on the basis of… | What points to this | Your ground for erasure | To refuse, Discord must show… |
 |---|---|---|---|
-| **Legitimate interests** (Article 6(1)(f)) | Template replies say other users "have a legitimate interest in having access to content sent to them". That suggests legitimate interests are part of Discord's justification, though it hasn't formally said so | Object under Article 21(1), giving your own reasons. Erasure then follows under **17(1)(c)** | Compelling legitimate grounds that override your interests, rights and freedoms, or that keeping them is needed for legal claims, or an Article 17(3) exception |
-| **Contract** (Article 6(1)(b)) | The privacy policy lists storing and displaying your messages "as you direct" under fulfilling its contract with you | **17(1)(a):** the messages are no longer necessary for that purpose. Your erasure request is strong evidence of what you now direct, but it doesn't settle the question by itself: the test is whether keeping them is still necessary for the purpose Discord relies on | Why keeping them is still necessary for its contract *with you*, or an Article 17(3) exception |
+| **Legitimate interests** (Article 6(1)(f)) | Template replies say other users "have a legitimate interest in having access to content sent to them". That suggests legitimate interests are part of Discord's justification, though it hasn't formally said so. The privacy policy's list of legitimate interests (security, performance reporting, personalisation, sponsored content, improving and advertising the service) doesn't mention keeping messages for other users | Object under Article 21(1), giving your own reasons. Erasure then follows under **17(1)(c)** | Compelling legitimate grounds that override your interests, rights and freedoms, or that keeping them is needed for legal claims, or an Article 17(3) exception |
+| **Contract** (Article 6(1)(b)) | The privacy policy (effective 29 September 2025) lists storing and displaying your messages "as you direct" under fulfilling its contract with you | **17(1)(a):** the messages are no longer necessary for that purpose. Your erasure request is strong evidence of what you now direct, but it doesn't settle the question by itself: the test is whether keeping them is still necessary for the purpose Discord relies on | Why keeping them is still necessary for its contract *with you*, or an Article 17(3) exception |
 
 Three points follow from this:
 - **Contract only covers the contract with you.** Article 6(1)(b) applies to a contract "to which the data subject is party", meaning you. Other users wanting to keep reading your messages isn't part of your contract. If that's Discord's reason, it points to legitimate interests rather than contract, and you can object. Either way, the safest request is to ask Discord to state the purpose and legal basis for keeping each set of messages, and why keeping them is still necessary.
+- **If Discord relies on legitimate interests to keep your messages for other users,** its privacy policy should say so: Article 13(1)(d) requires it to name the legitimate interests it pursues. The current policy doesn't, so asking which basis Discord relies on is a fair question, not a technicality.
 - **If Discord has no valid basis at all** for keeping a message, **17(1)(d)** applies (unlawful processing). That's a fallback, not something to lead with.
 - **The Article 17(3) exceptions apply whichever basis it is.** If Discord relies on one, its reasons for refusing should say so.
 
@@ -31,6 +32,8 @@ That's why the templates cite both 17(1)(a) and 17(1)(c): you don't know which b
 What's still uncertain is how authorities will treat conversations other people can still read. Discord could argue freedom of expression and information (17(3)(a)) for those. The clearest cases are ones where nobody else is left to read the messages, such as DMs with users who have deleted their accounts.
 
 **The delete-button argument.** Discord's stated reason for keeping your messages is that other users rely on them, and that removing them would leave conversations "missing important context". But Discord already lets you delete any of those same messages yourself, one at a time, and that disrupts the conversation in exactly the same way. Discord's own CSV process also removes messages in bulk from servers you've left, where other members can still read the conversation. So conversation context can't explain why Discord refuses to process the messages you can still open. This doesn't prove Discord must build a bulk-delete tool. It does show that its justification is inconsistent, and that a refusal needs a better legal explanation than the one it gives.
+
+**Discord's own wording.** Discord's [Information About Local Privacy Laws](https://discord.com/terms/local-laws) page (last updated 29 August 2025) says your rights "may be limited by law", for example where fulfilling a request "would adversely affect other individuals". That's a general statement, not an exception in itself. For erasure, a limit has to rest on something specific: an Article 17(3) exception, the Article 21 test, or a national law restriction (below). If Discord relies on it, ask which.
 
 **National rules.** The GDPR applies across the EU and EEA, but countries can add limited restrictions, for example to protect freedom of expression (Articles 23 and 85). This guide doesn't cover them country by country. If one might apply to you, your data protection authority can tell you.
 
@@ -47,7 +50,15 @@ What's still uncertain is how authorities will treat conversations other people 
 | A definition of "access" | "Access permissions are managed dynamically", and nothing more |
 | The legal basis for keeping the rest | Usually no answer |
 
-This "accessible space" rule is the core problem. It isn't in the GDPR, Discord doesn't publish it, and it's applied mechanically. In the [case study](09-case-study.md), it kept a DM between two accounts belonging to the same person, after **both** accounts asked for it to be erased. It also kept DMs with users who had already deleted their accounts, where nobody else is left to "keep access".
+This "accessible space" rule is the core problem. It isn't in the GDPR, and it's applied mechanically. Discord's [privacy policy](https://discord.com/privacy) comes closest to it, but only for self-deletion: it says you can delete any message you've sent "if you still have access to the space where you posted it". Nothing in Discord's published policies says that erasure *requests* exclude those same spaces; you only find that out from its replies.
+
+Put the two together and you can see the gap. Discord's [Information About Local Privacy Laws](https://discord.com/terms/local-laws) page says EEA and UK users can exercise their rights, including erasure, "through the Discord app directly or by contacting us". In practice:
+- **In the app,** you can only delete messages one at a time, and only in spaces you can still open.
+- **By contacting Discord,** messages are only deleted in spaces you *can't* open.
+
+Each route covers what the other leaves out, but neither lets you erase messages in bulk anywhere you can still open. That can be most of what you've sent: in the case study, over 99% of the remaining messages are in DMs that can still be opened. That's the heart of the Article 12(2) argument: the right to erasure has to be *facilitated*, not just technically available one message at a time.
+
+In the [case study](09-case-study.md), the rule kept a DM between two accounts belonging to the same person, after **both** accounts asked for it to be erased. It also kept DMs with users who had already deleted their accounts, where nobody else is left to "keep access".
 
 ## Decide these before you start
 
