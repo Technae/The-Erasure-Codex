@@ -8,6 +8,22 @@ Entries before 5 November 2026 were written up afterwards from the working notes
 
 ---
 
+## 6 November 2026
+
+### Changed: CODEX-FULL.md is the only file to give an AI assistant
+- **AI-GUIDE.md is now a short pointer to CODEX-FULL.md.** The instructions for AI assistants have moved to `docs/ai-instructions.md`, which is the source for the opening section of CODEX-FULL.md, and are no longer meant to be given to an assistant on their own. *Why:* in a second test, an assistant given only the updated AI guide ignored its instruction to ask for the full guide, wrote its own request template, and said it was the guide's. A file without the templates invites that. Old links to AI-GUIDE.md still work, and an assistant given only that page is told to ask for CODEX-FULL.md.
+- **README:** don't give an assistant a link or part of the guide, and compare any template it produces with page 4 word for word before sending. *Why:* the same test.
+
+### Added
+- **Special-category data (page 4, page 10, AI guide).** An optional paragraph and a second CSV for messages that reveal health, sexuality, religion, political opinions and so on: Discord needs an Article 9(2) condition to keep them, and its own templates offer to remove "sensitive personal data", so the request asks for those to be erased at a minimum. Article 9 is added to the legal reference, marked as an argument that hasn't been decided. *Why:* the guide didn't mention special-category data at all, though many people's DMs contain it.
+- **What counts as personal data (pages 1 and 10).** Article 4(1) and *Nowak* (C-434/16): information can relate to you by its content, purpose or effect, so a message stored against your account is generally your personal data even if it doesn't mention your name. *Why:* Discord's templates ask for messages "containing personally identifying information", which is a narrower test than the law's.
+- **Another example of objection reasons (page 4):** messages from a past relationship you want to move on from.
+
+### Changed: using the guide with an AI assistant
+- **The README now recommends one file, CODEX-FULL.md, uploaded as a file,** with a suggested first message. *Why:* in a test, an assistant given only AI-GUIDE.md followed its questions but then wrote its own request template, because the real templates are on other pages it didn't open. Given CODEX-FULL.md, it used the guide's template.
+- **CODEX-FULL.md now starts with a short instruction to AI assistants and a version date** (taken from the newest changelog entry), plus a link to the latest copy. *Why:* so the assistant follows the AI guide from its first answer, and so an old downloaded copy is easy to spot.
+- **AI-GUIDE.md:** templates must be used word for word, not rewritten or reconstructed; start with the questions even if the first message is general; and if the assistant only has the AI guide, it should ask for CODEX-FULL.md rather than work from memory. *Why:* the same test.
+
 ## 5 November 2026
 
 ### Changed: fourth review (script and templates)

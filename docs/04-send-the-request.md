@@ -152,7 +152,28 @@ Kind regards,
 
 ## Why you object, in your own words
 
-An objection under Article 21(1) has to be made "on grounds relating to your particular situation", so the template leaves a gap for you to fill in. Write a sentence or two about your own reasons. For example: the messages contain personal details you no longer want stored, they're years old and you've left those communities, or you're worried about what they reveal about you. Use your real reasons, not a stock paragraph. It doesn't need to be long or legal. If you'd rather not object, delete that paragraph: the request still stands on Article 17(1)(a).
+An objection under Article 21(1) has to be made "on grounds relating to your particular situation", so the template leaves a gap for you to fill in. Write a sentence or two about your own reasons. For example: the messages contain personal details you no longer want stored, they're years old and you've left those communities, they're from a past relationship you want to move on from, or you're worried about what they reveal about you. Use your real reasons, not a stock paragraph. It doesn't need to be long or legal. If you'd rather not object, delete that paragraph: the request still stands on Article 17(1)(a).
+
+## Optional: messages with especially sensitive information
+
+If some of your messages reveal your health, sex life or sexual orientation, religious or philosophical beliefs, political opinions, or racial or ethnic origin, these are **special categories of data** under Article 9. Discord needs a specific condition under Article 9(2) to keep them, on top of a legal basis. Discord's own template replies also offer to help remove messages containing "sensitive personal data".
+
+You can make that part of your request stand on its own. Make a second CSV with just those messages (copy their rows from your main CSV, keeping the header line) and add this paragraph after the objection:
+
+```
+Some of these messages contain special categories of personal data
+under Article 9(1) GDPR, about my [health / religious beliefs / sex
+life / political opinions]. The [number] messages in the second
+attached file (channel_id, message_id) are among them. Please erase
+these at a minimum, even if you decline other parts of this request.
+If you keep any of them, please also tell me which condition under
+Article 9(2) you rely on.
+```
+
+- **Only list messages that really reveal these things.** One doubtful message gives Discord an easy reason to dismiss the list. Say which categories, never what the messages say.
+- **Find them on your own computer.** Don't paste your messages into an online AI tool to sort them: they're the most private data in your package.
+- **It doesn't replace the main request.** The rest of your messages are still covered by the main CSV.
+- **UK users:** write "UK GDPR" instead of "GDPR". The paragraph also fits the erasure template for deleted or banned accounts on [page 12](12-banned-accounts.md).
 
 ## Tips
 

@@ -37,7 +37,7 @@ What's still uncertain is how authorities will treat conversations other people 
 
 **National rules.** The GDPR applies across the EU and EEA, but countries can add limited restrictions, for example to protect freedom of expression (Articles 23 and 85). This guide doesn't cover them country by country. If one might apply to you, your data protection authority can tell you.
 
-**Are your messages personal data?** Generally yes, when they're linked to your account. Discord itself says so: its data package gives you your messages as part of your data, and one of its own template replies calls them "part of the sender's personal data". Some messages contain more about you than others, and that can matter if Discord argues about a specific message, but it isn't the test Discord applies in practice (see below).
+**Are your messages personal data?** Generally yes, when they're linked to your account. Under Article 4(1), personal data is any information relating to an identifiable person, and the CJEU has held that information can relate to you through its content, its purpose or its effect (*Nowak*, C-434/16). A message stored against your account is a record of what you said, to whom and when, so it doesn't need to contain your name or address to count. "Personally identifiable information" (PII) is a narrower, mostly American idea; the GDPR doesn't use it. Discord itself says so: its data package gives you your messages as part of your data, and one of its own template replies calls them "part of the sender's personal data". Some messages contain more about you than others, and that can matter if Discord argues about a specific message, but it isn't the test Discord applies in practice (see below).
 
 ## What Discord actually does (as of 2026)
 
