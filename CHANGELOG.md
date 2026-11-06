@@ -10,6 +10,16 @@ Entries before 5 November 2026 were written up afterwards from the working notes
 
 ## 6 November 2026
 
+### Added: limits on what the guide, and an AI assistant, should help with
+- **Messages tied to a legal matter (page 1, AI instructions).** If messages could be evidence in a police investigation, court case, workplace or disciplinary dispute, or a complaint involving the person, get legal advice before asking for erasure; an assistant should stop and say so. *Why:* erasing them could harm the person's own case or look like destroying evidence.
+- **Court proceedings (page 7, AI instructions).** The guide doesn't cover going to court; that's the point to get a solicitor or an organisation like noyb, and an assistant shouldn't draft court documents. *Why:* court proceedings are litigation, which is a reserved legal service, and the stakes are higher.
+- **The assistant's role (AI instructions).** It helps the person use a self-help guide; it isn't their lawyer or representative, and the person makes every decision and sends everything themselves. *Why:* to keep that line clear, now that the assistant works through the request with them.
+
+### Changed: AI assistants work like a caseworker
+- **The AI instructions now take the person through the request step by step:** their details, a plain explanation of what the request does, open questions to help them find their own reasons for objecting, the optional parts, and only then the finished email. The assistant turns their answers into a sentence or two in their words and checks it with them. It must not invent, add or exaggerate reasons, and the person can choose not to object. *Why:* the objection reasons are the part people need most help with, and in testing an assistant left the gap for the person to fill without asking.
+- **Page 4:** the same questions, for people filling in the template themselves.
+- **AI instructions:** ask two or three questions at a time, and wait for each script output before giving the next command. *Why:* in testing, an assistant asked all its questions at once and gave the next command before seeing the first output.
+
 ### Changed: CODEX-FULL.md is the only file to give an AI assistant
 - **AI-GUIDE.md is now a short pointer to CODEX-FULL.md.** The instructions for AI assistants have moved to `docs/ai-instructions.md`, which is the source for the opening section of CODEX-FULL.md, and are no longer meant to be given to an assistant on their own. *Why:* in a second test, an assistant given only the updated AI guide ignored its instruction to ask for the full guide, wrote its own request template, and said it was the guide's. A file without the templates invites that. Old links to AI-GUIDE.md still work, and an assistant given only that page is told to ask for CODEX-FULL.md.
 - **README:** don't give an assistant a link or part of the guide, and compare any template it produces with page 4 word for word before sending. *Why:* the same test.

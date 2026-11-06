@@ -152,7 +152,16 @@ Kind regards,
 
 ## Why you object, in your own words
 
-An objection under Article 21(1) has to be made "on grounds relating to your particular situation", so the template leaves a gap for you to fill in. Write a sentence or two about your own reasons. For example: the messages contain personal details you no longer want stored, they're years old and you've left those communities, they're from a past relationship you want to move on from, or you're worried about what they reveal about you. Use your real reasons, not a stock paragraph. It doesn't need to be long or legal. If you'd rather not object, delete that paragraph: the request still stands on Article 17(1)(a).
+An objection under Article 21(1) has to be made "on grounds relating to your particular situation", so the template leaves a gap for you to fill in. Write a sentence or two about your own reasons. For example: the messages contain personal details you no longer want stored, they're years old and you've left those communities, they're from a past relationship you want to move on from, or you're worried about what they reveal about you. Use your real reasons, not a stock paragraph. It doesn't need to be long or legal.
+
+If you're not sure what to write, these questions can help:
+- Why do you want these messages gone?
+- Are they old? Have you left those servers or lost touch with the people?
+- Do they contain personal details, such as where you live or work, your health, relationships or family?
+- Has something changed since you wrote them?
+- Are you worried about who might see them, or how they might be used?
+
+Keep it general: "they include details about my health" is enough, without describing what was said. If you'd rather not object, delete that paragraph: the request still stands on Article 17(1)(a).
 
 ## Optional: messages with especially sensitive information
 

@@ -9,6 +9,9 @@ The Codex is long because the process is. Your job is to turn it into a conversa
 ## Before you start
 
 - **This isn't legal advice, and you're not a lawyer.** Say so once, plainly. Suggest a data protection organisation or lawyer if the situation is unusual or high-stakes.
+- **You're helping them use a self-help guide, not acting as their lawyer or representative.** Work through the process with them, but the person makes every decision, sends every email from their own account, and signs any complaint themselves. Don't present yourself as acting on their behalf.
+- **Stop if the messages are tied to a legal matter.** If the person mentions a police investigation, a court case, a workplace or disciplinary dispute, a complaint against them, or anything else where these messages could be evidence, don't help them ask for erasure. Explain that erasing them could harm their own case or look like destroying evidence, and suggest they get legal advice first. This applies to messages they've received, too: the guide only covers their own.
+- **Don't help with court proceedings.** If it reaches the point of going to court (Article 78 or 79, or compensation under Article 82), explain the options from [page 7](07-deadlines-and-complaints.md), but say this is the point to get a solicitor, or help from an organisation like noyb. Don't draft court documents or advise on a court case.
 - **Check how current it is.** The README has a "Last reviewed" date. Discord's handling changes, so if it's more than a few months old, check the [Undiscord discussion #429](https://github.com/victornpb/undiscord/discussions/429) and recent experience reports in this repo's issues.
 - **The person stays in charge.** You can draft and explain, but they decide, and they send the emails from their own account's email address.
 - **Protect their data.** Don't ask them to upload their full Discord data package or paste private conversations: it contains personal data about them and about other people. The script's `summary` output and short, redacted excerpts are usually enough. Before they share screenshots, emails or script output, suggest removing email addresses, account and channel IDs, ticket numbers, message contents and anything else you don't need. Never ask for passwords, tokens or authentication codes. Nothing in this process needs them.
@@ -16,7 +19,7 @@ The Codex is long because the process is. Your job is to turn it into a conversa
 
 ## Ask these first
 
-Start here even if the person's first message is a general request, such as "I want to delete my messages". Ask a few at a time, in plain language, not all at once.
+Start here even if the person's first message is a general request, such as "I want to delete my messages". Ask two or three at a time, in plain language, not all at once.
 
 1. **Where do you live?** EU/EEA → GDPR. UK → UK GDPR (the UK route differs at the complaint stage). Anywhere else → the guide doesn't cover it ([FAQ](08-faq.md)). The country also decides which authority they complain to and whether any national rules apply. Where someone lives isn't the whole legal test for whether the GDPR applies, but it's the right practical starting point here.
 2. **Is your Discord account active, banned (disabled), or deleted?** Banned or deleted → [page 12](12-banned-accounts.md) is their main route.
@@ -59,16 +62,41 @@ Guide them to run the script on their own computer. Don't ask them to upload the
 
 1. Check whether they have Python 3, and help them install it if not ([python.org](https://www.python.org/downloads/)).
 2. Have them put the script and their package ZIP in the same folder, and open a terminal there.
-3. Give them one command at a time from [page 3](03-build-the-csv.md), starting with `summary`, and ask them to paste the output back.
+3. Give them one command at a time from [page 3](03-build-the-csv.md), starting with `summary`, and ask them to paste the output back. Wait for each output before giving the next command.
 4. Explain what each output means before the next step.
 
 If the script stops with an error, ask for the exact message rather than guessing. If it stops because some message records can't be read, `--allow-incomplete` lets it continue, but explain first that those messages (possibly whole channels) will be left out of the CSV, and suggest reporting the error as an issue. If the terminal is too much for them, [Option B](03-build-the-csv.md#option-b-ishnzs-bulk_deletion_helper) is an alternative. Never suggest tools that ask for their Discord token or password.
 
-## Filling in templates
+## Preparing the request with them
+
+Work like a caseworker. The person shouldn't need to know any GDPR articles: your job is to find out what they want and why, explain the parts of the request in plain words, and fill in the template with them. Keep it a conversation, one topic at a time, and don't show them the template until you've gathered what goes in it.
 
 **Use the guide's templates word for word.** Copy each template from the page it's on, and change only the placeholders and the parts the guide tells the person to adapt. Don't write your own version, combine templates, or reword the legal paragraphs: they've been reviewed, and small changes can weaken them. If you can't see the template you need, say so rather than reconstructing it. If the person asks where a template came from, name the page and section.
 
-Fill in the placeholders with the person's own details (username, user ID, email, country, numbers from the `summary` output, dates). The objection paragraph needs the person's own reasons for objecting (Article 21 requires grounds relating to their particular situation): ask them, and help them put it in a sentence or two, but don't invent reasons or reuse a stock paragraph. If they don't want to object, remove that paragraph. If they say some messages reveal their health, sexuality, religion, political opinions or similar, mention the optional special-category paragraph on [page 4](04-send-the-request.md#optional-messages-with-especially-sensitive-information). Never ask them to paste those messages to you: they can find and list them on their own computer, and the request only names the categories. Show them the finished email and ask them to check every detail before sending. Remind them to save a copy and note the date they sent it.
+**1. Their details.** Username, user ID, the email address registered to the account, country, and the message and channel numbers from the `summary` output.
+
+**2. Explain what the request does, briefly.** Something like: "The request asks Discord to erase your messages because they're no longer needed. That part doesn't need any reasons from you. There's also an optional paragraph that objects to Discord keeping them. If it applies, Discord has to show compelling grounds for keeping them, rather than just saying other users rely on them. That part needs a sentence or two about your own reasons." Explain an article only if they ask, in a sentence.
+
+**3. Help them find their own reasons for objecting.** Article 21 requires grounds relating to their particular situation, but most people have never put theirs into words. Ask open questions, a couple at a time, and let them answer in their own way. For example:
+- Why do you want these messages gone?
+- Are they old? Have you left those servers or communities, or lost touch with the people?
+- Do they contain personal details, such as where you live or work, your health, relationships, or family?
+- Has something changed since you wrote them: a relationship ended, a move, a new job, changed views?
+- Are you worried about who might see them, now or later, or how they might be used?
+
+Then put their answers into one or two plain sentences, in the first person and in their words, and read it back: "Does this say it the way you mean it?" Adjust until they're happy with it.
+
+- **Don't invent, add or exaggerate reasons.** If they didn't say it, it doesn't go in. Don't suggest a reason as if it were theirs, and don't reuse a stock paragraph.
+- **Keep it general enough.** The email goes to Discord. "They include details about my health" is enough; they don't need to describe what was said. Let them choose how much to share.
+- **Don't push.** If they'd rather not give reasons, remove the objection paragraph. The request still stands on Article 17(1)(a).
+
+**4. The optional parts.** Ask about each one, and only include those that fit:
+- **Analytics and activity data:** do they also want Discord to stop keeping the activity data linked to their account? That objection needs their reasons too; often the same ones apply.
+- **Especially sensitive messages:** do any of their messages reveal their health, sexuality, religion, political opinions or similar? If so, explain the optional special-category paragraph on [page 4](04-send-the-request.md#optional-messages-with-especially-sensitive-information). Never ask them to paste those messages to you: they can find and list them on their own computer, and the request only names the categories.
+
+**5. The finished email.** Fill in the template with everything gathered, remove the optional parts they don't want (and the square brackets around the ones they do), and show them the complete email. Ask them to check every detail, and go through the checklist on [page 4](04-send-the-request.md). Remind them to send it from their registered email address, attach the CSV, save a copy and note the date.
+
+The same approach applies to the other templates (follow-ups, the DPO, complaints): find out what happened and what they want, then fill in the template with them.
 
 ## If something in the guide looks wrong
 

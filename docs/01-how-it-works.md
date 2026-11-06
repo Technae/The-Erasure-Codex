@@ -62,7 +62,10 @@ In the [case study](09-case-study.md), the rule kept a DM between two accounts b
 
 ## Decide these before you start
 
-**1. Do you want to leave servers and group chats first?**
+**1. Are any of these messages tied to a legal matter?**
+If your messages could be evidence in a police investigation, a court case, a workplace or disciplinary dispute, or a complaint involving you, get legal advice before asking for them to be erased. Erasing them could harm your own case or look like destroying evidence.
+
+**2. Do you want to leave servers and group chats first?**
 Under Discord's current practice, leaving is what makes messages deletable. Leaving costs you:
 - **Servers:** you can rejoin a public server, but not an invite-only one without a new invite.
 - **Group chats:** once you leave, you can't get back in unless someone adds you. You lose the history.
@@ -70,13 +73,13 @@ Under Discord's current practice, leaving is what makes messages deletable. Leav
 
 Leaving isn't required to make a request, and you shouldn't have to do it. If you stay, you're asking Discord to apply the law rather than its rule, so expect a longer fight (Steps 5 and 7). Many people do both: leave what they don't need, and ask for everything.
 
-**2. Do you want to delete your account?**
+**3. Do you want to delete your account?**
 Deleting your account does **not** delete your messages. Discord says it anonymises them: your name is replaced with "Deleted User", and your email and IP addresses are removed. The messages stay visible. Once your account is gone, or "pending deletion", you can't make requests through it. **Make your erasure request first, and keep your account until you've checked the result.**
 
-**3. Do you own any servers?**
+**4. Do you own any servers?**
 As owner you can delete channels, or the whole server, and that removes your messages in them. It also removes everyone else's. Think about the other members, and give them a chance to save anything they need, before you do that.
 
-**4. What else do you want erased?**
+**5. What else do you want erased?**
 Your data package also contains analytics and other "activity" data, sometimes going back many years. You can object to and ask for erasure of that too (see [Step 4](04-send-the-request.md)). You can also limit future collection in **User Settings → Data & Privacy**.
 
 ## What you'll need

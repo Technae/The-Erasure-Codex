@@ -47,7 +47,7 @@ You can complain to the data protection authority **in the country where you liv
 
 Keep it factual. Let the evidence show the problem. Words like "malicious" don't help, while dates, quotes and numbers do.
 
-**After you complain:** you can still write to Discord, and anything new it sends is worth forwarding to the authority with your case reference. In the EU/EEA, if the authority hasn't handled your complaint, or told you how it's progressing, within three months, Article 78(2) lets you take the authority to court. That's rarely needed, but worth knowing. (UK: see section 166 below.)
+**After you complain:** you can still write to Discord, and anything new it sends is worth forwarding to the authority with your case reference. In the EU/EEA, if the authority hasn't handled your complaint, or told you how it's progressing, within three months, Article 78(2) lets you take the authority to court. That's rarely needed, but worth knowing, and it's a point to get legal advice. (UK: see section 166 below.)
 
 ## Complaining in the UK
 
@@ -61,7 +61,7 @@ The process changed on **19 June 2026**. Under section 164A of the Data Protecti
 ## Other options
 
 - **Data protection organisations** such as [noyb](https://noyb.eu/) in Europe sometimes take up cases that affect many people. Their membership schemes can include legal advice.
-- **Courts:** you can take Discord to court yourself (Article 79), and claim compensation for harm (Article 82). That costs money and carries risk, so get advice first.
+- **Courts:** you can take Discord to court yourself (Article 79), and claim compensation for harm (Article 82). That costs money and carries risk, so get advice from a solicitor or an organisation like noyb first. This guide doesn't cover court proceedings, and it has no templates for them.
 
 ## Why complaining matters
 
