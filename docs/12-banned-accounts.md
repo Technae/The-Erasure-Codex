@@ -42,7 +42,7 @@ emails about the account, attached]. If you need more information,
 please tell me what you need.
 ```
 
-The [case study](09-case-study.md) includes an access request for an account Discord deleted for inactivity in 2024, due in November 2026. We'll add the result when it arrives.
+The [case study](09-case-study.md) includes an access request for an account Discord deleted for inactivity in 2024. It was sent from the account's registered email with Discord's own emails attached, and its deadline (9 November 2026) passed with no reply and no notice of an extension.
 
 ## Why your request should be straightforward
 

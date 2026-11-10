@@ -1040,7 +1040,7 @@ This is one user's request, from Ireland, with real figures and Discord's real r
 - **640,321** still present: everything the user could still open
 - By September 2026, **99.3% of the messages still in the account (635,544 of 640,314) were in DMs**. Only 4,339 were left in server channels, 364 in group chats, 64 in threads and 3 in voice channels. You can't leave a DM, so the "access" rule spares almost nothing else
 - Complaint filed with the Irish Data Protection Commission (DPC) in March/April 2026. In June it moved to the DPC's Cross Border Assessment team, and as of November 2026 it had no case officer
-- Four formal requests to Discord's Data Protection Officer were open in November 2026, with deadlines of 4, 9, 9 and 23 November
+- Four formal requests were made to Discord's Data Protection Officer and privacy team in October 2026. The deadlines for three of them (4, 9 and 9 November) passed with no reply and no notice of an extension. The fourth is due on 23 November
 
 ## What Discord said, and what it did
 
@@ -1085,12 +1085,14 @@ On 27 September 2026 the user wrote to dpo@discord.com. The email became an ordi
 
 The user then turned the questions into formal requests in the same ticket, which reopened it:
 
-| Sent | Request | Deadline |
-|---|---|---|
-| 4 Oct | Access to analytics data (purposes, legal basis, recipients, retention); objection to and erasure of it; the legal basis for keeping two specific DMs | 4 Nov |
-| 8 Oct | Erase two DMs with deleted users, or state the exception and whose interests it protects | 9 Nov |
-| 8 Oct | Access request for an account Discord deleted for inactivity in 2024 | 9 Nov |
-| 21 Oct | Access: retention after account deletion, use for model training, recipients, transfers | 23 Nov |
+| Sent | Request | Deadline | Result |
+|---|---|---|---|
+| 4 Oct | Access to analytics data (purposes, legal basis, recipients, retention); objection to and erasure of it; the legal basis for keeping two specific DMs | 4 Nov | No reply, no extension notice |
+| 8 Oct | Erase two DMs with deleted users, or state the exception and whose interests it protects | 9 Nov | No reply, no extension notice |
+| 8 Oct | Access request for an account Discord deleted for inactivity in 2024 | 9 Nov | No reply, no extension notice |
+| 21 Oct | Access: retention after account deletion, use for model training, recipients, transfers | 23 Nov | Pending |
+
+Each result was checked the day after the deadline, after noon Irish time, so the deadline had passed in every time zone.
 
 ## The same template, elsewhere
 
@@ -1705,7 +1707,7 @@ emails about the account, attached]. If you need more information,
 please tell me what you need.
 ```
 
-The [case study](https://github.com/Technae/The-Erasure-Codex/blob/main/docs/09-case-study.md) includes an access request for an account Discord deleted for inactivity in 2024, due in November 2026. We'll add the result when it arrives.
+The [case study](https://github.com/Technae/The-Erasure-Codex/blob/main/docs/09-case-study.md) includes an access request for an account Discord deleted for inactivity in 2024. It was sent from the account's registered email with Discord's own emails attached, and its deadline (9 November 2026) passed with no reply and no notice of an extension.
 
 ## Why your request should be straightforward
 

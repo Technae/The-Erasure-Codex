@@ -10,6 +10,9 @@ Entries before 5 November 2026 were written up afterwards from the working notes
 
 ## 10 November 2026
 
+### Updated: case study results
+- **Pages 9 and 12:** three of the case study's four October requests passed their deadlines (4, 9 and 9 November) with no reply and no extension notice, including the access request for a deleted account. The fourth is due 23 November.
+
 ### Checked: the EDPB-commissioned case digest
 - **Checked against the digest itself** (updated 26 May 2026; external expert, not an official EDPB position). Both points the guide relies on are there.
 - **Wording made exact (pages 8, 10, 11, 12):** the digest says requiring a copy of a *national ID card* by default isn't acceptable; the French "Contact us" example is in its section on the right to object; decision numbers now use the full EDPBI prefix. *Why:* to match the source.
