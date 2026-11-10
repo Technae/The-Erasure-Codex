@@ -27,7 +27,7 @@ As of 2026, Discord's privacy team will process a CSV of message IDs, but in pra
 
 Discord's first answer usually says bulk deletion isn't offered. That isn't the whole story. A template reply isn't necessarily a complete or properly reasoned answer, even when it amounts to a refusal. Your rights don't depend on Discord having a feature for them.
 
-If all this seems like a lot of work just to use a legal right, that's worth noticing. Discord is required to *make it easy* to exercise your rights (Article 12(2)). The effort this guide asks of you is itself something you can point out to a regulator ([Templates](docs/11-templates.md#your-effort-is-evidence)).
+If all this seems like a lot of work just to use a legal right, that's worth noticing. Discord is required to *facilitate* the exercise of your rights (Article 12(2)): to help you use them, not put obstacles in the way. The effort this guide asks of you is itself something you can point out to a regulator ([Templates](docs/11-templates.md#your-effort-is-evidence)).
 
 **What this guide is pushing for** isn't one particular feature. It's for Discord to *effectively facilitate* the erasure of your messages at scale, as the law requires: for example, a way to delete all your messages, or all your messages in a DM, group chat or server. A delete-all button is one way to do that. How Discord does it is up to Discord, as long as it works.
 
@@ -69,7 +69,7 @@ This guide builds on work by others. Thank you to:
 
 ## How this guide was made
 
-This guide comes from my own erasure requests to Discord between February and November 2026: the emails, Discord's replies, and the data packages I compared before and after. I wrote it with help from Claude (Anthropic's AI assistant) for legal research, structure, drafting and checking claims against sources. I also used ChatGPT for a second opinion on the legal content and to audit the helper script. Every legal point links to the law or to Discord's own published pages, and the helper script was tested against real data packages. I maintain this guide and I'm responsible for what's in it. If you find something wrong, please [open an issue](https://github.com/Technae/The-Erasure-Codex/issues) so I can fix it.
+This guide comes from my own erasure requests to Discord between February and November 2026: the emails, Discord's replies, and the data packages I compared before and after. I wrote it with help from Claude (Anthropic's AI assistant) for legal research, structure, drafting and checking claims against sources. I also used ChatGPT for a second opinion on the legal content and to audit the helper script. Every legal point links to the law or to Discord's own published pages, and the helper script was tested against real data packages. It hasn't been reviewed by a lawyer: the reviews so far were done with AI tools, plus my own testing against real requests. I maintain this guide and I'm responsible for what's in it. If you find something wrong, please [open an issue](https://github.com/Technae/The-Erasure-Codex/issues) so I can fix it.
 
 ## Licence
 

@@ -95,7 +95,13 @@ Community tools that read data packages exist, such as [undiscord-package-util](
 
 **Everything you want erased.** Don't pre-filter for "messages with personal information" unless you want to. Discord's templates sometimes say the CSV is for messages containing personally identifiable information, but in practice it filters by access, not content (see the [case study](09-case-study.md)), and all of your messages relate to you.
 
-**How big is too big?** Hundreds of thousands of lines are fine for Discord's process, but your email provider may limit attachment size (often around 20–25 MB). A CSV of 760,000 messages is about 30 MB. If yours is too big, either use `--split` and send the files in separate replies in the same thread, or compress it, or upload it to a file host and send a link. Links can expire or need permissions, so check that it opens in a private browser window.
+**How big is too big?** Hundreds of thousands of lines are fine for Discord's process, but your email provider may limit attachment size (often around 20–25 MB). A CSV of 760,000 messages is about 30 MB, and Gmail turns attachments over 25 MB into Google Drive links automatically.
+
+**Attach the CSV as a file, not a link.** In the [case study](09-case-study.md), three CSVs sent as Drive links got repeated requests for a CSV, while the same kind of file attached through Discord's support form was confirmed about a week later. That's one user's experience, not something Discord has explained, but links can also expire or need permissions. If your file is too big for one email, either:
+- use `--split` and attach each part to a reply in the same thread, or
+- send the request through Discord's support form, which accepted a 30 MB attachment.
+
+Compressing it into a ZIP also makes it much smaller, but Discord hasn't said whether it accepts ZIP files, so `--split` is the safer choice.
 
 **A note on support attachments:** in 2025 a breach at a third-party customer support provider used by Discord exposed data from support tickets. A CSV of IDs reveals little on its own, but don't attach anything you don't need to, especially ID documents.
 

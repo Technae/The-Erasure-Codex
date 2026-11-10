@@ -58,6 +58,8 @@ are my personal data: they were written by me, are linked to my account,
 and are included in my data package as my data.
 ```
 
+If you sent the CSV as a link (for example, a Google Drive link) and Discord keeps asking for a CSV, send it again as an attachment, split with `--split` if it's too big for one email.
+
 ---
 
 ## "We have successfully submitted the message IDs … for deletion"

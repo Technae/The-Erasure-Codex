@@ -4,7 +4,7 @@
 
 ## Your rights
 
-If you're in the **EU or EEA**, the GDPR applies. If you're in the **UK**, the UK GDPR applies, and it's nearly identical for this purpose. Both give you:
+If you live in the **EU or EEA**, the GDPR applies. If you live in the **UK**, the UK GDPR applies (it's where you live that counts, not your nationality), and it's nearly identical for this purpose. Both give you:
 
 - **The right to erasure (Article 17).** You can ask for your personal data to be erased. The usual grounds are that Discord no longer needs it for the purpose it was collected for (17(1)(a)), or that you object to its processing and Discord has no overriding grounds to continue (17(1)(c), together with Article 21).
 - **The right to object (Article 21).** Where a company relies on "legitimate interests", you can object, on grounds relating to your particular situation (say briefly why, in your own words). Discord's replies refer to other users' legitimate interests when it keeps your messages, though it hasn't clearly said which legal basis it relies on. It must then stop unless it can show *compelling* legitimate grounds that override your interests, rights and freedoms, or that the processing is needed to establish, exercise or defend legal claims.
@@ -81,6 +81,9 @@ As owner you can delete channels, or the whole server, and that removes your mes
 
 **5. What else do you want erased?**
 Your data package also contains analytics and other "activity" data, sometimes going back many years. You can object to and ask for erasure of that too (see [Step 4](04-send-the-request.md)). You can also limit future collection in **User Settings → Data & Privacy**.
+
+**6. Are you sure you won't want them back?**
+Erasure can't be undone. Keep your data package somewhere safe: it may be the only copy of your messages you'll have.
 
 ## What you'll need
 

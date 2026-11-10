@@ -8,7 +8,9 @@ Under **Article 12(3)**, Discord must tell you what it has done about your reque
 
 If the month ends and you have neither an answer nor a notice of extension, the deadline has been missed. If Discord refuses part of your request, Article 12(4) requires it to tell you why and that you can complain. A template that does neither isn't a valid answer.
 
-Counting: a month runs from the day Discord received your request to the same date the following month. If that falls on a weekend or public holiday, it moves to the next working day.
+Counting: a month runs from the day Discord received your request to the same date the following month. If that falls on a weekend or public holiday, it moves to the next working day. If the following month has no matching date, the deadline is its last day: a request received on 31 August is due by 30 September.
+
+If Discord promptly asked you for information it needed to confirm who you are, the clock may be paused until you reply (EDPB guidelines on the right of access, 01/2022, paragraphs 159–161; they're about access requests, but the same reasoning is likely to apply to erasure). That isn't a pause for any question Discord asks, and if you wrote from your registered email there's normally no reason to ask.
 
 In the UK, Article 12A counts the month from the latest of: when Discord receives your request, when it receives identity information it reasonably asked for, or when any fee is paid. For access requests only, the clock can also pause while Discord waits for information it reasonably needs to identify what you're asking for. See the [legal reference](10-legal-reference.md).
 
@@ -47,7 +49,7 @@ You can complain to the data protection authority **in the country where you liv
 
 Keep it factual. Let the evidence show the problem. Words like "malicious" don't help, while dates, quotes and numbers do.
 
-**After you complain:** you can still write to Discord, and anything new it sends is worth forwarding to the authority with your case reference. In the EU/EEA, if the authority hasn't handled your complaint, or told you how it's progressing, within three months, Article 78(2) lets you take the authority to court. That's rarely needed, but worth knowing, and it's a point to get legal advice. (UK: see section 166 below.)
+**After you complain:** the authority must keep you informed of the progress and outcome (Article 77(2)). You can still write to Discord, and anything new it sends is worth forwarding to the authority with your case reference. In the EU/EEA, if the authority hasn't handled your complaint, or told you how it's progressing, within three months, Article 78(2) lets you take the authority to court. That's rarely needed, but worth knowing, and it's a point to get legal advice. (UK: see section 166 below.)
 
 ## Complaining in the UK
 
@@ -60,7 +62,7 @@ The process changed on **19 June 2026**. Under section 164A of the Data Protecti
 
 ## Other options
 
-- **Data protection organisations** such as [noyb](https://noyb.eu/) in Europe sometimes take up cases that affect many people. Their membership schemes can include legal advice.
+- **Data protection organisations** such as [noyb](https://noyb.eu/) in Europe sometimes take up cases that affect many people. In the EU/EEA, you can ask such an organisation to complain on your behalf (Article 80(1)), if it agrees. Their membership schemes can include legal advice.
 - **Courts:** you can take Discord to court yourself (Article 79), and claim compensation for harm (Article 82). That costs money and carries risk, so get advice from a solicitor or an organisation like noyb first. This guide doesn't cover court proceedings, and it has no templates for them.
 
 ## Why complaining matters

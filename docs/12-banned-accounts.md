@@ -59,7 +59,7 @@ So if you want your ordinary messages erased, Discord's own rule supports your r
 
 ## Proving it's your account
 
-**Don't send ID documents by default.** Discord can ask for more information only if it has *reasonable doubts* about who you are (Article 12(6)), and an EDPB-commissioned case digest on erasure says that requiring ID by default isn't acceptable. An ID document also isn't much use here: Discord usually doesn't know your legal name, so a passport shows who you are, not that you own the account.
+**Don't send ID documents by default.** Discord can ask for more information only if it has *reasonable doubts* about who you are (Article 12(6)), and an EDPB-commissioned case digest on erasure says that requiring a copy of a national ID card by default isn't acceptable. It also summarises decisions where writing from the registered email was enough, and where people were identified by details such as current and previous usernames and when the account was registered ([legal reference](10-legal-reference.md#decisions-and-guidance-worth-knowing)). An ID document also isn't much use here: Discord usually doesn't know your legal name, so a passport shows who you are, not that you own the account.
 
 **Better ways to show the account is yours**, roughly strongest first:
 1. **Write from the account's registered email.** That's how Discord itself identifies you: it sends data packages and account notices there.

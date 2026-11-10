@@ -225,9 +225,11 @@ For each category of personal data, please tell me:
      transfers (Article 15(2));
   c) the retention period, or the criteria used to determine it;
   d) where data was not collected from me, its source;
-  e) whether any automated decision-making, including profiling, is
-     applied to me, and if so meaningful information about the logic
-     involved and its significance and envisaged consequences.
+  e) whether any decision about me is based solely on automated
+     processing, including profiling, with legal or similarly
+     significant effects (Article 22), and if so meaningful information
+     about the logic involved and its significance and envisaged
+     consequences (Article 15(1)(h)).
 
 Please respond within one month, as Article 12(3) requires. This request
 is free of charge (Article 12(5)).
@@ -273,10 +275,10 @@ its privacy policy)
 1. Summary
 On [date] I asked Discord to erase my messages under Article 17 GDPR.
 [Number] of the [number] messages I asked to be erased have not been
-erased. Discord has not explained why it is keeping them: whether it
+erased. [Discord has not explained why it is keeping them: whether it
 considers that no Article 17(1) ground applies, or which exception under
-Article 17(3) or other justification under Article 21(1) it relies on.
-It has not told me of my right to complain. [My escalation to Discord's
+Article 17(3) or other justification under Article 21(1) it relies on.]
+[It has not told me of my right to complain.] [My escalation to Discord's
 Data Protection Officer of [date] also went unanswered.]
 
 2. What happened
@@ -305,10 +307,11 @@ Discord's replies exactly. For example:
   privacy policy only says that users can delete their own messages "if
   you still have access to the space where you posted it"; it doesn't
   say that erasure requests exclude those spaces.
-- Article 12(2) and Recital 59: no practical way to exercise the right.
-  Discord offers no deletion option, requires users to build their own
-  CSV from a data package that can take weeks to arrive, and tells them
-  bulk deletion is "not offered". [Describe your burden: e.g. "It took me
+- Article 12(2) and Recital 59: no practical way to exercise the right
+  at scale. Discord offers no way to delete messages in bulk, only one
+  at a time. It requires users to build their own CSV from a data
+  package that can take weeks to arrive, and tells them bulk deletion
+  is "not offered". [Describe your burden: e.g. "It took me
   [number] emails over [number] weeks, and I had to follow a community
   guide to find out how the process works. Deleting the remaining
   [number] messages by hand would take [estimate] hours."]
@@ -323,8 +326,8 @@ Discord's replies exactly. For example:
 [- Article 38(4): my email to Discord's Data Protection Officer was
   handled as an ordinary support ticket and closed without a reply. The
   same case digest describes a comparable case (an automated reply
-  redirecting rights requests to a contact form, FR:OSS:D:2022:326) as a
-  cumbersome procedure.]
+  redirecting rights requests to a contact form,
+  EDPBI:FR:OSS:D:2022:326) as a cumbersome procedure.]
 
 4. What I ask the authority to do
 - Order Discord to comply with my request (Article 58(2)(c)).
@@ -349,6 +352,7 @@ slow down your own result. See the next section before including it.]
 ```
 
 **Tips:**
+- **Only keep statements that are true in your case.** The template describes a common situation. Delete or change anything that doesn't match what happened to you, including the points in section 3.
 - **Keep it factual.** Dates, quotes and numbers carry weight. Words like "malicious" don't.
 - **Keep copies** of everything you submit, and the authority's reference number.
 - **Expect months.** If Discord sends anything new later, forward it to the authority with your reference number.
@@ -390,7 +394,7 @@ If that is not achievable, I ask the authority, or the lead supervisory
 authority, to consider whether these issues warrant an inquiry.
 ```
 
-You can't force an authority to open an inquiry, and how amicable resolution works varies between countries. (In Ireland, for example, a complaint resolved amicably is treated as withdrawn.) Stating your position helps the authority understand that deleting your messages alone doesn't address your complaint. The authority still decides what to investigate and what to do.
+You can't force an authority to open an inquiry, and how amicable resolution works varies between countries. (In Ireland, for example, a complaint resolved amicably is treated as withdrawn.) The EDPB-commissioned case digest on erasure notes that the Irish DPC uses amicable resolution widely, that starting it often prompts the company to comply, and that the author considers trying it first, where suitable, to be best practice for authorities. So expect it to be offered. Stating your position helps the authority understand that deleting your messages alone doesn't address your complaint. The authority still decides what to investigate and what to do.
 
 ---
 

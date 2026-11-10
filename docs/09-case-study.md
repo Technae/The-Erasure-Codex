@@ -25,7 +25,9 @@ Eight days later, after a follow-up, the same team wrote:
 
 > If, however, you believe you have sent messages which include specific identifiable personal data and/or sensitive personal data - your name, or other information about you - we can certainly help you remove such information. […] Please provide us with a CSV file of the messages containing personally identifying information in the following format: channel_id, message_id
 
-The user sent CSVs listing every message in the data package, four in all, between 7 and 25 February. Discord confirmed each batch as "submitted for deletion", except messages in spaces the user could still access, other users' messages, and invalid IDs.
+The user sent four CSVs between 7 and 25 February. The first went through Discord's support form on 7 February, attached directly, in a separate ticket. Discord confirmed it on 15 February as "submitted for deletion", except messages in spaces the user could still access, other users' messages, and invalid IDs. The other three were emailed in the original thread as file-host links, because the file was too big to attach. Discord answered the first two of those by asking for a CSV again, and confirmed the last on 2 March, with the same three exclusions.
+
+So in the same week, the same team told the user in one ticket that bulk deletion wasn't offered, and confirmed a bulk deletion in another. One reason the support-form request went faster may be that the CSV was attached rather than linked. That's the user's experience, not something Discord has explained.
 
 **So bulk deletion exists:** Discord removed 121,948 messages from CSVs, with no sign of a per-message review for personal data. What decided deletion was access, not content.
 
@@ -79,9 +81,10 @@ From reports in Undiscord #429 (user reports, not verified):
 
 ## Lessons
 
-1. **Don't stop at the first reply.** The CSV route only appeared after pushing back.
+1. **Don't stop at the first reply.** In the same week, the same team said bulk deletion wasn't offered in one ticket and confirmed a bulk deletion in another.
 2. **Check, don't trust.** "Submitted for deletion" covered messages that were never deleted.
 3. **Ask the same question every time:** which exception? Months of unanswered questions are themselves the evidence.
 4. **Keep everything,** with dates and hashes, from the start.
+5. **Attach the CSV as a file,** not a link to a file host ([Build the CSV](03-build-the-csv.md#what-to-include)).
 
 [← FAQ](08-faq.md) · [Contents](../README.md) · [Next: Legal reference →](10-legal-reference.md)

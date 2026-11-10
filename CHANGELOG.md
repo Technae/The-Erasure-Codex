@@ -8,6 +8,42 @@ Entries before 5 November 2026 were written up afterwards from the working notes
 
 ---
 
+## 10 November 2026
+
+### Checked: the EDPB-commissioned case digest
+- **Checked against the digest itself** (updated 26 May 2026; external expert, not an official EDPB position). Both points the guide relies on are there.
+- **Wording made exact (pages 8, 10, 11, 12):** the digest says requiring a copy of a *national ID card* by default isn't acceptable; the French "Contact us" example is in its section on the right to object; decision numbers now use the full EDPBI prefix. *Why:* to match the source.
+- **Added (pages 10 and 12):** decisions where the registered email was enough to identify someone, and where people were identified by details such as previous usernames and registration date. *Why:* they support page 12's advice on proving the account is yours.
+- **Amicable resolution (page 11):** the digest notes the Irish DPC uses it widely and that it's often offered first. *Why:* so people can expect it.
+
+## 9 November 2026
+
+### Fixed: from a full review and legal audit
+- **Complaint template (page 11):** no longer says Discord "offers no deletion option". It offers deletion one message at a time, but no way to delete in bulk. *Why:* the sentence was false, and people paste it to regulators.
+- **Case study (page 9):** now says four CSVs were sent and two were confirmed (15 February and 2 March). The first went through the support form as an attachment; the others were emailed as file-host links and two drew requests for a CSV again. Lesson 1 rewritten, and a lesson added: attach the CSV. *Why:* the old text said every batch was confirmed, and that the CSV route only appeared after pushing back. Neither matched the record.
+- **Deadline pauses in the EU (pages 7 and 10, AI instructions):** the EDPB's access guidelines say the time limit may be suspended while a company waits for information it promptly asked for to confirm who you are. The guide had said this only applied in the UK. Page 7 also gives the month-end rule (31 August → 30 September). *Why:* someone could otherwise count the month wrongly.
+- **Attach, don't link (pages 3, 4, 5):** the option to send the CSV as a file-host link is gone. For large files: `--split` and attach each part, or use the support form, which accepted 30 MB. *Why:* in the case study, linked CSVs were repeatedly met with requests for a CSV, while an attached one was confirmed. One user's experience, not something Discord has explained.
+
+### Changed
+- **Complaint template (page 11):** statements about what Discord did are now in square brackets, with a tip to keep only what's true in your case.
+- **Special-category paragraph (pages 4 and 10):** notes that it's strongest for private conversations; for large public servers Discord could rely on Article 9(2)(e).
+- **Where you live (pages 1 and 8):** it's residence that counts, not nationality. **Switzerland** isn't covered, although Discord's page groups it with the EEA and UK.
+- **Twitter decision (page 10):** now lists the articles the DPC found breached and what it ordered.
+- **Page 1:** erasure can't be undone; keep your data package.
+- **AI instructions:** what to do about harassment or threats (report, not erasure), under-18s (suggest involving a parent or guardian), and requests about someone else's account.
+- **README:** Article 12(2) is a duty to *facilitate*, not to "make it easy".
+- **Page 10:** two small overstatements toned down (Article 12(5); the DPO address).
+- **Template consistency:** the UK request on page 4 now has the optional analytics paragraph; the general access request on page 11 uses the narrower Article 22 wording from page 12.
+
+### Added
+- **Messages written as a minor:** an example reason on page 4 and in the AI instructions, and Recital 65 on page 10.
+- **Page 10:** Articles 5(1)(e) and 5(2), 77(2) and 80(1); the EDPB erasure report's finding on weak anonymisation (also in the FAQ on account deletion).
+- **Page 7:** the right to be kept informed of a complaint's progress, and to have an organisation such as noyb complain for you.
+
+### Changed (earlier on 9 November)
+- **README:** says plainly that the guide hasn't been reviewed by a lawyer; the reviews so far were done with AI tools, plus testing against real requests. *Why:* "reviewed" on its own could be read as professional review.
+- **FAQ:** the author can't help with requests outside the EU, EEA and UK. *Why:* to be clear about where the guide, and its author, can and can't help.
+
 ## 6 November 2026
 
 ### Added: limits on what the guide, and an AI assistant, should help with

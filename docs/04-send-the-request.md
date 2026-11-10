@@ -10,7 +10,7 @@
 
 **By post:** Discord's [Information About Local Privacy Laws](https://discord.com/terms/local-laws) page also gives postal addresses (Discord Netherlands BV in Schiphol for the EEA, Discord Inc. in San Francisco for everyone else). Post is slower, but a tracked or registered letter gives you proof of when it arrived. That can help if your emails are going unanswered, or you can't send from your account's address.
 
-You can also use Discord's support form, but email gives you your own dated copy of everything, which is what you'll want if you complain later. Either way, Discord's replies come through its ticket system, and each ticket has a number. Note it down.
+You can also use Discord's support form, but email gives you your own dated copy of everything, which is what you'll want if you complain later. The support form is useful if your CSV is too big to attach to an email: in the [case study](09-case-study.md) it accepted a 30 MB file. Either way, Discord's replies come through its ticket system, and each ticket has a number. Note it down.
 
 **Keep everything in one thread.** Reply to Discord's emails rather than starting new ones, keep the quoted text, and don't delete the tag in square brackets (like `[ABC123-DEF45]`). That's how the ticket system matches your reply to the request.
 
@@ -132,6 +132,13 @@ no Article 17(1) ground applies, or rely on an exception under Article
 establishment, exercise or defence of legal claims), and why it applies
 to those messages.
 
+[Optional: To the extent that you process the analytics and other
+activity data linked to my account, including the data in the Activity
+folder of my data package, on the basis of legitimate interests, I also
+object to that processing under Article 21(1), on grounds relating to my
+particular situation: [why you object], and ask for its erasure under
+Article 17(1)(c).]
+
 Please respond within one month of receiving this request, as
 Article 12(3) requires, and confirm in writing which messages have been
 erased. Please do not close this request until you have answered it.
@@ -145,20 +152,21 @@ Kind regards,
 - [ ] Sent **from your account's email address**
 - [ ] The email says you want to **keep your account** (the templates include this line; don't remove it)
 - [ ] You've filled in **why you object** in your own words (see below), or removed the objection paragraph if you don't want to object
-- [ ] The CSV is attached, or the link works in a private browser window
+- [ ] The CSV is **attached as a file**, not sent as a link (if it's too big, see [How big is too big?](03-build-the-csv.md#what-to-include))
 - [ ] The numbers in the email match the CSV (the `summary` command gives you both)
 - [ ] You've saved a copy of the email, the CSV, and its hash (`sha256sum messages_to_delete.csv`)
 - [ ] You've written down today's date. **The one-month deadline starts when Discord receives your request.**
 
 ## Why you object, in your own words
 
-An objection under Article 21(1) has to be made "on grounds relating to your particular situation", so the template leaves a gap for you to fill in. Write a sentence or two about your own reasons. For example: the messages contain personal details you no longer want stored, they're years old and you've left those communities, they're from a past relationship you want to move on from, or you're worried about what they reveal about you. Use your real reasons, not a stock paragraph. It doesn't need to be long or legal.
+An objection under Article 21(1) has to be made "on grounds relating to your particular situation", so the template leaves a gap for you to fill in. Write a sentence or two about your own reasons. For example: the messages contain personal details you no longer want stored, they're years old and you've left those communities, they're from a past relationship you want to move on from, you wrote them when you were under 18, or you're worried about what they reveal about you. Use your real reasons, not a stock paragraph. It doesn't need to be long or legal.
 
 If you're not sure what to write, these questions can help:
 - Why do you want these messages gone?
 - Are they old? Have you left those servers or lost touch with the people?
 - Do they contain personal details, such as where you live or work, your health, relationships or family?
 - Has something changed since you wrote them?
+- Were you under 18 when you wrote them?
 - Are you worried about who might see them, or how they might be used?
 
 Keep it general: "they include details about my health" is enough, without describing what was said. If you'd rather not object, delete that paragraph: the request still stands on Article 17(1)(a).
@@ -179,6 +187,7 @@ If you keep any of them, please also tell me which condition under
 Article 9(2) you rely on.
 ```
 
+- **It's strongest for private conversations.** For messages you posted in large public servers, Discord could argue that you made the information public yourself (Article 9(2)(e)). DMs and small private groups are where this paragraph is strongest.
 - **Only list messages that really reveal these things.** One doubtful message gives Discord an easy reason to dismiss the list. Say which categories, never what the messages say.
 - **Find them on your own computer.** Don't paste your messages into an online AI tool to sort them: they're the most private data in your package.
 - **It doesn't replace the main request.** The rest of your messages are still covered by the main CSV.
